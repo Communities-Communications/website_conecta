@@ -1,0 +1,16 @@
+id,name,letter
+website_conecta_trade,Trade,A
+website_conecta_construction,Construction,B
+website_conecta_education,Education,C
+website_conecta_industry,Industry,D
+website_conecta_institutions,Institutions,E
+website_conecta_recreation,Recreation,F
+website_conecta_marketing,Marketing,G
+website_conecta_information_technology,Information Technology,H
+website_conecta_communication,Communication,I
+website_conecta_restoration,Restoration,J
+website_conecta_health,Health,L
+website_conecta_services,Services,M
+website_conecta_import_and_export,Import and Export,N
+website_conecta_distribution,Distribution,O
+website_conecta_transport,Transport,P

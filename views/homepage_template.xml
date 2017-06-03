@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<template name="Homepage" priority="29" t-name="website.homepage">
+			<t t-call="website.layout">
+			    <div id="wrap" class="oe_structure oe_empty">
+
+<style type="text/css">
+
+@media (min-width: 768px) {
+.lp-menu-bar {
+    background-color: transparent;
+}
+#wrap {
+    margin-top: -84px;
+}
+}
+</style> 
+
+
+      <div class="carousel slide" data-ride="carousel" id="myCarousel" style="">
+        <div class="carousel-inner lp-home-banner-contianer">
+          <div class="item active">
+            <img alt="First slide" src="/website_conecta/static/src/images/banner2.jpg" style="width: 100%;"/>
+				<div class="container lp-header-overlay">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 text-center mt128">
+							<p class="lp-banner-browse-txt">Fundão  - Campinas!</p>
+							<h1><font style="color: rgb(255, 255, 255);">Plataforma de Intercâmbio</font></h1>
+						</div>
+
+						<div class="col-md-6 col-xs-12 col-md-offset-3 col-sm-offset-0">
+							<div class="lp-search-bar" style="opacity: 1;">
+								<form method="post" class="form-inline" action="/conecta/profiles" >
+								<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+									<div class="lp-search-bar-left">
+									
+					
+						<div class="form-group" style="min-width: 33%;">
+							<div class="input-group">
+								<div class="input-group-addon lp-border"><i class="fa fa-search"></i></div>
+									<input type="text" name="min_employees" class="form-control" t-att-value="min_employees" placeholder="What is your Interest?"/>
+							</div>
+						</div>
+						<div class="form-group" style="min-width: 21%;">
+							<div class="input-group">
+								<div class="input-group-addon lp-border"><i class="fa fa-crosshairs"></i></div>
+                            <select name="country" class="form-control selectpicker">
+                              <option value="">Select a Country</option>
+										<option value="Brazil">Brasil</option>
+										<option value="Portugal">Portugal</option>
+                            </select>
+							</div>
+						</div>
+
+
+							   	<!--<div class="ui-widget border-dropdown">
+									  <select name="country" class="form-control selectpicker">
+                              <option value="">Select a Country</option>
+										<option value="Brazil">Brasil</option>
+										<option value="Portugal">Portugal</option>
+									  </select>
+									</div>
+									
+										<input type="text" placeholder="What is your Interest?" name="keywords" class="lp-search-input lp-home-search-input" />-->
+									</div>
+									<div class="lp-search-bar-right">
+										<input type="submit" value="Search" class="lp-search-btn" />
+										<i class="icons8-search lp-search-icon"></i>
+									</div>
+									<div class="clearfix"></div>
+								</form>
+							</div>
+							<div class="text-center lp-search-description">
+								<p>Esta  área deve conter um slideshow
+								ou em alternativa um mapa
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+          </div>
+          <!--<div class="item">
+            <img alt="Second slide" data-src="" src="/website_conecta/static/src/images/banner1.jpg" style="width: 100%;"/>
+				<div class="container lp-header-overlay">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 text-center mt128">
+							<p class="lp-banner-browse-txt">Fundão  - Campinas!</p>
+							<h1><font style="color: rgb(255, 255, 255);">Plataforma de Intercâmbio</font></h1>
+						</div>
+						<div class="col-md-6 col-xs-12 col-md-offset-3 col-sm-offset-0">
+							<div class="lp-search-bar" style="opacity: 1;">
+								<form method="post" action="listing.html" >
+									<div class="lp-search-bar-left">
+														
+									<div class="ui-widget border-dropdown">
+									  <select class="comboboxs">
+										<option value="">Select one...</option>
+										<option value="All Locations">All Locations</option>
+										<option value="London">Fundão</option>
+										<option value="Birmingham">Campinas</option>
+									  </select>
+									</div>
+										<input type="text" placeholder="What is your Interest?" name="keywords" class="lp-search-input lp-home-search-input" />
+									</div>
+									<div class="lp-search-bar-right">
+										<input type="submit" value="Search" class="lp-search-btn" />
+										<i class="icons8-search lp-search-icon"></i>
+									</div>
+									<div class="clearfix"></div>
+								</form>
+							</div>
+							<div class="text-center lp-search-description">
+								<p>Esta  área deve conter um slideshow
+								ou em alternativa um mapa
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+          </div>-->
+        </div>
+        <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+          <span class="fa fa-chevron-left"/>
+        </a>
+        <a class="right carousel-control" data-slide="next" href="#myCarousel">
+          <span class="fa fa-chevron-right"/>
+        </a>
+      </div>
+
+
+	<!--==================================Section Open=================================-->
+	<section>
+		<div class="lp-section-row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="lp-home-categoires margin-top-subtract-55 padding-left-0">
+							<li>
+								<a href="/conecta/profiles?categ=Institutions" class="lp-border-radius-5">	
+									<span>
+									<img class="icon icons8-Organization" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAl0lEQVR4nO3QQQqAMAwAwf7/03rxFCiCNmmU2WvSFGYMSZKmHR8PAAAAawFeH0wOAAAAtQBx3m0fAAAAuQDdAgAAQC1AnHfbBwAAQC5AtwAAAFALEOfd9gEAAJAL0C0AAADUAsR5t30AAADkAnQLAAAAtQBxPtu/23v6DgAAAHsBVt2p+mfbQQAAfgKwql3/AAAAQJKkqxPyL22e5pvDNgAAAABJRU5ErkJggg=="/><br/>
+										Institutions
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="/conecta/profiles?categ=Industry" class="lp-border-radius-5">	
+									<span>
+										<img class="icon icons8-Factory" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAB9klEQVRoge2Z7WGCMBCGHYERGMERHMENdIO6Qdmg3aBsYDcoG8gGukHd4OkPDwmQT0QI1Pcfcpe8j+TMBVerCAW8AWfMOgLJ1D6tArYWAFWnqb1aBeRi9GC4nwBXiUlHtucvoBCTm0diJpdSG6klZhYgADhiFgOSSVg2kq0wAWsxWDjiogfZLAWk2kNyR1z0IF4GfZ/cZFoSSLWrbx1x0YN47Q9zAlk74hKf/WYUATtu7chJ+czb3GAg8lPZMOKRkwDvwC+K+ph7GETW54/OiCUnBT5aAIWaLzEAl6eCcGsfVICLazAx90VTBVLMLZCgAgZKibfWk83MFfmdN4GIqWMLIG9P+iCIXwfMbT13AFDOym0QNMtOAFLDHCrIQS6zQUDQF2SO5rCv3N/RfFlQQWsBDCBB/ZMVxABgNENXnafmA9KS9qyuye2e7TXf6L0gHYNVBXcB9j4GDPmqnPNKbvMJAqdQgKE1FEil/fOsOk2p8l2WepBnGvUwRagPYC8peWOQvhMMEaPcvgaANPedyECKF0hkIHkASPXq6BwjSOYL0vHuMjGGlgiy6ZPXvZhID4BU/5MksYH4HZLqvLoD9izCUYo9BCJWkBIoZw/SV8C3DLudO0jdAf8LkNi1RJDPuYPUHfALJAK9QGLU3T8Lkelt39xU/gFRpE0qVneUdAAAAABJRU5ErkJggg=="/><br/>
+										Industry
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="/conecta/profiles?categ=Marketing" class="lp-border-radius-5">	
+									<span>
+										<img class="icon icons8-Ratings" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABDklEQVRoge3T0Q2DMAwEUEZgNDbuCGEj9wckmjohudjBSHcSH5Vq915JlkWJiHwkTpLWsSlPN88zDIEXGIUQswVGKZy09jsTHNLeKxqk9Ll7wVMhBB5wCiHwgFMIgQecQgg84BRC4IGGXXdp6UGIgaO0fxWR9GpIhthfCVEQazjIUWrtQdz91nTIpWTSMCVEKIj8X9wfTA0RBqKUPC9vOo9aDRECopU8niumingcUvunM0wV0dvDFNJ4XE4MjNB6mEFaENl3YYTWwxKyjR6XnngfrW0GQuthCpkZQuABpxACDziFEHjAKYTAA04hBB5wCiH5QJSMQPbK3tnZYUjpDcELjEJIviBKRiAh78w1X/0dYa9VUJ1+AAAAAElFTkSuQmCC"/><br/>
+										Marketing
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="/conecta/profiles?categ=Information+Technology" class="lp-border-radius-5">	
+									<span>
+										<img class="icon icons8-Cloud-Storage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACU0lEQVRoge2Y4XWjMBCEXYJLoARKUAeXEujg0oHdQdJB6ODSQdyB0wF0YHfw3Q+kaLEFkjhLgnue9/zHiN0ZsbNa2O0KAqiBN6BjjDNwAKqS/LwA9sAHYTiU5uuEFnHWJK/AEVA3a16AVoj5KER3GkLEN7D3rK212HJi9K7+Ab7077f2Q5AIEUeKeUnN+za5r/6ryHiNvq9LRNmZ9CjqvwGU/p30/+3CuL2+v34w5cmETCXUBl5ERJj/9d9Z+pOZEjgliG2e9PHRsWWSvTY2qZIJIWfgV8yNb8TDnAtVQiEGF3xdDKgWiAhuqQuFVAxNowE+Rd5m7iZT660neC2eRDIRE7kbIaaaWtR61e5Gj/s9AVcvgPfZDcdOo5UnkDkb8p64Nr/S+e8PSuGPa0AgI0SlIBoCU1uuC6b2PgOC5Duk3PnNpveui8HkGAZD96PNAOHR+03HjtlBowRD24XMY7bumBdnaTOc0EH+uAloxuwvYk7dBdDldBAiWtciUyqnyOA1djrNCXfbx/bl44Kd2gOv2E5WRoQmY/yhYoXkAr6qwfrjvievCF6e2FPylJdaPLCdUrkupn9xeRCY8zKF56YYzPpEdIOs4/gSYEeTy+0F44/vQtyigeurCoXfK5YA10y4JX8Y4JrSsXNLVY5aHO58gn3v7stSi8fIJwzzESz8lFkSI58w/rSyVbTSH1tGN/3yvhH88H8KWQmeQnKBYf7r9E/NrFu9kG7UlabXrV7IVQjpZ9atXohiGEH6TZdWKJ5C1ob/UojsDltFL7vDVtED6i8w/VStE5ALCgAAAABJRU5ErkJggg=="/><br/>
+										Information
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="/conecta/profiles?categ=Services" class="lp-border-radius-5">	
+									<span>
+										<img class="icon icons8-Services" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAD6UlEQVRoge2Z7ZGjMAyGUwIlpIR0cHRw6WDpYNNB6GDTQeggdAAdJB2QDkgHz/2wdBbGbD4IcHOz70xmgixsvbIkf7Ba/eAHq9VqtQJS4AjkkbYM+ALW81v2AIAE2AMNHq01GFiLTHEC0uWsHoAx8Apc5H9l2k+m3SJZ0u4egFoMS2WGbvL8JT9EthYdgMvSdvcAHMS4nTzv6EPbcnkuljY6CRPWECmMLBfvp0pC5KUlthhw1Qdccp9wia44PPC+hmEL/AY+pZ9mVnJ0q5NF8UQfxUAfzYSmdwzQRL0CG5mdIpwJ0auMgRVBucVVt4uEZYYvEJs5iJTGsGjpxCdzDPnAO4khXkzJQQfcGs+1wDZo1xm74SpXIr+deS+N9NncIzsFmcTMTMcwfCL3khZfkuuIDAmz6cMqYtglQkTRCzvcYgiAkWkFLOaxOgLg/AYiWxHdLdtvB65aVSNCqzQyWxiOMQdMRWJvBr4xnOwtbqHTZP8cIJ4EZFrgYw4i6vFyyHu8Vn7X+J1xGdN5K/DJeQZ+yQydwlCSmakNgZp+2a3k3U9cuDbhjL1qZMyTeUTvFtEDyJ4Y6zjQx3UUCem8jnRcR/R0n1TjthcHo39304evdrpoFviwyp4xOCNI0mCAjfwAzhG9NBzQkMmN7Jfpa2Pkuv6EhWLNo1ULH+MAX0Eb0KnxnWeRfZn3MyPX2dzKc+xgtZE2ndHXtuwBCcUZ+MCvCxejr9Ndic6ZPlJLGjl04S8aaoIzPGNWc/wKinhkQ/8i4IZZYXHJHya2bt/Vqy1d71eGcCn9JGasI95pz589xEtqlE5/gk+07Jt3M9EpkBgOHJPicsSSvmHiPdD/69CniUhn6rmWEVsBcYCGzi6QK+lYMamlbTdmfNsZwGlEHxoa9ShjxgCfaNdIW3g87d0G0r2z6nl9FogRmohZ0Pbw/ogl7qVwe6GK7r3rLdBJTdsOVxjWAbnU6CcB0bOMsZ+SSIia/gbvuzOEkikD+YF++SZ8fwoi6wd0HjrVRXQ2/wuRuzqjEQmtKhJaeiOSR94fCq2cboWbnEiOywG76jaBjk32PT7Z90aeGv0w2a8yRj4ZkcDghMgVjiE8hDzQ1bWoZqkPNcaIoXOGvXgrI4QT/JF0mQVRDKnUyBF96Ky+vM0ZBRM+1zEhQXcnnb3RxIcGtwmtJ7UE/4Fl8C4Jd6hqMBdoJkQ7X28nB93T4RF3PrDbFjXKbssPEZ0GtwAejWzeXCF+1K1FrnFfG/1mQMcim5VEhMyN/qEIoDUyoHf5cFichDFmSySujYEJPqfqgfezGUx9DcQv6Oa/7h8L4l9al/0W/oN/DH8AxITBGKkZnEQAAAAASUVORK5CYII="/><br/>
+										Services
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="/conecta/profiles?categ=Import+and+Export" class="lp-border-radius-5">	
+									<span>
+										<img class="icon icons8-Import" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAA+0lEQVRoge3YwQ3CMBQD0IzQkRmJDWCDZCNz+UWloo1IDDbS9732f1IvbSmlFAAVutTCihABAKBDaIWq3YS47SbEbTchbrsJcdtVQehJiFsS0u9dANwAXNjdR4N0SCDW75w7s/tslArZIRqAhdXdG6ZBZIgYp0CkiDhgGiJHxBFTEAtEHDIMsUHEMUMQK0Qc9DFkh1Cmbo8CMARpuvufaVOQN5iKf3y1Ns/6YGYg8bwHZhYSHXoMAxI9WgwLEl06DBMSfRoMGxKdLxhm99koHRK9K+bK7j4a/Ark50mIWxLitpsQt92EuO0mxG03IW67EIcJUf6fav0L+3kAn/M5fDhxOgMAAAAASUVORK5CYII="/><br/>
+										Import/Export
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../section-row -->
+		
+
+		
+		<div class="lp-section-row exculsive-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="lp-section-title-container text-center ">
+							<h1>Destaques</h1>
+							<div class="lp-sub-title">Esta  área pode conter Projectos ou Eventos em destaque</div>
+						</div><!-- ../section-title-->
+					</div>	
+				</div>	
+				<div class="lp-section-content-container lp-list-grid-section">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 lp-grid-box-contianer lp-grid-box-contianer1" data-title="The Dorchester grill" data-reviews="4" data-number="+007-123-4567-89" data-email="jhonruss@example.com" data-website="www.example.com" data-price="$200" data-pricetext="Text about your price" data-description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi archeum" data-userimage="images/user-thumb-94x94.png" data-username="Jhon Russel" data-userlisting="14" data-fb="www.facebook.com" data-gplus="www.plus.google.com" data-linkedin="www.linkedin.com" data-instagram="www.instagram.com" data-twitter="www.twitter.com" data-lattitue="40.6700" data-longitute="-73.9400" data-posturl="post-detail.html" data-authorurl="author.html" >
+							<div class="lp-grid-box lp-border lp-border-radius-8">
+								<div class="lp-grid-box-thumb-container" >
+									<div class="lp-grid-box-thumb">
+										<img src="/website_conecta/static/src/images/grid/grid-1.png" alt="grid-1" />
+									</div><!-- ../grid-box-thumb -->
+									<div class="lp-grid-box-quick">
+										<ul class="lp-post-quick-links">
+											<li>
+												<a class="icon-quick-eye md-trigger" data-modal="modal-2"><i class="fa fa-eye"></i></a>
+											</li>
+										</ul>
+									</div><!-- ../grid-box-quick-->
+								</div>
+								<div class="lp-grid-box-description ">
+									<h4 class="lp-h4">
+										<a href="post-detail.html">
+											Título do Projecto
+										</a>
+									</h4>
+									<p>
+										<i class="fa fa-map-marker"></i>
+										<span>Portugal, Cidade de Fundão </span>
+									</p>
+									<ul class="lp-grid-box-price">
+										<li class="category-cion"><a href="listing.html">
+										<!-- Food icon by Icons8 -->
+										<img class="icon icons8-Food" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADaklEQVRoQ+1aQVbbMBD9013YlJ6gUS9AOAHKCZoscRZNT0B6AuAENSdoukhYAiewOQHhAlU4QWEDu07fKLZxDI4jm5S2T14ltjTSn5k/kr5NemKuiNDBK1wMnMeB6ueHlvnI/3igdl3uU3dq+BUwZENGgaL8+Ol8XO9nQIodNw2u7oTLAHogTSPmI1LCKZ9aPrUSD3iOeI40JUNJf59aPrV8aq32wAqOzKRnFKilo0V3asru2937X7eyuyZA6hAPxNVzxfZlqeVq9zEikx9zEL1ngor31dzVUJ32+tS0iWHAfBMNPrTr2Ej75FMrBrDHhG68r+T3xi99ajQxIgCXUaB03QFzdq5JT01IwAEzjuOBOqpr1KWfnpgjIhwycBIHauTSd0mQmJqIAC1zFyA9As6aesdlMqlyw0A/DtS5S9+0rZ6YIRG+AXzHLWqTPjPb9MBzgN7+CZ5k/EgmEPfVrQuQ7tTsMTAioGdBEPWEElaKyYX6exyooYth17Z6asYEfHJNZZ2kUTYe8w2DevFA2YVyAcRWEZ4lUdkY6R/JaT3ZcamSaXVixgVE2Buocd6JmTimp0bC9ZWBOVrYdQ15VWQkhfGAKwLaDHyJAxVW9ck/r1p3iirfohQzZthC96XAWBD3iBJptlbJdQKyID4EzA4DMVroNwVTAHHNLeg6Np2AWL4sg5mD0U8J5ZIKSRHpgHAm6QSgNgix5QwkBYN7jInwUf4zY4w3OF6XnFI88AuHRLAV0BJ0C8M6kShuRco06iWOFD2+WHQ4lGqWTEhKnYC6KIJKJi/AZaFKzhJ8x0yjYoVxjWztiCxtAxZEHRF4KJvLBNBtPFDvltpNzE8ibNt7ixo/xhbCJlGoXbWqPKUnpkME+yKmTN5nxm5dTq0avxZH6hisGqjKSVXPq+yv5Mhzxl31qKoJrvvcAynzlI/IujlU0s6nlk+tgsjcMKOy7j61/uvUym1RrktE5p1/YouSCQfP6FGZPgZsRMB4MY7oiTkgQphIME+EgyUBgyFb95OXInqjbXxyUpRUkVOeCBNWo2XG57LzxaNoBlgRgxESYRYF6rIpKOeIlH6/JWcMolGVMmiVS+YwPbvkAYioUfwOa12AzkCSN0M7yQCX1rOLD8ScpE0BBEDkWInkXmLvSZFwAPLsG6u0/288R19KOGbU8gAAAABJRU5ErkJggg==" alt="restaurents"/></a></li>
+										<li><span>breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa</span></li>
+									</ul>
+								</div><!-- ../grid-box-description-->
+								<div class="lp-grid-box-bottom">
+									<div class="pull-left">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+										<span class="rating-ratio">4.0</span>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="lp-add-to-fav simptip-position-top simptip-movable" data-tooltip="Add to favorites">
+										<i></i>
+										</a>
+									</div>
+									<div class="clearfix"></div>
+								</div><!-- ../grid-box-bottom-->
+							</div><!-- ../grid-box -->
+						</div>
+						<div class="col-md-3 col-sm-6 lp-grid-box-contianer" data-title="3 Bed Detached House" data-reviews="5" data-number="+001-587-4567-89" data-email="russel@example.com" data-website="www.example.com" data-price="$50,000" data-pricetext="Text about your price" data-description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi archeum" data-userimage="images/user-thumb-94x94.png" data-username="Jhon Russel" data-userlisting="14"  data-fb="www.facebook.com" data-gplus="www.plus.google.com" data-linkedin="www.linkedin.com" data-instagram="www.instagram.com" data-twitter="www.twitter.com" data-lattitue="51.516576" data-longitute="-0.137508" data-posturl="post-detail.html" data-authorurl="author.html"  >
+							<div class="lp-grid-box lp-border lp-border-radius-8">
+								<div class="lp-grid-box-thumb-container">
+									<div class="lp-grid-box-thumb">
+										<img src="/website_conecta/static/src/images/grid/grid-1.png" alt="grid-2" />
+									</div><!-- ../grid-box-thumb -->
+									<div class="lp-grid-box-quick">
+										<ul class="lp-post-quick-links">
+											<li>
+												<a class="icon-quick-eye md-trigger" data-modal="modal-2"><i class="fa fa-eye"></i></a>
+											</li>
+										</ul>
+									</div><!-- ../grid-box-quick-->
+								</div>
+								<div class="lp-grid-box-description ">
+									<h4 class="lp-h4">
+										<a href="post-detail.html">
+											Título do Projecto
+										</a>
+									</h4>
+									<p>
+										<i class="fa fa-map-marker"></i>
+										<span>Portugal, Cidade de Fundão </span>
+									</p>
+									<ul class="lp-grid-box-price">
+										<li class="category-cion"><a href="listing.html">
+											<!-- Home icon by Icons8 -->
+											<img class="icon icons8-Home" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACVElEQVRoQ+3YvXnbMBAG4O9Ku4kyAiaIvAG4QVJGKiJvYE+SbGClEFtlA2EDyxNghNhNVCIPIEKmGJIHKgDFAu5s0gTeOxz+CAl/5FbPcMAWBjPcolBfxGuq5ijVhx3iD3ZEmNs2jME+JSYdZKOfjwjzdgwWfbAYtRR3KYKXBCI3+okIK4swhqRjkFEVZq2W4j42JjqkiVBLsbedlhs9T4mJCulC+OhzmKLUpi1Tu4Vg+8m+EDoEOEQI5uqQUASH8RCfgebvfUH974y8I9wUe+drgsvkcZjhuZqa3QQgS70m4NvoEFnqBwK+V525V0ux5gD153KjV0R4cv8PPKqF+GExaiFW9m+jZOSsEwaDEbVh9o5pfCc5JBaCwySFxEb0YZo1E63YUyH6MEWp1W4h3O4gCiQ1oguDW/wK2TUHTb+y1J8J2Fazy08/q3BRuvS5H1KuPUKhvgrFfYuF2PkecNvxmQGSI06ZqdYUY2DPMAW3PvVCroW4BNMJuTZiKKYVMhXEEMw/kKkhQjFnkDrCfiDkHMDNJjGf+5W+bQI4QZqXBVOGVJvUs8sMB2kgXgB8mjjE9bF+M0NNhLmBpAN+TxlibvCRDrCL5AlD8nRtgxeLsNuBIbvOmDXAfaveL5uAOoaq7cDcI4YeaLjGYz5vBthjDLBvXUcuyUjXxQEHGTIz9vUrQ5qRHprFoe9zQz56RkKHSoZ07DhyRnKNVBHINZJrhFuaLxwqeWjloZWHVn8Eco3kGsk1kmukMwKjHnUnebAKLI/RX2sLVu/BavQeBjbYBvkLODEBNn2o34UAAAAASUVORK5CYII=" alt="realestate"/>
+										</a></li>
+										<li><span>breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa</span></li>
+									</ul>
+								</div><!-- ../grid-box-description-->
+								<div class="lp-grid-box-bottom">
+									<div class="pull-left">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+										<span class="rating-ratio">3.0</span>
+									</div>
+									<div class="pull-right">
+										<span class=" simptip-position-top simptip-movable" data-tooltip="Marked as hot" >
+										<i class="fa fa-fire hot-post" title=""></i>
+										</span>
+										<a href="#" class="lp-add-to-fav simptip-position-top simptip-movable" data-tooltip="Add to favorites">
+										<i></i>
+										</a>
+									</div>
+									<div class="clearfix"></div>
+								</div><!-- ../grid-box-bottom-->
+							</div><!-- ../grid-box -->
+						</div>
+						<div class="col-md-3 col-sm-6 lp-grid-box-contianer" data-title="3 Bed Detached House" data-reviews="5" data-number="+001-587-4567-89" data-email="russel@example.com" data-website="www.example.com" data-price="$50,000" data-pricetext="Text about your price" data-description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi archeum" data-userimage="images/user-thumb-94x94.png" data-username="Jhon Russel" data-userlisting="14"  data-fb="www.facebook.com" data-gplus="www.plus.google.com" data-linkedin="www.linkedin.com" data-instagram="www.instagram.com" data-twitter="www.twitter.com" data-lattitue="51.516576" data-longitute="-0.137508" data-posturl="post-detail.html" data-authorurl="author.html"  >
+							<div class="lp-grid-box lp-border lp-border-radius-8">
+								<div class="lp-grid-box-thumb-container">
+									<div class="lp-grid-box-thumb">
+										<img src="/website_conecta/static/src/images/grid/grid-1.png" alt="grid-3" />
+									</div><!-- ../grid-box-thumb -->
+									<div class="lp-grid-box-quick">
+										<ul class="lp-post-quick-links">
+											<li>
+												<a class="icon-quick-eye md-trigger" data-modal="modal-2"><i class="fa fa-eye"></i></a>
+											</li>
+										</ul>
+									</div><!-- ../grid-box-quick-->
+								</div>
+								<div class="lp-grid-box-description ">
+									<h4 class="lp-h4">
+										<a href="post-detail.html">
+											Título do Projecto
+										</a>
+									</h4>
+									<p>
+										<i class="fa fa-map-marker"></i>
+										<span>Portugal, Cidade de Fundão </span>
+									</p>
+									<ul class="lp-grid-box-price">
+										<li  class="category-cion"><a href="listing.html">
+											<!-- Camera icon by Icons8 -->
+<img class="icon icons8-Camera" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEXUlEQVRoQ+1ZTVrbSBB9xWrMJswJQs8FhpwgrRPELCMvQk4QcwIyJ4g5AWRhZYlyAjcnIFxgmpxgzCbJipqv2mohbP20bIn444MlVv+8rupXr14TnsgfPREceAaybZHsJSL6wu7hFz7gDkMiHLQBzYxv2EGKP3BqDtU8dGznQByIH5i1BbC8YQdoF1EomO6BJHZCwAeAb5loaN4qE3qq8p3+YjUxpwC9YODUxGocMr4UiE7sjABdNQEDqYnV4fLv+ovdJ4aV/zPjlRmpbyGbWJlnag+IcOXmISjzVt00zVMKJEosNw2cxWplrJ7aj0Q4YeCzidVR0xx1v+vEnhPwjhn/mJH62DTX6mYS+46AcxlYttkQkAwcmlilTYs3ABkScFF6d0rIIAeip/YAhAsC9rPB17NYrTBOlFjJ+dc1mygdtw6oKLGSmn+XjWXGHIT3/sAcEAcCjmn2mPEVhPNNT3SdjYeMETLAHcZEeOPuUBZ9cnT5E1cSidB8DFmw72/01B4R4cxFZheK/AUFcDmLVSVTbbIxYTPc4Q0IQzD2fI1xtYIwByPFDr6GsFNxH3pqU4mMBIB8zhcvqAsf48wNkjxsWQv8Ytk8J3VUXtwYAwaM41DaXtQczORAJCL/ubsxwJ++iurEWn/pGbgxsVJtI6IT+4mArJjxLYOExVIwbvxGM4IRchkSeChFMMv7iYnVcciankUlIq5mFKk2Sv6d+0nB/H02+sszWePc2Z0T9tOuujNNsItJk9TIpM2YiMdZVTcY4LBpXC0QF7I7drWEd+ioTWrdqwIHQoemSZ6Orqqz8WBMrKK606sF0njsFR/oos4a0H7TaVatI9Ghn3wTorc6B+IvXpZOrSOxDEruTx6ZGt3WPZBMaHZZiwrazVSlWKdA7lUv3/IGKbUSlWKKVajgboEkdkzApy5U7woYr4KBYxOryfLvnQIpK6rrEkYJEK+CS5VHp0D01F6J7NikmapksKzJkuptRupV3xFZKapdRUTmKSvafv5OI1K3UBeAHhOIa4D6TC0AVY2ey4ZSrdX2FJ/OZX8q9OsLou/W1tVYZQURP2Bdm/EYBTFjFmdK9CFR6rrXTllLgCxEHq5cVICorXwvE40FQ6TS7OsciAOTyfhNUyxrshYp1WCb9gJkKcXWikzRmgoxRHoDsmiKIP253Jc5djAJeSIoPEWIZ7UnIHiAYRNx9AYkb1nzbtEZ2hKdlICUge9F84GAlwwMnQGxACCmW7AL3zuQAgGI9K6zWIv3/JIZ4zZEUQSykBeEqI3J0Kb6O4OOxfJxJy+n7v3cawBzeaYAIW1t0GW+lsiX3GmsevNos+HH/tY7Ns5pfOBYMN6bkXI20Lb/ee/XmR0D2l+48YnN3yIkMgRMZrG63EYwUWJfMyCttaTpvRtfYBmxLc9zh3EbUTzYk7Nhjx68j+RgFi+ywuOCtvSBZQvwXbO490s2bOevur8L6DOQ33XyVes+R+Q5Ij2dwP9TYAKAKNjkVAAAAABJRU5ErkJggg==" alt="camera"/>
+										</a></li>
+										<li><span>breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa</span></li>
+									</ul>
+								</div><!-- ../grid-box-description-->
+								<div class="lp-grid-box-bottom">
+									<div class="pull-left">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+										<span class="rating-ratio">3.0</span>
+									</div>
+									<div class="pull-right">
+										<span class=" simptip-position-top simptip-movable" data-tooltip="Marked as hot" >
+										<i class="fa fa-fire hot-post" title=""></i>
+										</span>
+										<a href="#" class="lp-add-to-fav simptip-position-top simptip-movable" data-tooltip="Add to favorites">
+										<i></i>
+										</a>
+									</div>
+									<div class="clearfix"></div>
+								</div><!-- ../grid-box-bottom-->
+							</div><!-- ../grid-box -->
+						</div>
+						<div class="col-md-3 col-sm-6 lp-grid-box-contianer"  data-title="Hotel Rammizine" data-reviews="5" data-number="+041-923-4367-89" data-email="jhonruss@example.com" data-website="www.example.com" data-price="$1500" data-pricetext="Text about your price" data-description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi archeum" data-userimage="images/user-thumb-94x94.png" data-username="Jhon Russel" data-userlisting="14" data-fb="www.facebook.com" data-gplus="www.plus.google.com" data-linkedin="www.linkedin.com" data-instagram="www.instagram.com" data-twitter="www.twitter.com" data-lattitue="51.512306" data-longitute="-0.119221" data-posturl="post-detail.html" data-authorurl="author.html" >
+							<div class="lp-grid-box lp-border lp-border-radius-8">
+								<div class="lp-grid-box-thumb-container">
+									<div class="lp-grid-box-thumb">
+										<img src="/website_conecta/static/src/images/grid/grid-1.png" alt="grid-4" />
+									</div><!-- ../grid-box-thumb -->
+									<div class="lp-grid-box-quick">
+										<ul class="lp-post-quick-links">
+											<li>
+												<a class="icon-quick-eye md-trigger" data-modal="modal-2"><i class="fa fa-eye"></i></a>
+											</li>
+										</ul>
+									</div><!-- ../grid-box-quick-->
+								</div>
+								<div class="lp-grid-box-description ">
+									<h4 class="lp-h4">
+										<a href="post-detail.html">
+											Título do Projecto
+										</a>
+									</h4>
+									<p>
+										<i class="fa fa-map-marker"></i>
+										<span>Portugal, Cidade de Fundão </span>
+									</p>
+									<ul class="lp-grid-box-price">
+										<li  class="category-cion"><a href="listing.html">
+											<!-- 5 Star Hotel icon by Icons8 -->
+<img class="icon icons8-5-Star-Hotel" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACWUlEQVRoQ+1ZvXnbMBB95zKN5REwQZQJAk0QuwxZRJnAHsEj2BNYKciUsScQNrAzAUZI0qQ0/IEy80E0IQIgKOhTwE68H9w7HN7hKMLAw79LrlXEZyb6VFPL25hoEEgt1w2Qgi16gSSW7wTCKznHCT5BYU7AuVZWwD0IT3jGQ2OcUC5K9tRNqnVHeC1XBHwxDRTwTRRsqd+lljsD0YqLWmrk71+Nfq4LNjcdpJabsew8I7ySvwjqz6a06FSU7Mw0Ti13AsJ/yBn+4kqU7LoppUpe4x1uxAX73fxOLHcqreawA5cAzokwG2K2fciVgk7gPYBbp8POK7kkwt0+ggtdQyl8FSVbWUtL7wQRHl/p9hYKqz70oQGMsWuqhLCkTaVAKXwwY9s67C2lKr19Bbsas/BUtryWNxqM2Qr0WttANEsRZl20UwUV4retGn1mTBbdArKopdLO1wUbvLqEBBHLpi9OJyC8ko9E2GqGbVD66iIKdtHpL5PqBwNpDW0Z7e7gvvTNdZ12xFZyh/T+/wRyDKWlp8OPfUCUwoMoWTOztM+illPrv2FXp9KKRZux/ASzVqwAYvkJBpL7iGULYvWd3EdsmTyE906sta8rh2+fCimtqfuCr//cR2K1gCh+ch85psPeOwLneaTzTSBGQnIf+ffxIc8j4UwcTL/hS05jGQwkzyN5HtlkwIeWvej3EOYOG0AvIGPmBZcMj/HvCmT0vDAAZLR/JyC+JOpT276+R5WW72IZiGPGghuio3/z26/XtT+G/+M+I74ZSqW/63OQlQZTBWtbt/t3xgvz/SNvFqVEmwAAAABJRU5ErkJggg==" alt="hotels"/>
+										</a></li>
+										<li><span>breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa breve descrição da Empresa</span></li>
+									</ul>
+								</div><!-- ../grid-box-description-->
+								<div class="lp-grid-box-bottom">
+									<div class="pull-left">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="rating-ratio">5.0</span>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="lp-add-to-fav simptip-position-top simptip-movable" data-tooltip="Add to favorites">
+										<i></i>
+										</a>
+									</div>
+									<div class="clearfix"></div>
+								</div><!-- ../grid-box-bottom-->
+							</div><!-- ../grid-box -->
+						</div>
+					</div>
+				</div><!-- ../section-content-container-->
+			</div>
+		</div><!-- ../section-row -->
+		
+		<div class="lp-section-row aliceblue testimonial lp-section-content-container" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="video-thumb">
+								<img src="/website_conecta/static/src/images/video-img.jpg" class="lp-border-radius-5" alt="video-img" />
+							<a href="https://vimeo.com/45830194" class="overlay-video-thumb popup-vimeo">
+								<i class="fa fa-play-circle-o"></i>
+							</a>
+						</div><!-- ../video-thumb -->
+					</div>
+					<div class="col-md-6">
+						<div class="testimonial-inner-box">
+							<h3 class="margin-top-0">O que é o Lorem Ipsum?</h3>.
+							<div class="testimonial-description lp-border-radius-5">
+								<p>
+									O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.
+								</p>
+							</div><!-- ../testimonial-description -->
+							<div class="testimonial-user-info user-info">
+								<div class="testimonial-user-thumb user-thumb">
+									<img src="/website_conecta/static/src/images/user-thumb-60x60.png" alt="user-thumb" />
+								</div>
+								<div class="testimonial-user-txt user-text">
+									<label class="testimonial-user-name user-name">Autor</label><br/>
+									<label class="testimonial-user-position user-position">Nome da Empresa. Fundão, PT</label>
+								</div>
+							</div><!-- ../testimonial-user-info -->
+						</div><!-- ../testimonial-inner-box -->
+					</div>
+				</div>
+			</div>
+		</div><!-- ../section-row -->
+		
+		<div class="lp-section-row  blog-section  col-md-12">
+			<div class="container">
+					<div class="row">
+						<div class="lp-section-title-container text-center ">
+							<h1>Últimos Blogs</h1>
+							<div class="lp-sub-title">Blog para colocação de notícias que surgem em destaque na página inicial</div>
+						</div><!-- ../section-title-->
+						
+						<div data-posts_limit="3" class="js_get_posts" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template"/>
+						
+					</div>
+			</div>
+		</div><!-- ../section-row -->
+	</section>
+	<!--==================================Section Close=================================-->
+
+
+			    </div>
+			</t>
+		</template>
+	</data>
+</openerp>

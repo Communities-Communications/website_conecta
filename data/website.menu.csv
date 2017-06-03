@@ -1,0 +1,6 @@
+id,name,url,parent_id/id
+website_conecta,Companies,/companies,website.main_menu
+website_conecta_register,Register Company,/conecta/profile/register,website_conecta.website_conecta
+website_conecta_profiles,Browse Companies,/conecta/profiles,website_conecta.website_conecta
+website_conecta_events,Singles Events,/event,website_conecta.website_conecta
+website_conecta_events_register,Register Event,/conecta/event/register,website_conecta.website_conecta

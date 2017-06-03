@@ -1,0 +1,4 @@
+"id","questionnaire_question_id/id","type","question_compare_id/id","question_compare_option_id/id","question_match_id/id","question_match_option_id/id","option","weight"
+"conecta_questionnaire_tall_tall_match","conecta_questionnaire_physical","option_match","conecta_questionnaire_how_tall","conecta_questionnaire_how_tall_short","conecta_questionnaire_pref_tall","conecta_questionnaire_pref_tall_short","match","10"
+"conecta_questionnaire_tall_medium_match","conecta_questionnaire_physical","option_match","conecta_questionnaire_how_tall","conecta_questionnaire_how_tall_medium","conecta_questionnaire_pref_tall","conecta_questionnaire_pref_tall_medium","match","10"
+"conecta_questionnaire_tall_short_match","conecta_questionnaire_physical","option_match","conecta_questionnaire_how_tall","conecta_questionnaire_how_tall_tall","conecta_questionnaire_pref_tall","conecta_questionnaire_pref_tall_tall","match","10"

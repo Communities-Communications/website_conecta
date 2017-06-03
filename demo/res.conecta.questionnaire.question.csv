@@ -1,0 +1,3 @@
+"id","questionnaire_id/id","type","name"
+"conecta_questionnaire_how_tall","conecta_questionnaire_physical","single_answer","How tall are you"
+"conecta_questionnaire_pref_tall","conecta_questionnaire_physical","single_answer","Partner height preference"

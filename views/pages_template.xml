@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- author:MC v1.0:-->
+<openerp>
+  <data><!--layout inherit from CONECTA--> 
+
+        <template id="conecta_contact" name="CONECTA Contact" inherit_id="website.contactus">
+        	<xpath expr="//div[@id='wrap']" position="replace">
+		      <div id="wrap">
+			<div class="oe_structure"/>
+
+	<div class="about-page-heading about-page">
+			<div class="page-heading-inner-container text-center">
+				<h1>Contact</h1>
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Home</a></li>
+					<li><span>Contact</span></li>
+				</ul>
+			</div>
+			<div class="page-header-overlay"></div>
+		</div>
+	<!--==================================Section Open=================================-->
+	<section class="clearfix">
+		<div class="contact-left">
+<div tabindex="0" style="position: relative;" id="map" class="contactmap leaflet-container leaflet-fade-anim">
+			<div style="transform: translate(0px, 0px);" class="leaflet-map-pane">
+			<div class="leaflet-tile-pane">
+			<div class="leaflet-layer">
+			<div style="" class="leaflet-tile-container leaflet-zoom-animated"></div>
+			
+			</div>
+			</div>
+
+			</div>
+<div class="control tilt">
+  <button class="dec">&#8601;</button>
+  <button class="inc">&#8599;</button>
+</div>
+
+<div class="control rotation">
+  <button class="inc">&#8630;</button>
+  <button class="dec">&#8631;</button>
+</div>
+
+<div class="control zoom">
+  <button class="dec">-</button>
+  <button class="inc">+</button>
+</div>
+</div>		
+
+
+<script src="/website_conecta/static/src/lib/OSMBuildings/OSMmap.js"></script>
+			
+		</div>
+		<div  class=" padding-top-60 padding-bottom-70 contact-right">
+			<h3 class=" lp-border-bottom padding-bottom-20 margin-bottom-20">Address</h3>
+			<div class="address-box mr-bottom-30">
+						<p>
+							<i class="fa fa-map-marker"></i>
+							<span>Praça do Município - 6230-000 Fundão</span>
+						</p>
+						<p>
+							<i class="fa fa-phone"></i>
+							<span>+351 2750 0000</span>
+						</p>
+						<p>
+							<i class="fa fa-envelope"></i>
+							<span>support@conecta.pt</span>
+						</p>
+				
+					<ul class="social-icons post-socials contact-social">
+						<li><a href="#"><!-- Facebook icon by Icons8 -->
+							<img class="icon icons8-Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADEklEQVRoQ+1a7XHbMAwFNEE6QZIJmk5Qd4N4gmaDOAtQEBaoM0HTCepOEGeCuhPU3aBdgOiBJX10LFmMYsl0T7zLj9i0xAc8fEgPCA3LGPMREScAcOX/mrYO8fkKAFYismDmb3U3xOcfEtG1iHwCgIshTtjhHmtEvCOiRfzbLSBlWSqAmW4QkV9FUcwBYElEapGjLSJSVkystTNEPPcHmVdVdRcOtQFijJkj4q1+4REriOwWEc08Y9TY98zsDO+AeDp99SDeHdsDbdZTD4nId3/eqdLMASnL8qfGRM6eqInl4Jl1VVWXSEQ3IvJZY4KZcw3wWicZYzTwzxFxisaYB0TUVKuZIMu4aKJaiBcR+YJlWSrXrhAx+9iooVeIlZUCEd1QVdVOTWkLuhy+D+c/ChDfNVz7jiGOyyUArEVkVRTFU0r2PAoQnzY1zacmFZeR9nl+cCAexCMAnInIU1EUDwCwIKLf4aBEpL3dhbV2ogkohfKDAwlJRTMMM9+0xVdq7A4KJHQOL6lVWQLpUqtyBbJExPeI+IGINDNtFhFpzJQAoFlsJwm0lYVBqbXPusFbTTFzMkA2Fq3xVltC8A2vK+iDFMR9HkmNhSZQ2VAreyDhgLEl6/hety/+DSK+iYvmc8/07pFDATl6sL+GMtqqiMijtjLMrG1L4xrMI20WrTuhMYYQsUxpZ3IH4p5aRaRiZjpljzR2AicZ7Ih4SUTrLDzSNf2KyB9mPmur7r3HSHyAsbK3uePfy8Wx10qw0/aWkVoJJhuplWCknS0jtRKsNlIrwUgjtV5jpP/n5YMxZoWIb/sUevrKWkEUFZEfg0hvPQJxgqiT3iJpulWL6MLh+CXavrcoXR6JIzV66uS2SB3tRRDtwyOREOrU6EEGBg4NpHFgwHtlM8IhIjNmvu9Kpabn6kNQyxhzi4hORt8Z4Qg3judRvCg5TxUlU56ruwJRD1hrVZbQuRMnPcQg9P/aMSdrrXonTOEcyjEHuY6fWprtHXOK76TZzFrrJGStMwc5RceLaJ3QwbOiKFQ83ZrTCpf8CzG2NErUDo89AAAAAElFTkSuQmCC" alt="facebook"/></a></li>
+						<li><a href="#"><!-- Google Plus icon by Icons8 -->
+							<img class="icon icons8-Google-Plus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEh0lEQVRoQ+1a4VnUQBDdWQpQKhAqECsQKxAqACsQC2Azuw2oFXhUIFagViBWAFQAFkDG762z+fZCcknOSy5+n/kDHLlk3s7szHszS6blYuYDETkxxhwYYw7b7pvo82/GmCsiumDmq6Z3Uv1DBfB+Bsa3rdE3InpXB7QEhJmPROSTMeapiPwyxiystZfMjBXZ2sXMh2VZHhljTonoiTHmnojeMPNlMqoCwsynCsKIyIW19oyZ77dmfcOLmflpWZYfiAghb4joOIGJQJh5T0R+wBOKdDEnAA3hnxYdnnnBzDcRSFEUX7En4IkQwumcQSTbnHOXRPTaGHPpvT8m9cY19oS1dm9u4bQiqyLMbrBniGifnHOIubci8jGEcPYveCPzSmU7gCCdvSSiV9vOTkMXEdlMRL6KyHcqiuIOm3zoQ2Z2/z2AyMyMWsucCoj3/lGVX+uJE38pOeI/kIkXvvV1/z0yF08kO/7aI86510QEOrOnmqURI3K8tZbHqlFrA9Ei9EkpzQdjzE2NYgMQRNA70O02IbQpz64FJFF9rHIIYUk1QpCVZQmWAL2Aa+G9f7Mpg9ueMxhIIpeqAxrpDDOfiQjUZbymoD2DgWS02awqns45MNJnACIiX0IIUHajXYOB5FSmA0hkpGr5jfd+fzQUf7RUpFi9KntimVnI7LbpFtX9n9O9Y1OfvwVSaeX6auegm5LCpr0zCAhenofWKklcA+JDCNzH+DoL7+vJwUCcc4vUvdCMBNH/qFmWpehB0nkyINqKiRpZVxhFD2m4ahnhHnRjRGTXWns4pBhOBgTGo5aUZYnuxXMFAxALfGatjQ00EbnF72jR9AmpdM+kQNJLkZnKskRlR18YvbAEDEWwMeS6QG0FSG7UOul2XXndlAAGb/a2Fc1brZoE0GAGmWy95goE+wYbPyUBAFhJGGcH5Pz8/CWsttbCA9gv+fUoq7Vt7K79s4olrBVamrVOiAgZCoOgW+gRfRF+HtU80wqmbvxkm905VxBRrNIi4q21i3qKVU2CwlllMdzbp7pPAqQoCgx/Ype+K71q4YTAqmqN9363K3xGB1IbAPVqdCsYhFXUJeiWdxXI0YEURXGtDYZBii9fgC4v1kkp/t44acxXaoh0zTrlv0IIozXJe2ct5xzGW7FG9N24ysuifh97ClYBSYa2ubJG3wEKjLdx1p1xMbBgzC32x5yCKdu+Q2uqc9DTQN/vRYSttRjeP5r6akjBEwAxiMp3Zbb6/5cGPX1Gb1of0FSIlVwvgLgSkTiDJyJU9th1nGq8nduOYShejNE0wgZpsnW2roN71JODWtFDhb+y1gIUDhgM0iJDPaF7EOGLjAoZ8SIOd9IcsYvsrfPCsb6TinRqcFQHBhKDRfyHEPxYBmziuYkuaf/5oDowoK7COZTUjwJfgq6Y3REObckmurR8hCNLm5CwABEPriQ9vrOz83NboJA1Hx4enqeeQDrwY609bTxUk4GBUAKYPENtIiI28gydtwDEUkJpneRqyo0ZSrNUrgA3YlSfh+hxKxRgZEVIh8Zi/BvU1cKW0t95DwAAAABJRU5ErkJggg==" alt="google-plus"/></a></li>
+						<li><a href="#"><!-- LinkedIn icon by Icons8 -->
+							<img class="icon icons8-LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEBUlEQVRoQ+1a7VEbMRDVqgHoAKgAUwFOBTEVBCoAGtCt1EBMBZgKMBUEKohTAaSCkAa0mXeRPPL5PmQP3MGMb4Y/Rnfa1dt9+yVSDY8x5hsRjZVSo/DXtLSP3xdKqYWIPDrn7uo2pOqPzDwRke9KqcM+JNxijxciumbmefruiiJFUUCBKywQkV9a65lS6pGZcSKDPcwMqxh778+J6DgIMrXWXkehlooYY6ZEdCkif7XWzMzTwSRv2ZiZr7z3TER7InLjnCsPvlQkmNN9UGI8NAJdBwiERORnqQDRGcysVKQoimf4RLC9D4lEjS9fBV9+sdYeETOfi8gtfMI5B1v8NI8xZgGfASpkjJkREagWTPAp0IgnDX8BKiJyR0VRwNZGRHTS5BshpsCpImLg9GkTp/cFaeIrCygi2NhauxZTgv/cKqXOG4SbWWsv+hK8bp8of6siCXSgZCASg9DEew+63iOiC2ZGvBnkyVIkMbuS4lJJI0kgdbDWngyixX/GLS2qFZE2s2PmfRH502aWfSiXpYgx5jWYzxEzv1QQORSRZwRR59x+H0Jv7SORmuEb1tqz9ENFUdwrpZBg3jnnmsjg3fXLQoSZD733CDp7SikgsnR2ZAIhpRlV0Xp36ZMNshQJedjIez8nooNUQBH5rbWeDJ2XZSuSRFGk0Si0lNZ6UWWxPlGomHgWa5VRv0PI0n8iVeesZeaxiHxFjZF8/zVUgXOt9UOuuWYhEhd1nTaygty1wc8mHd98DSmQ7dp7I0Va0pdlepOR6pRr8YAklFJTrfU8+hjiUqgCJ0hiw1IQzRdmBlq1z2CKhBIaxVujcEgGvfePgS3XqH8bH+lKKLMRQe0QiKJViYRcltTfls/1jkiXrdf9P8nnyipw68iea/epszf5UxTCGFMQETIBtJteRGSmtb5pMjVjDNo/B7E2ryozCCItFN3o1MYYdEyKtGMyqI8ktc0yIwgpELKGYxGxzjmunniIOT9E5Mk5VwbkQRVJapuVQiy2oprqmqRcqPWT3k2rzd828cWPgEgjle8UeYtSFxCnJ/kWp5qTCu1MCyeQc1I7RCom2paG1B3ojn7rompOrrWLIx2mtzOtnWm1jC/egroxsYrjq7VBT25nZJMuShuFdlWR1XfjoAd9gNbRmzEGDYDTtg1E5ME5N9lkbfV72767Mnr7KHOOLjQaAmUcG56V47akLv40A9G04nTOHa5cGFBKYR6ChtigVza60Gm8MBBQKa9wQBkRYefcTdcHh/i/MeaSiMox+toVjqRVE5XBTxhBo1XzNDRCofN4GtpIZVO92lWpveYUJrYr85AhTr9uzzCXuWq95pS+CDYL8xBcJohXiwbRB3ECFqK1xpWr2lH4PxVzvVlIavAKAAAAAElFTkSuQmCC" alt="linkedin"/></a></li>
+						<li><a href="#"><!-- Instagram icon by Icons8 -->
+							<img class="icon icons8-Instagram" src="data:image/png;base64,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" alt="instagram"/></a></li>
+						<li><a href="#"><!-- Tumblr icon by Icons8 -->
+							<img class="icon icons8-Tumblr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADxUlEQVRoQ+1a4VXbMBDWaYHSCYAJoBOQDUomKExAGAD5pAUKExQmIExQmKDJBE0ngC6g6/v8pDzF2LETm8Tpi97Ln8iS7tPdfTrdiVRFM8Z8I6KBUuo0/Ko+3cT/E6XURETGzrmnsgWp+Cczn4vId6XU0SYkXGONGRFdM/M4HbsAJMsyABjhAxH5o7W+VUo9MzN2ZGuNmWEVA+/9iIgOgyC31trrKNQciDHmloiu0BEQA0TvGjOPgsVgs++cc/nG50CCOT0GEF+2rYG63YOGRORXkHcIM8uBZFn2Gz7RZ02U+HLUzMxae0zMfCEiP+ATzrm+OnipkowxcPxDIhqSMeaeiEC1YIJe+kWVqUV/EZEHyrIMtnZKRK19wxjDRJQVF06dss7+V+lPfGUCIILB1tp3Z8oqkwZfe1VKHZSN62L+snmj/J0BYeYDEXkVkb/OuTmYLjdqU0AQETyKyItzDqFN3nYOSBVp7BSQ6HQwK631ETO/7ZxGgm+A+Y5ExDrnOLXlndAIM0N4hDYIGabOOQR3C633QMJ9BQco2GqqtR6kJlU0rSVUfm+tvVyV6ovzr0y/wR8Q7ufMJCJPWuuLMhDoN8Y8E9HZMkHbnDFrnyMxwAz3FWbm+7a7uS0gXUYCredqo5HWi3dJzXsgcQcKfjG21g4rYqGfkRiqfGkrPpLe7VPBqoSpAD4firuEc+6iLWGsTL+rHni9PxCbOuweSENbW5u19qbVwVX6Q2+IdT5Q19/Qgio/25vW3kf2PrLcizbmI8aYCRGdID9bLM5ARGYeiMgVET2U9deRQWdAEkFLU65JPeNNRJBBR+IZmX/c78+TytibtfZzneBVPto61jLGjInoKxFdVt0WY86rTEjcNGMVap0ouDONJBnxJ+ccdri0oZjkvY8amCmlZlrrMYpKbc6aLoHkOV9IT0THzAwhV2q9AAKJE9OpvGAtQ9YbIEjUee/BTp+UUo3zVIGxUE8Bcy1k8ZuqdG5adazTdEII5b2H4wPMTERYaz1NC6s3NzdnRHQQHiLExwjIjSFnjNzYQu28bu0k5zzttPSGiQOYWAtfKgsYCxpEPb8qwbdsgoXSW1KazqujdbvQpB8F1sBQg6ChfBhSq9AWnmNExmoyX9U3STV6mJfbkurozhREE23k1ej/68FA0Mr8CQdCCefcXRu1f9RYYwzisryM/u4JR1y0kLMC89xqrV+2/aQjkAgYD+9O8kcNxZJ36TMn7z2004h5Pmrnq+YNVYDR0mdO6eAkNsJjgpNNC5yuF9guMl3pWfMPzOt9SgN4YEwAAAAASUVORK5CYII=" alt="tumblr"/></a></li>
+					</ul><!-- ../social-icons-->
+			</div>
+
+				    <div class="text-center mt64" name="mail_button">
+				        <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary">Send us an email</a>
+				    </div>				
+
+		</div>
+	</section>
+	<!--==================================Section Close=================================-->
+
+
+		      </div>
+        	</xpath>
+        </template>
+
+        <template id="conecta_contact_form" name="CONECTA Contact form" inherit_id="website_crm.contactus_form">
+        	<xpath expr="//form[@method='post']" position="replace">
+<form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/page/website_crm.contactus_thanks" class="s_website_form form-horizontal mt32" enctype="multipart/form-data">
+                              <div class="form-group">
+                                   <div class="col-sm-6 col-md-6">
+                                        <input placeholder="Name" type="text" class="form-control o_website_form_input" name="contact_name" t-att-value="request.params.get('contact_name', '')" required=""/>
+                                   </div>
+                                   <div class="col-sm-6 col-md-6">
+                                        <input placeholder="Phone" type="text" class="form-control o_website_form_input" name="phone" t-att-value="request.params.get('phone', '')"/>
+                                   </div>
+                              </div>
+                              <div class="form-group">
+                                   <div class="col-sm-6 col-md-6">
+                                        <input placeholder="E-mail" type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
+                                   </div>
+                                   <div class="col-sm-6 col-md-6">
+                                        <input placeholder="Empresa/Instituição" type="text" class="form-control o_website_form_input" name="partner_name" required="" t-att-value="request.params.get('partner_name', '')"/>
+                                   </div>
+                              </div>
+                              <div class="form-group">
+                                   <div class="col-sm-12 col-md-12">
+                                        <input placeholder="Subject" type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')"/>
+                                   </div>
+                              </div>
+                              <div class="form-group">
+                                   <div class="col-sm-12 col-md-12">
+                                        <textarea placeholder="Message" class="form-control o_website_form_input" name="description" required=""><t t-esc="request.params.get('description', '')"/></textarea>
+                                   </div>
+                                   <div class="col-sm-12 col-md-12"><br/>
+                                        <button class="btn btn-primary btn-lg o_website_form_send">Send</button><span id="o_website_form_result"/> </div>
+                              </div>
+                         </form>
+        	</xpath>
+        </template>
+
+
+        <template id="conecta_aboutus" name="CONECTA aboutus" inherit_id="website.aboutus">
+        	<xpath expr="//div[@id='wrap']" position="replace">
+		    <div id="wrap">
+		    <div class="oe_structure">
+
+<!--==================================Section Open=================================-->
+	<section>
+		<div class="about-box-container aliceblue">
+			<div class="container  lp-section-content-container clearfix">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-slide">
+								<div class="about-box-icon">
+									<!-- Inspection icon by Icons8 -->
+									<img class="icon icons8-Inspection" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACgElEQVRoQ+1a0XHVMBDcrQA6IFQQqADogFQAVECoAFIBUAGPCkgqgFQAVEBSAVDBMsvIM86zbJ+t2C+ekf7es06+vduT7s4iCoek7wAeFS5zTvKkZA2WCFtWkkrXsDzJIl16hSW9B/AcwFFE0bmKTDDEFYAdybOcPlkgkj4AeB0B0MxZAUjzqjOS7/Z16wPyG8B9AI9J/hgC1Fi0FMiYvCTHoePxiuTDKJD/vB9bvB0jkbk5g0wxxNDcPo/cABLhcSmQIa83a1cgEUtEvBXZNHIe3ffArXmk52XfADyJKDsw54Kkt/obY1UghQAGxSuQxjxTLFE9ErDAFINOOkfmnhUBnbNTKpAaI3O5MyK3KWpJOiLpWqMztgbEqbnHyT6gzQCR5ALpLYCfJDt1/yaAtAole+MZSeds28u1Wt2XjyRPNxkjkqy4mxvXbiWR/LM5IN6lUu3tnkCWUnPOs9VTFElfATwF8Jnky6GjZPVgl2TrulmRpUjLwlb8E4C/7pcF5md7B7mcr9gjCYSt3Ow+fXw32F+pzeQz43wsIVjVIwmIt85jAAZh3nd6YZK+pM5ltqy9E8E+BkaS63EDCVHqoMGewLjV+iJ55g3JXfq/oZT/85zQWJVamdN4l8D40av0ycF95EuS3q3C46BArGUrh2qUNqV88GWz3D5kBweSwDRbrX9OotRBY6Rn1zGY01xmG+HXnfBIRNGxORXIHG6OWbXkefVI9UgJfwZkK7UqtbZGrYX0HV028i1zUoU4+saFJtwakIX0m7zsnK+6LlnvRa5wTNZmpkCrM3lNsnPRp49aTU925msXFYtfqmkVR07DHyyqVnxxdyV9zalzM8hL/AMDhk9gHow7uAAAAABJRU5ErkJggg==" alt="Inspection" />
+								</div>
+								<div class="about-box-title clearfix">
+									<h4>PLANNING</h4>
+								</div>
+								<div class="about-box-description">
+									<p class="paragraph-small">
+										Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-icon">
+								<!-- Rocket icon by Icons8 -->
+								<img class="icon icons8-Rocket" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE70lEQVRoQ92ajXHUQAyFpQqACoAKgAoIFQAVECoAKiCpAKgAUgGhAkgFQAWECoAKxHwe6Ua3Xttr3/kS2JmbJGN7b59+np7kqPwnS/8FHGZ2R0Tuich9/9xMP0VZ1xWImT0TkSP/AGRwXTsgZsbBAfBERLB6rD8i8kVEvvnnt3vkjYj8UdWb18Ijbv2Xfrg4/HcR+SAi56p6WbrDQX8WkQtVPbpSIH4YrErss7D8WwDUDp/BmNmxiLwXkU+q+uRKgJgZYfNaRPBCAHipqnigaZnZie9xqqonBwdiZlgfS4YX3onIiaoS983LzMiZhyLyVFXPDwrEQRDXeOQnSa2qJPDsZWa/fJ9bGOFgQAoQJPLRXC8EWt/rK8ZQ1Y6aDwKkAHGmqiTq4mVm5BYk8U5VuzxbHcgYCGctkp76wTr3wxH/g8vM8AY51uXH6kBcWvCl5MSWJxLr1A7cMVHtgu/5Iwph3LOaR5xiSWws1xWtFOP8zjXqBgcO2iXk+PuGiDxS1Z5nkgG2DLMKkAJEL7ETdb5SVQrgZqX47wpd6ZXEVg8y460FhDqBdaHY+yU7mZn5ATvqLIDAQoROp2qLa1HNtzy8So6YGRZ+4WEDxfbqxBIg7mUAkm+bJF8lR5L+Yf9qjHPBzGCaxyLSHFrJQD1v7NUjqUix7/Mx3ZSUK2FFcp+5ZZHwkTMbQxR7b+XGXj1S0OymSE3UghB9o/TrIQWFkzuDe48me8E+Y+eKa1WmGXrQPUNlJsxYn/BIpt1U/L6ragjN3pZTQD56t9YCYif9NFD8gv2oN7Bfr8GaDK2CfaqbtNzTYoEGEFX2y89VPVKwTzW5WhlqCRAzy56YBFFlrRb2KYTgKEPNAVLkJOHUBKIHpIV9ChbZWZIH0F1A1ICEPA5+p/hsVWYzQ+wh+kZZZKYnYKPoHBeRRqllODQTvbxgClQoHwAMaqg5h0+eQBiSE0iPC29/Z/XvYzkSEz5+IqnzmhW7Y+AKwtgpTCfVryc2RQv5wNpLcidmYs/BRqrVy5NA2Cj1D03yY8ILhBCFFm/j3VnzrKG9W4EECfTUaqvF3CB5prW3EK3mSHmwIo5JwrtLxjiuq/BEDKd7TdUco5T3TmktvjSaGSxI4jNUfjrnS82MRmurpd33K40pICG1oUVoF3oGDEPm5y1giqRmPAqoXhvbstfYPVNAorfu9FZqiCbZq1Kpu6SONvfQHokCuUnyImeqnhmb8V4VEKouCcraqOACDP03taWrxsW12iio8/JBPOIWfayqp6nn4KD00Z328jADBDkT2gx6jblutVIfxCOufpnFxmG6sYuZMQmkspdg6KNjJFrmYlUBrA7EzACQ561bsiGB4cBIFpiMiXiMQgkjgCIyAd3zSJrbrhNaaUzJIRnN8Aap9gIyhm/Z+lsyIzVml6p6N24s34+MDRKWULE6TfL2h9Wb4KWD8HaJMIMA8Bxy/9SnHuXYk7/JHVTAZUEATEqOl6iD0ToyNTT2xI7C2CQa8yRRRG6nl55Nzy/1SIwvh5Izy5TBMWj+8mQcPBPaai/yfwgkoRVvR4feR0ReVGeutY2LAcZeVe4YkHg72gOyy8jHzKLXJ7cGB2tLwqj2DB4JPYUIDKVLYSOpY0S5cwe3rwOPeSSA1O7pXo2Vb5XWPtSS/bNHeJ4ix4r/wqH3mD3RWHKQXZ/5C8V3y1F/Ng2NAAAAAElFTkSuQmCC" alt="PASSION"/>
+							</div>
+							<div class="about-box-title clearfix">
+								<h4>PASSION</h4>
+							</div>
+							<div class="about-box-description">
+								<p class="paragraph-small">
+									Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-icon">
+								<!-- Hearts icon by Icons8 -->
+								<img class="icon icons8-Hearts" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADpUlEQVRoQ+2YjXEUMQyFpQqACkgqACogVECoAFIBSQWECkgqgFQQqACogFABSQVABWK+G5nxbdY/6/VyTGY1c3M3t7aspydLWqncEdE7gkNWIP8bkysjKyMLeWANrYUc26x2MiNm9lxEDkVkT0QO/ORrEeHzRUQuVJXfSTEz9r70/fzmg7CfvR9V9dMUVNVAzIyDT6NDc+dg0NEQkAN4HzkgpwNAp6p6UQOoCMTM7ovIOxF55QpvRORMRK5UFYPFDcSrrIGteyLyS0ROVPWDr+EZetD3G6+LCM+uA2Azg+HHInIsIg/9PNagB31JyQJxEJ9dOYcfB8NSGn0PzL32NUf+DRPIuXs6a5iZARyH4ZQrEXmWA1MCwuEo/M63qqKwStyQYHzYQ7htGKoRM4Md1j/iW1WDU25tTwKJDIGJgykgwikDMJNARDoAQwjDTFJHDsgPv9hNBkSGEB6iqsR9k0QO4T7tjykZBWJmXNhLEblR1ZAaW43gcgMkeydKys2MLEYCeKGqJIotSQEhLkm3ZIuNR3ctZgajZD3qVMigf81KASEmn3qm2KTYXYunZjLoV1UNhbgIxDwcinXmXwI0s6RdKUZWIEsy1MIIhY8i9KSlfiwBpvWOhKw1q4b0BNSatbKprqeBtbrMLFsSUpedIkhlRx7MLWa1xqbWeSP605/vj73v5FqUUEveqird7M7EzDj/TaqGbEpFxgsUHQoQrQVemNVitHrB2SA6aHVo5UcLdKmND6ycz2n6WkGwz8xokXi3Ga3oQXcJCC30N1+c9MYcQ3N7o5TLsmwpKLYgUXwSWijLDhZ6gfLXZ5xISBXvaRGI0xtCrPjK2QPI4BU7G1JVoRUWuWLAUO0XBTMAwSs2b6fFRFPFiLNCbQFE1TCghZmRYcdeDYhs+h0zZDAMwEskgOqBROFik1hI99wJmDicch+rGUmE2dbsqoUFZzueeVWHU3zeZCB+MF6j92F8ipyp6kkLEDPj9TUMJpgqMjsr3onhWU1AInZCc8lfhBjdclWoeZgy9yKkkFnzgVlAnB1aGdhhwoEnmdcyTUyKmVGp6Z9glhEsw79Zs4HZQBKhVjvEZuIOiMmh1DW0hsp8HgY7YYhNqG1mUP6MUApDbADcmk+13LPJ6bfmEK8FW4nAjQ+zqG4szM5alYBIBNwD2EGqpvk1usfWdLkjqcOjAsqSSdP8qYAWBRIlgtmz3xKwxYGUDOj1fAXSy5O99KyM9PJkLz1/AOAWmEIQ8JAtAAAAAElFTkSuQmCC" alt="heart"/>
+							</div>
+							<div class="about-box-title clearfix">
+								<h4>CARING</h4>
+							</div>
+							<div class="about-box-description">
+								<p class="paragraph-small">
+									Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-icon">
+								<!-- Customer Support Filled icon by Icons8 -->
+								<img class="icon icons8-Customer-Support-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEL0lEQVRoQ+1ajVEWMRDdV4FSgVKBHxUIFQgViBWIFYgVCBUIFQgVCBUoFQgVCBWs8zKbz1y+3OXyc8o47Azj4F02edm/t3tAGkVVX4vIroi85A+AvZRKVf0mIj9E5Jb/Arhu3HqwHDXKVJUHfysi+yLyPNQBIKlTVTXa615ELvgD4LLmHIN9SxQYgI9mgeTSAiDhelrpAwACq5JZFlFV3voXs8DkRpVAvM4rA0QXLJIsEFVdichXi4Gs8kYg1E+XOwBAULNlEoiBYJAO4mBKewcgXv07AGdzkYwCqQHBTTsCobodALPcbCzD0ALf57pTZdaac9l0M4JhMpiOzdRTVT0Rkfe5xannnS3CLa7GatPgAuPDWIplXFTJAkB4jr1c8G+4llVgFrwqWQhI1ioDIKpKmvGzCoEtWghINvBjINWx4cEvCOQUwNHYJcdAaA1apVoWBHILYDsLxOoGU26TLAhkMujXFlFVmu1zE4r+BTE+Dokl3X9DQiCkA6TmTbKwRc4BHOaAkKSxSWqROwDJGFNVVucXLcqtIdvJAWkN9E8AjqcOqqp8zn6mRbZTlCV0rbiDK9lszVRVle7JeCP9p5D0nQA45y+qStdgb1Mr7CgP4sU9gLgAtOaL1MYDiPciIFKN+w6JZYOytAJZx4SqMnUTxJ1ZxNNv/h8zDeODQwfn440xs9bjbysEQsr8rNDezqWCGyaIFW891GPWIjCC8WtaXWyQikMgNVnLmTiwBlvUC2PQPg54cL7DiQtbZnebrSzbWmIGvru0EAgnGG8KLbJlPu8Thf89zICOWoSElLXGrPSrcL/49TX/aqrsvvgFMysPJHRTF0cxEIuTlkzpQbl2OATCHqS0oXJKVJX+/8qmH961/ODgMHKtGwCrXtxORFy1j9lvacD71Ot5Gqs3waWC3c8A4gTR6F1yD2CrtR9ZU+vAKgRDYDd2QlqK6ZfUxVnD3KqVSfgLuASw36NDDAsiMx8PnhIC27Xk0Jp6vf4H0/knRvwTVa1Jw+v5k1EQWsQDIgBSlMGwrQPvIuU59rwrNXyo7duPAJxOObyquhGTf88Cnmm/hBUPAGxU9qgS17JUxgfj4dpPCC3tsj7RSp7i0+oM+lurJ9xv1hxtrN+ZmjR6StGaVcbWM7MRjPuUYNbhRXDKyRhK0v0iIKa4V0DmLoJACChO2UmvKAZiYHyhyx2m9bljBJF7J2O1FsjfssriQOiv9NtSel9qoY02eSQ9PwBIfquZ88WqhhWXAuH7jAnXDts0J9X/Mxsm59JzgHSZd9UgS6zJz7XGNurQAHXCIKQj/I4/SAqTBTHKHiR5zaPUDmgmvylmXcvScI8GqAXL6IRxtkX+MRC6Ezlc9uvuY7EI/y6FBZDkkZMYpnxmy7OxmIjN+yiAjFXrEl98AlJyW7l3nywS3NB/41q/AQX0N1EALwUWAAAAAElFTkSuQmCC" alt="supportive"/>
+							</div>
+							<div class="about-box-title clearfix">
+								<h4>SUPPORTIVE</h4>
+							</div>
+							<div class="about-box-description">
+								<p class="paragraph-small">
+									Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		        </section>
+
+		    </div>
+		    <div class="oe_structure"/>
+	            </div>
+		</xpath>
+	</template>
+
+<!-- List Blogs Template -->
+<!--
+        <template id="conecta_blog_list" name="CONECTA blog_list" inherit_id="website_blog.blog_post_short">
+        	<xpath expr="//t[@t-call='website_blog.index']" position="replace">
+		    <t t-call="website_blog.index">
+			<t t-set="head">
+			    <link t-att-href="'/blog/%s/feed' % (blog.id)" type="application/atom+xml" rel="alternate" title="Atom Feed"/>
+			</t>
+			
+			
+	   <div class="page-heading listing-page">
+			<div class="page-heading-inner-container text-center">
+				<h1 t-field="blog.name"></h1>
+				<ul class="breadcrumbs">
+					<li><a href="/">Home</a></li>
+					<li><span t-field="blog.name"/></li>
+				</ul>
+			</div>
+			<div class="page-header-overlay"></div>
+		</div>			
+
+	<section>		
+		<div class="lp-section-row blog-section col-md-12">
+			<div class="container">
+					<div class="row">
+						
+						<div data-posts_limit="3" class="js_get_posts" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template"/>
+						
+					</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section>		
+		<div class="lp-section-row blog-section col-md-12">
+			<div class="container">
+					<div class="row">
+						<div class="lp-section-content-container lp-blog-grid-container"  t-ignore="True" id="main_column">
+					
+						
+						</div>
+			<div class="container">
+			    <t t-call="website.pager">
+				<t t-set="classname">pull-right</t>
+			    </t>
+			</div>						
+					</div>
+			</div>
+		</div>
+	</section>
+
+			
+
+
+     
+     
+		    </t>
+        	</xpath>
+        </template>
+
+-->
+
+
+
+<!-- Latest posts's Template -->
+        <template id="conecta_media_list_template" name="CONECTA media_list" inherit_id="snippet_latest_posts.media_list_template">
+        	<xpath expr="//t[@t-foreach='posts']" position="replace">
+                      <h3>Latest News</h3>
+		      <t t-foreach="posts" t-as="p">
+			<t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                              <ul class="media-list">
+                                   <li class="media"> <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)" t-attf-class="media-photo loading_container thumb #{properties.get('background-color')}" t-attf-style="background-image: #{properties.get('background-image', 'none')}; opacity: #{properties.get('opacity', 1)};"></a> <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)" class="media-date"><span t-field="p.create_date" t-field-options="{&quot;format&quot;: &quot;dd&quot;}"/><span t-field="p.create_date" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/></a>
+                                        <h5 class="media-heading" t-field="p.name"></h5>
+                                        <p t-field="p.subtitle" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 200px;"></p>
+                                   </li>
+                              </ul>
+			</t>
+        	</xpath>
+        </template>
+
+<!-- Latest posts's Template bib pictures -->
+        <template id="conecta_media_list_template_big_picture" name="Conecta media_list" inherit_id="snippet_latest_posts.s_latest_posts_big_picture_template">
+        	<xpath expr="//t[@t-foreach='posts']" position="replace">
+
+						<div class="container lp-section-content-container lp-blog-grid-container">
+        								<!--<div class="row">-->
+       	
+      <t t-foreach="posts" t-as="p">
+        <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+
+								<div class="col-md-4 col-sm-4 lp-blog-grid-box">
+									<div class="lp-blog-grid-box-container lp-border lp-border-radius-8">
+										<div class="lp-blog-grid-box-thumb">
+											<div t-attf-class="thumb #{properties.get('background-color')}" t-attf-style="background-image: #{properties.get('background-image', 'none')}; opacity: 1; height: 250px; background-size: 100% 100%;"/>
+										</div>
+										<div class="lp-blog-grid-box-description text-center">
+												<div class="lp-blog-user-thumb margin-top-subtract-25">
+													
+                    <t t-if="p.author_avatar">
+                        <span t-field="p.author_avatar" class="o_not_editable" t-field-options="{&quot;widget&quot;: &quot;image&quot;}"/>
+                    </t>													
+													
+												</div>
+												<div class="lp-blog-grid-category">
+													<a t-att-href="'/blog/%s' % (p.blog_id.id)">
+														<span t-field="p.blog_id.name"/>
+													</a>
+												</div>
+												<div class="lp-blog-grid-title">
+													<h4 class="lp-h4">
+														<a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)"><span t-field="p.name"/></a>
+													</h4>
+												</div>
+												<ul class="lp-blog-grid-author">
+													<li>
+														<a href="#">
+															<i class="fa fa-user"></i>
+															<span t-field="p.author_id" style="display: inline-block;" t-field-options="{                                 &quot;widget&quot;: &quot;contact&quot;,                                 &quot;fields&quot;: [&quot;name&quot;]                             }"/>
+														</a>
+													</li>
+													<li>
+														<i class="fa fa-calendar"></i>
+														<span t-field="p.create_date" t-field-options="{&quot;format&quot;: &quot;dd&quot;}"/> <span t-field="p.create_date" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/>
+													</li>
+												</ul><!-- ../lp-blog-grid-author -->
+										</div>
+									</div>
+								</div>
+						
+      </t>
+								
+							<!--</div>-->
+						</div><!-- ../section-content-container-->
+        	</xpath>
+        </template>
+
+  </data> 
+</openerp>

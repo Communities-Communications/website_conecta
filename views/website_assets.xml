@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+
+<!-- Jump to website after theme installation
+     ========================================================================== -->
+
+  <data noupdate="1">
+    <record id="base.open_menu" model="ir.actions.todo">
+      <field name="action_id" ref="website.action_website"/>
+      <field name="state">open</field>
+    </record>
+  </data>
+
+  <data>
+
+
+<!-- LESS/CSS/JS
+     ========================================================================== -->
+
+    <template id="less" inherit_id="website.assets_frontend" active="True" priority="1">
+      <xpath expr="." position="inside">
+        <!-- Google Web Fonts -->
+
+        <!-- Template CSS Files  -->
+	<link href="/website_conecta/static/src/lib/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/css/colors.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/css/font.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/jQuery.filer-master/css/jquery.filer.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/jQuery.filer-master/css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/Magnific-Popup-master/magnific-popup.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/popup/css/component.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/icon8/styles.min.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	<!--<link type="text/css" rel="stylesheet" href="/website_conecta/static/src/lib/jquerym.menu/css/jquery.mmenu.all.css" />-->
+	<link href="/website_conecta/static/src/css/mapbox.css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/chosen/chosen.css" rel="stylesheet" />
+	<link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css" rel="stylesheet" />
+	<link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/css/main.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/OSMBuildings/OSMBuildings.css" type="text/css" rel="stylesheet" />
+	<link href="/website_conecta/static/src/lib/Star-Rating/css/star-rating.css" rel="stylesheet" type="text/css"/>
+	<link href="/website_conecta/static/src/lib/bootstrap/css/bootstrap-select.min.css" type="text/css" rel="stylesheet" />
+	<!-- Template JS Files -->
+	<script src="/website_conecta/static/src/lib/OSMBuildings/OSMBuildings.js" ></script>
+	<script src="/website_conecta/static/src/lib/Star-Rating/js/star-rating.js" ></script>
+	<script src="/website_conecta/static/src/lib/bootstrap/js/bootstrap-select.min.js" ></script>						
+	<!--<script src="/website_conecta/static/src/js/jquery-lib.js"></script>
+	<script src="/website_conecta/static/src/js/jquery-migrate-1.3.0.min.js"></script>
+	<script src="/website_conecta/static/src/js/mapbox.js"></script>
+	<script src="/website_conecta/static/src/js/leaflet.markercluster.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="/website_conecta/static/src/js/build.min.js"></script>
+	<script src="/website_conecta/static/src/lib/chosen/chosen.jquery.js" ></script>
+	<script src="/website_conecta/static/src/js/jquery-ui.js"></script>
+	<script src="/website_conecta/static/src/lib/slick/slick.min.js"></script>
+	<script src="/website_conecta/static/src/lib/jquerym.menu/js/jquery.mmenu.min.all.js"></script>
+	<script src="/website_conecta/static/src/lib/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
+	<script src="/website_conecta/static/src/lib/jQuery.filer-master/js/jquery.filer.min.js"></script>
+	<script src="/website_conecta/static/src/js/bootstrap-rating.js"></script>
+	<script src="/website_conecta/static/src/lib/popup/js/classie.js"></script>
+	<script src="/website_conecta/static/src/lib/popup/js/modalEffects.js"></script>
+	<script src="/website_conecta/static/src/js/main.js"></script>-->
+      </xpath>
+    </template>
+
+
+<!-- JS
+     ========================================================================== -->
+
+    <!--<template id="assets_editor" inherit_id="website.assets_editor" name="Editor assets">
+      <xpath expr="." position="inside">    
+      </xpath>
+    </template>-->
+
+    <template id="footer_default" name="Automatic Footer" inherit_id="website.footer_default">
+      <xpath expr="//div[@id='footer']" position="attributes">
+        <attribute name="class">hidden</attribute>
+      </xpath>
+    </template>
+
+  </data>
+</openerp>

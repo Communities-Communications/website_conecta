@@ -1,0 +1,1792 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_conecta
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20170201\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-17 15:26+0000\n"
+"PO-Revision-Date: 2017-05-17 17:17+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: pt\n"
+"X-Generator: Poedit 2.0.1\n"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_interests_list
+msgid ""
+"<br/>\n"
+"                                    <br/>\n"
+"                                    Shared Interests:"
+msgstr ""
+"<br/>\n"
+"                                    <br/>\n"
+"                                    Interesses em Comum:"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+msgid ""
+"<i class=\"fa fa-envelope\"/>\n"
+"\t\t\t\t\t\t\t<span>support@conecta.pt</span>"
+msgstr ""
+"<i class=\"fa fa-envelope\"/>\n"
+"\t\t\t\t\t\t\t<span>support@conecta.pt</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "<i class=\"fa fa-facebook\"/><span>Facebook</span>"
+msgstr "<i class=\"fa fa-facebook\"/><span>Facebook</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "<i class=\"fa fa-google-plus\"/><span>Google</span>"
+msgstr "<i class=\"fa fa-google-plus\"/><span>Google</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+msgid ""
+"<i class=\"fa fa-map-marker\"/>\n"
+"\t\t\t\t\t\t\t<span>Praça do Município - 6230-000 Fundão</span>"
+msgstr ""
+"<i class=\"fa fa-map-marker\"/>\n"
+"\t\t\t\t\t\t\t<span>Praça do Município - 6230-000 Fundão</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+msgid ""
+"<i class=\"fa fa-phone\"/>\n"
+"\t\t\t\t\t\t\t<span>+351 2750 0000</span>"
+msgstr ""
+"<i class=\"fa fa-phone\"/>\n"
+"\t\t\t\t\t\t\t<span>+351 2750 0000</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "<i class=\"fa fa-plus\"/> Adicionar Empresa"
+msgstr "<i class=\"fa fa-plus\"/> Adicionar Empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid ""
+"<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star-o\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<span class=\"rating-ratio\">4.0</span>"
+msgstr ""
+"<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-star-o\"/>\n"
+"\t\t\t\t\t\t\t\t\t\t<span class=\"rating-ratio\">4.0</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "<i class=\"fa fa-twitter\"/><span>Twitter</span>"
+msgstr "<i class=\"fa fa-twitter\"/><span>Twitter</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "<i>to</i>"
+msgstr "<i>para</i>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid ""
+"<span class=\"sr-only\">Toggle navigation</span>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>"
+msgstr ""
+"<span class=\"sr-only\">Fechar navegação</span>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid ""
+"<span class=\"timing-hours\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t07:30-20:00\n"
+"\t\t\t\t\t\t\t\t\t\t</span>"
+msgstr ""
+"<span class=\"timing-hours\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t07:30-20:00\n"
+"\t\t\t\t\t\t\t\t\t\t</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "<span>Companies</span>"
+msgstr "<span>Empresas</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "<span>Company</span>"
+msgstr "<span>Empresa</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "<span>Contact</span>"
+msgstr "<span>Contacto</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "<span>Event</span>"
+msgstr "<span>Evento</span>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "<span>Messages</span>"
+msgstr "<span>Mensagens</span>"
+
+#. module: website_conecta
+#: model:ir.model.fields,help:website_conecta.field_res_partner_contacts
+msgid "A member that has contacted you or you have contacted them"
+msgstr "Um membro com quem comunicou"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "A password will be e-mailed to you."
+msgstr "Iremos enviar-lhe uma password para o seu e-mail."
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Add Company"
+msgstr "Adicionar Empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Add Event"
+msgstr "Adicionar Evento"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Add details about your Company"
+msgstr "Adicionar detalhes sobre a sua empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Add details about your Event"
+msgstr "Adicionar detalhes sobre o seu evento"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Add your Company"
+msgstr "Adicionar a sua Empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Add your Event"
+msgstr "Adicionar o seu Evento"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Address"
+msgstr "Endereço"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "All Locations"
+msgstr "Todas as Localizações"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Already have an account? Sign in"
+msgstr "Já tem uma conta? Faça login"
+
+#. module: website_conecta
+#: model:ir.ui.menu,name:website_conecta.res_conecta_questionnaire_answer_menu
+msgid "Answers"
+msgstr "Resposta"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+#: selection:res.partner,message_setting:0
+msgid "Anyone"
+msgstr "Qualquer"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_blog_list
+msgid "Atom Feed"
+msgstr "Atom Feed"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Begin"
+msgstr "Começar"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_blog_post
+msgid "Blog Post"
+msgstr "Publicação no Blogue"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Brazil"
+msgstr "Brasil"
+
+#. module: website_conecta
+#: model:website.menu,name:website_conecta.website_conecta_profiles
+msgid "Browse Companies"
+msgstr "Consultar Empresas"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+msgid "Browse Profiles"
+msgstr "Consultar Perfis"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "CARING"
+msgstr "TRANSPORTAR"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Categoria 1"
+msgstr "Categoria 1"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Categoria 2"
+msgstr "Categoria 2"
+
+#. module: website_conecta
+#: model:ir.ui.menu,name:website_conecta.res_partner_interest_category_menu
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_name
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Category"
+msgstr "Categoria"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_ids
+#: model:ir.ui.menu,name:website_conecta.res_country_state_city_menu
+msgid "Cities"
+msgstr "Cidades"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_city_id
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "City"
+msgstr "Cidade"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_name
+msgid "City Name"
+msgstr "Nome da Cidade"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_messages
+msgid "Comment:"
+msgstr "Comentário:"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+msgid "Communities"
+msgstr "Communities"
+
+#. module: website_conecta
+#: model:website.menu,name:website_conecta.website_conecta
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "Companies List"
+msgstr "Lista de Empresas"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "Company Data"
+msgstr "Dados da Empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Company data"
+msgstr "Dados da Empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Company name"
+msgstr "Nome da Empresa"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_conecta
+#: model:ir.ui.menu,name:website_conecta.res_conecta_parent_menu
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+#: model:res.groups,name:website_conecta.conecta_group
+msgid "Conecta"
+msgstr "Conecta"
+
+#. module: website_conecta
+#: model:ir.actions.act_window,name:website_conecta.res_partner_interest_category_action
+msgid "Conecta Interest Categories"
+msgstr "Categorias de Interesse"
+
+#. module: website_conecta
+#: model:ir.actions.act_window,name:website_conecta.res_partner_interest_action
+#: model:ir.ui.view,arch_db:website_conecta.res_partner_interest_view_tree
+msgid "Conecta Interests"
+msgstr "Interesses"
+
+#. module: website_conecta
+#: model:ir.actions.act_window,name:website_conecta.res_partner_action
+msgid "Conecta Members"
+msgstr "Membros"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_questionnaire
+msgid "Conecta Questionaire"
+msgstr "Questionário"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_questionnaire_answer
+msgid "Conecta Questionaire Answer"
+msgstr "Resposta ao Questionário"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_questionnaire_answer_question
+msgid "Conecta Questionaire Answer Question"
+msgstr "Conecta Questionaire Answer Question"
+
+#. module: website_conecta
+#: model:ir.actions.act_window,name:website_conecta.res_conecta_questionnaire_answer_action
+msgid "Conecta Questionaire Answers"
+msgstr "Respostas ao Questionário"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_questionnaire_matchingrules
+msgid "Conecta Questionaire Matching Rules"
+msgstr "Critérios"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_questionnaire_question
+#: model:ir.model,name:website_conecta.model_res_conecta_questionnaire_question_option
+msgid "Conecta Questionaire Question"
+msgstr "Questão de Questionário"
+
+#. module: website_conecta
+#: model:ir.actions.act_window,name:website_conecta.res_conecta_questionnaire_action
+msgid "Conecta Questionaires"
+msgstr "Questionários"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Connect with your Social Network"
+msgstr "Ligar à sua Rede Social"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_contacts
+msgid "Contact List"
+msgstr "Lista de Contacto"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Contact Owner"
+msgstr "Contacto"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Contactos"
+msgstr "Contactos"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+msgid "Copyright © 2016 Conecta"
+msgstr "Copyright © 2016 Conecta"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+msgid "Counselling"
+msgstr "Consultoria"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_country_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import_country_id
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Country"
+msgstr "País"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_country_state
+msgid "Country state"
+msgstr "Estado"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+msgid "Create Account"
+msgstr "Criar Conta"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.>res_conecta_questionnaire_view_form
+msgid "Create Fake Questionnaire Answers"
+msgstr "Criar Respostas Falsas ao Questionário"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_create_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_create_uid
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+msgid "Created by"
+msgstr "Created by"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_create_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Database"
+msgstr "Base de dados"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_display_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_display_name
+msgid "Display Name"
+msgstr "Nome a Mostrar"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_dist_pref
+msgid "Distance Pref"
+msgstr "Preferências de Distância"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact_form
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "E-mail"
+msgstr "Email"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Email"
+msgstr "Email"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Email Address *"
+msgstr "Endereço de E-mail *"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Email:"
+msgstr "Email:"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_employees
+msgid "Employees"
+msgstr "Funcionários"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact_form
+msgid "Empresa/Instituição"
+msgstr "Empresa/Instituição"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "End"
+msgstr "Fim"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Entrada/Registo"
+msgstr "Entrada/Registo"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_event_event
+msgid "Event"
+msgstr "Evento"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Event Image"
+msgstr "Imagem do Evento"
+
+#. module: website_conecta
+#: selection:res.conecta.questionnaire.matchingrules,option:0
+msgid "Exclude"
+msgstr "Excluir"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Extende Description"
+msgstr "Ver toda a Descrição"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_social_facebook
+msgid "Facebook Account"
+msgstr "Conta Facebook"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_first_name
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "First Name"
+msgstr "Primeiro Nome"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Forgot Password"
+msgstr "Esqueci a palavra passe"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Forgot password?"
+msgstr "Esqueceu a password?"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Forgotten Password"
+msgstr "Password esquecida"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_partner_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_message_partner_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_review_partner_id
+msgid "From Partner"
+msgstr "Do Parceiro"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_social_github
+msgid "GitHub Account"
+msgstr "Conta GitHub"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_social_googleplus
+msgid "Google+ Account"
+msgstr "Conta Google+"
+
+#. module: website_conecta
+#: model:res.groups,comment:website_conecta.conecta_group
+msgid "Has registered a conecta profile, has no access to Odoo backend at all"
+msgstr "Registou um perfil conecta, não tem aceso ao backend do Odoo"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_blog_list
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Home"
+msgstr "Página Inicial"
+
+#. module: website_conecta
+#: model:ir.model.fields,help:website_conecta.field_res_conecta_questionnaire_matchingrules_weight
+msgid ""
+"How important this rule is\n"
+"e.g. tall pref->tall height=10\n"
+"tall pref->average height=3"
+msgstr ""
+"How important this rule is\n"
+"e.g. tall pref->tall height=10\n"
+"tall pref->average height=3"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_id
+msgid "ID"
+msgstr "Id."
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_event_event_image_ids
+msgid "Images"
+msgstr "Imagens"
+
+#. module: website_conecta
+#: model:ir.ui.menu,name:website_conecta.res_country_state_city_import_menu
+msgid "Import From Geonames"
+msgstr "Importar de Geonomes"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.res_country_state_city_import_view_form
+msgid "Import from GeoNames"
+msgstr "Importar de Geonomes"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "Inspection"
+msgstr "Inspecção"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_interest_category_id
+msgid "Interest Category"
+msgstr "Categoria de Interesse"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_interest_list
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_list
+msgid "Interest List"
+msgstr "Lista de Interesses"
+
+#. module: website_conecta
+#: model:ir.ui.menu,name:website_conecta.res_partner_interest_menu
+#: model:ir.ui.menu,name:website_conecta.res_partner_interest_parent_menu
+#: model:ir.ui.view,arch_db:website_conecta.conecta_interests
+msgid "Interests"
+msgstr "Interesses"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Início"
+msgstr "Início"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category___last_update
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation___last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_last_name
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Last Name"
+msgstr "Último Nome"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_write_uid
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_import_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_write_date
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_media_list_template
+msgid "Latest News"
+msgstr "Última Notícias"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_latitude
+msgid "Latitude"
+msgstr "Latitude"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_categ_letter
+msgid "Letter"
+msgstr "Carta"
+
+#. module: website_conecta
+#: selection:res.conecta.messages,type:0
+msgid "Like"
+msgstr "Gosto"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_like_list
+msgid "Like List"
+msgstr "Lista de Gostos"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_social_linkedin
+msgid "LinkedIn Account"
+msgstr "Conta LinkedIn"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Local"
+msgstr "Local"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Logout"
+msgstr "Terminar Sessão"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_longitude
+msgid "Longitude"
+msgstr "Longitude"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_event_event_image_main
+msgid "Main image"
+msgstr "Imagem Principal"
+
+#. module: website_conecta
+#: selection:res.conecta.questionnaire.matchingrules,option:0
+msgid "Match"
+msgstr "Correspondência"
+
+#. module: website_conecta
+#: model:ir.model.fields,help:website_conecta.field_res_conecta_questionnaire_matchingrules_option
+msgid ""
+"Match: add points\n"
+"Penalise: remove points\n"
+"Exclude:instantly incompatible partners"
+msgstr ""
+"Match: add points\n"
+"Penalise: remove points\n"
+"Exclude:instantly incompatible partners"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_interests_list
+msgid "Matches"
+msgstr "Correspondências"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matching_rule_ids
+msgid "Matching Rules"
+msgstr "Regras"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_max_employees
+msgid "Max Employees"
+msgstr "Número Máximo de Funcionários"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_event_event_image_main_medium
+msgid "Medium image"
+msgstr "Imagem Média"
+
+#. module: website_conecta
+#: model:ir.ui.menu,name:website_conecta.res_partner_conecta_parent_menu
+#: model:ir.ui.menu,name:website_conecta.res_partner_menu
+msgid "Members"
+msgstr "Membros"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+#: selection:res.partner,message_setting:0
+msgid "Members I Like"
+msgstr "Membros I Like"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+#: selection:res.partner,message_setting:0
+#: selection:res.partner,profile_visibility:0
+msgid "Members Only"
+msgstr "Só Membros"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+msgid "Members Only<br/>"
+msgstr "Só Membros<br/>"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_message_text
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_review_text
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact_form
+msgid "Message"
+msgstr "Mensagem"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_message_setting
+msgid "Message Setting"
+msgstr "Preferências da Mensagem"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Message:"
+msgstr "Message:"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_messages
+msgid "Messages"
+msgstr "Mensagens"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_min_employees
+msgid "Min Employees"
+msgstr "Mínimo de Funcionários"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Monday - Friday"
+msgstr "Segunda - Sexta"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+msgid "My Profile"
+msgstr "O Meu Perfil"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_category_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_name
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact_form
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Name"
+msgstr "Nome"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Name:"
+msgstr "Nome:"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Next Events"
+msgstr "Próximos Eventos"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Next Week"
+msgstr "Próxima Semana"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Next month"
+msgstr "Próximo Mês"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "No event found"
+msgstr "Nenhum evento encontrado"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "No one matches that critera"
+msgstr "Ninguém corresponde aos seus critérios"
+
+#. module: website_conecta
+#: selection:res.partner,profile_visibility:0
+msgid "Not Listed"
+msgstr "Não Listado"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Not a member? Sign up"
+msgstr "Não é membro? Registe-se"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+msgid "Notícias"
+msgstr "Notícias"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_num_profiles
+msgid "Num Profiles"
+msgstr "Número de Perfis"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_interest_num_interested
+msgid "Number with Interest"
+msgstr "Número com interesse"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Old Events"
+msgstr "Eventos Anteriores"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Online"
+msgstr "Online"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_option_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_option
+msgid "Option"
+msgstr "Opção"
+
+#. module: website_conecta
+#: selection:res.conecta.questionnaire.matchingrules,type:0
+msgid "Option Match"
+msgstr "Opções"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_ids
+msgid "Options"
+msgstr "Opções"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Our Events"
+msgstr "Nossos Eventos"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_message_owner
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_review_owner
+msgid "Owner"
+msgstr "Proprietário"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "PASSION"
+msgstr "PAIXÃO"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "PLANNING"
+msgstr "PLANEAMENTO"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_partner
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_partner_id
+msgid "Partner"
+msgstr "Parceiro"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_partner_categ
+msgid "Partner Category"
+msgstr "Categoria de Parceiro"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_partner_gender
+msgid "Partner Gender"
+msgstr "Género de Parceiro"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_partner_interest
+msgid "Partner Interest"
+msgstr "Interesse do Parceiro"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_partner_interest_category
+msgid "Partner Interest Category"
+msgstr "Categoria de Interesse do Parceiro"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_partner_interest_fake
+msgid "Partner Interest Fake"
+msgstr "Partner Interest Fake"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_partner_relation
+msgid "Partner Relation"
+msgstr "Partner Relation"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Password"
+msgstr "Password"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Password *"
+msgstr "Password *"
+
+#. module: website_conecta
+#: selection:res.conecta.questionnaire.matchingrules,option:0
+msgid "Penalise"
+msgstr "Penalizar"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "Personal Data"
+msgstr "Dados Pessoais"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact_form
+msgid "Phone"
+msgstr "Telefone"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Portugal"
+msgstr "Portugal"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+msgid "Praça do Município. Fundão - PT"
+msgstr "Praça do Município. Fundão - PT"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+msgid ""
+"Private<br/>\n"
+"                        <br/>\n"
+"                        Who can message you<br/>"
+msgstr ""
+"Private<br/>\n"
+"                        <br/>\n"
+"                        Who can message you<br/>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Profile Image"
+msgstr "Imagem de Perfil"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_profile_micro
+msgid "Profile Micro Summary"
+msgstr "Descrição Breve do Perfil"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_profile_text
+msgid "Profile Text"
+msgstr "Texto do Perfil"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_profile_visibility
+msgid "Profile Visibility"
+msgstr "Visibilidade do Perfil"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+msgid "Profile Visibility<br/>"
+msgstr "Visibilidade do Perfil<br/>"
+
+#. module: website_conecta
+#: selection:res.partner,profile_visibility:0
+msgid "Public"
+msgstr "Público"
+
+#. module: website_conecta
+#: model:ir.model.fields,help:website_conecta.field_res_partner_profile_visibility
+msgid ""
+"Public: can be viewed by anyone on the internet\n"
+"Members Only: Can only be viewed by people who have an account\n"
+"Not Listed: Profile will only be visiable to members you have contacted"
+msgstr ""
+"Public: can be viewed by anyone on the internet\n"
+"Members Only: Can only be viewed by people who have an account\n"
+"Not Listed: Profile will only be visiable to members you have contacted"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+msgid "Public<br/>"
+msgstr "Público<br/>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Qucik Contact"
+msgstr "Contacto Breve"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_question_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_question_id
+msgid "Question"
+msgstr "Questão"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_question_compare_id
+msgid "Question Compare"
+msgstr "Comparar Questões"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_question_compare_option_id
+msgid "Question Compare Option"
+msgstr "Comparar Questões"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_question_match_id
+msgid "Question Match"
+msgstr "Questões que Correspondem"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_question_match_option_id
+msgid "Question Match Option"
+msgstr "Questões que Correspondem"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_name
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_option_name
+msgid "Question Text"
+msgstr "Texto de Questão"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_questionnaire_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_questionnaire_question_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_questionnaire_id
+msgid "Questionnaire"
+msgstr "Texto de Questão"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_questionnaire_answer_id
+msgid "Questionnaire Answer"
+msgstr "Resposta ao Questionário"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_questionnaire_answers
+msgid "Questionnaire answers"
+msgstr "Respostas aos Questionário"
+
+#. module: website_conecta
+#: model:ir.ui.menu,name:website_conecta.res_conecta_questionnaire_menu
+#: model:ir.ui.menu,name:website_conecta.res_conecta_questionnaire_parent_menu
+msgid "Questionnaires"
+msgstr "Questionários"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_answer_question_ids
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_ids
+msgid "Questions"
+msgstr "Questões"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Quick questions"
+msgstr "Questões Rápidas"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Rate us and Write a Review"
+msgstr "Avalie-nos e escreva uma recomendação"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_review_star
+msgid "Rating"
+msgstr "Classificação"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_read
+msgid "Read"
+msgstr "Ler"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+msgid "Registar"
+msgstr "Registar"
+
+#. module: website_conecta
+#: model:website.menu,name:website_conecta.website_conecta_register
+msgid "Register Company"
+msgstr "Registar Empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:website.menu,name:website_conecta.website_conecta_events_register
+msgid "Register Event"
+msgstr "Registar Evento"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Register Interests"
+msgstr "Registar Interesses"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Register Profile"
+msgstr "Registar Perfil"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Register your Event"
+msgstr "Registar Evento"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Register your Profile"
+msgstr "Registar Perfil"
+
+#. module: website_conecta
+#: selection:res.conecta.messages,type:0
+msgid "Regular"
+msgstr "Normal"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_relation_type
+msgid "Relation Type"
+msgstr "Tipo de Relação"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_messages
+msgid "Reply"
+msgstr "Responder"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "Reset"
+msgstr "Limpar"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "Results"
+msgstr "Resultados"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Review"
+msgstr "Avaliar"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Reviews"
+msgstr "Avaliações"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+msgid "Romantics"
+msgstr "Romantics"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "SUPPORTIVE"
+msgstr "SUPPORTIVE"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Saturday - Sunday"
+msgstr "Sábado - Domingo"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem ."
+msgstr "Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem ."
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Select <i class=\"fa fa-database\"/>"
+msgstr "Selecionar <i class=\"fa fa-database\"/>"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Select Category"
+msgstr "Seleccionar Categoria"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Select a City"
+msgstr "Seleccionar uma Cidade"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Select a Country"
+msgstr "Seleccionar um País"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Select a State"
+msgstr "Seleccionar um Estado"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_event
+msgid "Select a local"
+msgstr "Seleccionar uma localidade"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact_form
+msgid "Send"
+msgstr "Enviar"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+msgid "Send us an email"
+msgstr "Envie-nos um e-mail"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+msgid "Settings"
+msgstr "Configurações"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Short Self Description"
+msgstr "Descrição breve"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_event_event_show_registration
+msgid "Show Registration"
+msgstr "Mostrar Registo"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Sign Up"
+msgstr "Registar"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Sign in"
+msgstr "Log in"
+
+#. module: website_conecta
+#: selection:res.conecta.questionnaire.question,type:0
+msgid "Single Answer"
+msgstr "Resposta"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_second_menu
+#: model:website.menu,name:website_conecta.website_conecta_events
+msgid "Singles Events"
+msgstr "Eventos"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_event_event_image_main_small
+msgid "Small image"
+msgstr "Small image"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Sobre"
+msgstr "Sobre"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Sobre a Empresa"
+msgstr "Sobre a Empresa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "Social Media"
+msgstr "Social Media"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_state_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_country_state_city_state_id
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "State"
+msgstr "Estado"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact_form
+msgid "Subject"
+msgstr "Assunto"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_questionnaire
+msgid "Submit"
+msgstr "Submeter"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_interests
+msgid "Submit Interests"
+msgstr "Submeter Interesses"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+msgid "Tel: 00351-275-000-000"
+msgstr "Tel: 00351-275-000-000"
+
+#. module: website_conecta
+#: model:ir.model.fields,help:website_conecta.field_res_partner_relation_type
+msgid "The type of relation this member is seeking"
+msgstr "O tipo de relação que este membro procura"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "This Week"
+msgstr "Esta Semana"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "This month"
+msgstr "Este Mês"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.>res_conecta_questionnaire_answer_view_tree
+msgid "Time"
+msgstr "Hora"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_to_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_message_to_id
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_review_review_to_id
+msgid "To Partner"
+msgstr "Para Parceiro"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_social_twitter
+msgid "Twitter Account"
+msgstr "Conta do Twitter"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_messages_type
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_type
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_question_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_contacts_unread_message_count
+msgid "Unread message count"
+msgstr "Número de mensagens por ler"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile_settings
+msgid "Update Profile"
+msgstr "Actualizar Perfil"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "Use the top menu <i>'Content'</i> to create your first event."
+msgstr "Use the top menu <i>'Content'</i> to create your first event."
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Username *"
+msgstr "Nome de utilizador *"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "Username or Email Address *"
+msgstr "Nome de utilizador ou endereço de e-mail*"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "View on map"
+msgstr "Ver no mapa"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Website"
+msgstr "Página Web"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_conecta_questionnaire_matchingrules_weight
+msgid "Weight"
+msgstr "Peso"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "What is your Interest?"
+msgstr "Qual o seu interesse?"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "XX Results"
+msgstr "Resultados"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "You are currently viewing only public profiles, to view all profiles please"
+msgstr "Neste momento apenas está a ver perfis públicos, para ver todos os perfis, por favor faça"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Your Rating for this Company"
+msgstr "A sua votação desta empresa"
+
+#. module: website_conecta
+#: model:ir.model.fields,field_description:website_conecta.field_res_partner_social_youtube
+msgid "Youtube Account"
+msgstr "Conta Youtube"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_register
+msgid "Zip"
+msgstr "Código Postal"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "checked"
+msgstr "seleccionado"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "clock"
+msgstr "horas"
+
+#. module: website_conecta
+#: model:ir.model.fields,help:website_conecta.field_res_conecta_questionnaire_matching_rule_ids
+msgid "e.g. person puts 'tall' as height matches with people partner who put 'tall' as preferred partner height"
+msgstr "e.g. person puts 'tall' as height matches with people partner who put 'tall' as preferred partner height"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "facebook"
+msgstr "facebook"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "google-plus"
+msgstr "google-plus"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "heart"
+msgstr "coração"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "https://plus.google.com/+Odooapps"
+msgstr "https://plus.google.com/+Odooapps"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "https://twitter.com/Odoo"
+msgstr "https://twitter.com/Odoo"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "https://www.facebook.com/odoo"
+msgstr "https://www.facebook.com/odoo"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "https://www.linkedin.com/company/odoo"
+msgstr "https://www.linkedin.com/company/odoo"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "https://www.youtube.com/user/OpenERPonline"
+msgstr "https://www.youtube.com/user/OpenERPonline"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.view_partner_form_inherit_website_conecta
+msgid "https://youraccount.github.io"
+msgstr "https://youraccount.github.io"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "instagram"
+msgstr "instagram"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_ir_fields_converter
+msgid "ir.fields.converter"
+msgstr "ir.fields.converter"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.layout
+msgid "join-now"
+msgstr "join-now"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "linkedin"
+msgstr "linkedin"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "map"
+msgstr "map"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "map-marker"
+msgstr "map-marker"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "not published"
+msgstr "não publicado"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "phone-icon"
+msgstr "phone-icon"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_blog_list
+#: model:ir.ui.view,arch_db:website_conecta.conecta_event_list
+msgid "pull-right"
+msgstr "encostar à direita"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_list
+msgid "register an account"
+msgstr "regitar uma conta"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_contacts
+msgid "res.conecta.contacts"
+msgstr "res.conecta.contacts"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_fake_first
+msgid "res.conecta.fake.first"
+msgstr "res.conecta.fake.first"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_fake_last
+msgid "res.conecta.fake.last"
+msgstr "res.conecta.fake.last"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_messages
+msgid "res.conecta.messages"
+msgstr "res.conecta.messages"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_conecta_review
+msgid "res.conecta.review"
+msgstr "res.conecta.review"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_country_state_city
+msgid "res.country.state.city"
+msgstr "res.country.state.city"
+
+#. module: website_conecta
+#: model:ir.actions.act_window,name:website_conecta.res_country_state_city_action
+msgid "res.country.state.city.action"
+msgstr "res.country.state.city.action"
+
+#. module: website_conecta
+#: model:ir.model,name:website_conecta.model_res_country_state_city_import
+msgid "res.country.state.city.import"
+msgstr "res.country.state.city.import"
+
+#. module: website_conecta
+#: model:ir.actions.act_window,name:website_conecta.res_country_state_city_import_action
+msgid "res.country.state.city.import.action"
+msgstr "res.country.state.city.import.action"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_aboutus
+msgid "supportive"
+msgstr "apoiante"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.conecta_contact
+#: model:ir.ui.view,arch_db:website_conecta.footer_CONECTA
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "tumblr"
+msgstr "tumblr"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "web-link"
+msgstr "web-link"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_messages
+msgid "wwwwww"
+msgstr "wwwwww"
+
+#. module: website_conecta
+#: model:ir.ui.view,arch_db:website_conecta.my_conecta_profile
+msgid "Áreas de Interesse"
+msgstr "Áreas de Interesse"

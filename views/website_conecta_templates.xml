@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+
+        <template id="layout" name="CONECTA layout top Menu" inherit_id="website.layout">
+        	<xpath expr="//div[@id='wrapwrap']//header" position="replace">
+
+<div id="page">
+	<!--==================================Header Open=================================-->
+	<header>
+		<div class="lp-topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 text-left">
+						<ul class="lp-topbar-menu">
+							<li>
+								<a href="/">Início</a>
+							</li>
+							<li>
+								<a href="/page/aboutus">Sobre</a>
+							</li>
+							<li>
+								<a href="/page/contactus">Contactos</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 text-right">
+						<div class="lp-join-now" id="sign"  t-ignore="true" t-if="website.user_id == user_id">
+							<span>
+								<!-- Contacts icon by Icons8 -->
+								<img class="icon icons8-Contacts" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADNElEQVRoge2ZLWhbURTHn3iig8IiIiomIgqrqJiomJgIrCKiomKig4iKioiKioiJiEJExURFRGEbRERMVERkENhE5BgTGUxEVERkUBERURFR8Zu45+5durzk3feRm7H8IRB455z3u9/3nOd5a6317wjYAcrAOdAEroAqcAhsuOabK8AHKsBX5qsP7LrmnSlgE+gasCMZhRpwDJwCDeBGnk+Bt8COa/Y/AjaAn0YDDgA/xNYH3j8YoUaY/VIlPQvwHdiKYO8De0AdGItvcxms86AKwL38rOe9bAoTacyzLBijglQE4jpBjHOJ8TFNNluItkAcJ4ixKzGGKaJZQ/QEopgwDgApYcUC0NtpIWEc5w3R227shQrkVqEhn4ThdYIYTyXGrzTZbCH04fYmQYznEqOfJpstRFUg3qUQ4zJNNluIA4H4nCDGtcQop8lmC1ESiElM/7zcCgD20+azAdE33lpMfx+4kBjttPlsQAYCETu/AIoSo5cmmy1E4vmNylcgwX0tsVDpLMAQqMbwr4mv88XuAx0BuYnhr6/wXVwnV8Aj4IcAvbDweyk+37LksxKqUgJQt/Cpi89VlmxWMnaeCZCLYJ8zplVxCYjRRZCbdObNd1lXOiFzt+WGieC6ohuTn2GTMxoBsOeCda5Qta2pATkGTlAFioL8HxnPR66ZQ2WcCQPCpbNKdzn6IhFcAPOow7ItozBGnRUVYHulG0JQDZkusNvSdqxSydTzPA9VOdTTaWGCBLSMKeh+wcsoNI0pBXARwa9m2N9LjOVWGlHnwCuCO5aGaROUT4/m+O8bdq0HndAFjsjyGwqq6n5GUHgGdTpfAttiUzeeNVBnS15+JbHVqolPAVUInxjPxqhS6sJbgm0jysCt8aIB6pvH5gzbU+COcE2Bs5COqhDUynRH/WUbpwE+6oONVh84jOC3I6PTkd4dy/86EbJJ1Ce6vvHe1qxOs2mIXgd3wEnsQPHfXzZGt0ecnIUgBR0ia8CFUAfoUFjsslDgCcHiK2XEaMOj04QpNgVzgg84X7LDs5MxzaMvfuCDtVPGQu2GAC0bJ3OrXTXdRm1EbmEo93ocd2TXWut/1W9KptrZf/2YyAAAAABJRU5ErkJggg==" alt="join-now"/>
+							</span>
+							<a class="md-trigger" data-toggle="modal" data-target="#loginModal">Entrada/Registo</a>
+						</div>
+						<div class="lp-join-now" id="sign"  t-ignore="true" t-if="website.user_id != user_id">
+							<span>
+								<!-- Contacts icon by Icons8 -->
+								<img class="icon icons8-Contacts" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADNElEQVRoge2ZLWhbURTHn3iig8IiIiomIgqrqJiomJgIrCKiomKig4iKioiKioiJiEJExURFRGEbRERMVERkENhE5BgTGUxEVERkUBERURFR8Zu45+5durzk3feRm7H8IRB455z3u9/3nOd5a6317wjYAcrAOdAEroAqcAhsuOabK8AHKsBX5qsP7LrmnSlgE+gasCMZhRpwDJwCDeBGnk+Bt8COa/Y/AjaAn0YDDgA/xNYH3j8YoUaY/VIlPQvwHdiKYO8De0AdGItvcxms86AKwL38rOe9bAoTacyzLBijglQE4jpBjHOJ8TFNNluItkAcJ4ixKzGGKaJZQ/QEopgwDgApYcUC0NtpIWEc5w3R227shQrkVqEhn4ThdYIYTyXGrzTZbCH04fYmQYznEqOfJpstRFUg3qUQ4zJNNluIA4H4nCDGtcQop8lmC1ESiElM/7zcCgD20+azAdE33lpMfx+4kBjttPlsQAYCETu/AIoSo5cmmy1E4vmNylcgwX0tsVDpLMAQqMbwr4mv88XuAx0BuYnhr6/wXVwnV8Aj4IcAvbDweyk+37LksxKqUgJQt/Cpi89VlmxWMnaeCZCLYJ8zplVxCYjRRZCbdObNd1lXOiFzt+WGieC6ohuTn2GTMxoBsOeCda5Qta2pATkGTlAFioL8HxnPR66ZQ2WcCQPCpbNKdzn6IhFcAPOow7ItozBGnRUVYHulG0JQDZkusNvSdqxSydTzPA9VOdTTaWGCBLSMKeh+wcsoNI0pBXARwa9m2N9LjOVWGlHnwCuCO5aGaROUT4/m+O8bdq0HndAFjsjyGwqq6n5GUHgGdTpfAttiUzeeNVBnS15+JbHVqolPAVUInxjPxqhS6sJbgm0jysCt8aIB6pvH5gzbU+COcE2Bs5COqhDUynRH/WUbpwE+6oONVh84jOC3I6PTkd4dy/86EbJJ1Ce6vvHe1qxOs2mIXgd3wEnsQPHfXzZGt0ecnIUgBR0ia8CFUAfoUFjsslDgCcHiK2XEaMOj04QpNgVzgg84X7LDs5MxzaMvfuCDtVPGQu2GAC0bJ3OrXTXdRm1EbmEo93ocd2TXWut/1W9KptrZf/2YyAAAAABJRU5ErkJggg==" alt="join-now"/>
+							</span>
+						    <ul class="nav pull-right navbar-nav">
+				                    <li class="dropdown">
+				                        <a href="#" style="padding-top: 0px; padding-bottom: 0px;" class="dropdown-toggle" data-toggle="dropdown">
+				                                <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+				                                <span class="caret"/>
+				                        </a>
+				                        <ul class="dropdown-menu js_usermenu" role="menu">
+				                            <li id="o_logout"><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+				                        </ul>
+				                    </li>
+						    </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../topbar -->
+		
+		
+		
+		<!-- Login Popup -->
+		<div class="margin-top-150 modal fade" id="loginModal" role="dialog">
+			<div class="login-form-popup lp-border-radius-8">
+				<div class="siginincontainer">
+					<h1 class="text-center">Sign in</h1>
+					<form class="form-horizontal margin-top-30" role="form" t-attf-action="/web/login{{ '?debug' if debug else '' }}" method="post" onsubmit="this.action = this.action + location.hash">
+						<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+						    <div class="form-group field-db" t-if="databases and len(databases) &gt; 1">
+							<label for="db" class="control-label">Database</label>
+							<div class="input-group">
+							    <input type="text" name="db" t-att-value="request.db" id="db" class="form-control" required="required" readonly="readonly"/>
+							    <span class="input-group-btn">
+							      <a href="/web/database/selector" class="btn btn-default">Select <i class="fa fa-database"/></a>
+							    </span>
+							</div>
+						    </div>
+						<div class="form-group">
+							<label for="username">Username or Email Address *</label>
+							<input placeholder="Email" type="text" name="login" t-att-value="login" id="login" class="form-control" required="required" autofocus="autofocus"/>
+						</div>
+						<div class="form-group">
+							<label for="password">Password *</label>
+							<input placeholder="Password" type="password" name="password" id="password" class="form-control" required="required" t-att-autofocus="'autofocus' if login else None"/>
+						</div>
+					    <p class="alert alert-danger" t-if="error">
+						<t t-esc="error"/>
+					    </p>
+					    <p class="alert alert-success" t-if="message">
+						<t t-esc="message"/>
+					    </p>
+
+					    <input type="hidden" name="redirect" t-att-value="redirect"/>
+						<div class="form-group">
+							<div class="forgot">
+                                                  <a href="/web/reset_password">Forgot password?</a> </div>
+						</div>
+						
+						<div class="form-group">
+<button type="submit" class="lp-secondary-btn width-full btn-first-hover">Sign in</button>
+						</div>
+					</form>	
+					<!--<div class="pop-form-bottom">
+						<div class="bottom-links">
+							<a  class="signUpClick">Not a member? Sign up</a>
+							<a  class="forgetPasswordClick pull-right" >Forgot Password</a>
+						</div>
+						<p class="margin-top-15">Connect with your Social Network</p>
+						<ul class="social-login list-style-none">
+							<li><button id="logingoogle" class="google flaticon-googleplus" ><i class="fa fa-google-plus"></i><span>Google</span></button></li>
+							<li><button id="loginfacebook" class="facebook flaticon-facebook" ><i class="fa fa-facebook"></i><span>Facebook</span></button></li>
+							<li><button id="logintwitter" class="twitter flaticon-twitter" ><i class="fa fa-twitter"></i><span>Twitter</span></button></li>
+						</ul>
+					</div>-->
+				<a class="md-close"><i class="fa fa-close"></i></a>
+				</div>
+				<div class="siginupcontainer">
+					<h1 class="text-center">Sign Up</h1>
+					<form class="form-horizontal margin-top-30"  method="post">
+						<div class="form-group">
+							<label for="username">Username *</label>
+							<input type="text" class="form-control" id="username2" />
+						</div>
+						<div class="form-group">
+							<label for="password">Email Address *</label>
+							<input type="email" class="form-control" id="password2" />
+						</div>
+						<div class="form-group">
+							<p>A password will be e-mailed to you.</p>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Register" class="lp-secondary-btn width-full btn-first-hover" /> 
+						</div>
+					</form>	
+					<!--<div class="pop-form-bottom">
+						<div class="bottom-links">
+							<a class="signInClick" >Already have an account? Sign in</a>
+							<a class="forgetPasswordClick pull-right" >Forgot Password</a>
+						</div>
+						<p class="margin-top-15">Connect with your Social Network</p>
+						<ul class="social-login list-style-none">
+							<li><button id="logingoogle2" class="google flaticon-googleplus" ><i class="fa fa-google-plus"></i><span>Google</span></button></li>
+							<li><button id="loginfacebook2" class="facebook flaticon-facebook" ><i class="fa fa-facebook"></i><span>Facebook</span></button></li>
+							<li><button id="logintwitter2" class="twitter flaticon-twitter" ><i class="fa fa-twitter"></i><span>Twitter</span></button></li>
+						</ul>
+					</div>-->
+				<a class="md-close"><i class="fa fa-close"></i></a>
+				</div>
+				<div class="forgetpasswordcontainer">
+					<h1 class="text-center">Forgotten Password</h1>
+					<form class="form-horizontal margin-top-30"  method="post">
+						<div class="form-group">
+							<label for="password">Email Address *</label>
+							<input type="email" class="form-control" id="email2" />
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Get New Password" class="lp-secondary-btn width-full btn-first-hover" /> 
+						</div>
+					</form>	
+					<div class="pop-form-bottom">
+						<div class="bottom-links">
+							<a class="cancelClick" >Cancel</a>
+						</div>
+					</div>
+				<a class="md-close"><i class="fa fa-close"></i></a>
+				</div>
+			</div>	
+		</div>
+		<!-- ../Login Popup -->
+		
+		<!-- Popup Open -->
+		<div class="md-modal md-effect-3" id="modal-2">
+			<div class="container">
+				<div class="md-content ">
+					<div class="row popup-inner-left-padding ">
+						<div class="col-md-6 lp-insert-data">
+						</div>
+						<div class="col-md-6">
+							<div id="quickmap" class="quickmap"></div>
+							<a class="md-close widget-map-click"><i class="fa fa-close"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Popup Close -->
+		<div class="md-overlay"></div> <!-- Overlay for Popup -->
+		<div class="lp-menu-bar">
+			<div class="container">
+					<div class="row">
+					<div class="col-md-8 navbar-toggle">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+						</div>
+						<div class="col-md-4 col-xs-6 lp-logo-container" style="float: left;">
+							<div class="lp-logo">
+								<a class="navbar-brand" href="/">
+									<img src="/website_conecta/static/src/images/logo.png" alt="" />
+								</a>
+							</div>
+						</div>
+						
+
+						
+						
+						<!--<div class="col-xs-6 mobile-nav-icon">
+							<a href="#menu" class="nav-icon">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</a>
+						</div>
+							<div id="menu">
+								<ul id="top_menu">
+									<li><a href="#">Categories </a>
+										<ul class="sub-menu">
+											<li><a href="listing.html">Automotive </a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>-->
+	
+
+						<div class="col-md-8 col-xs-12 lp-menu-container navbar-collapse in navbar-top-collapse">
+							<div class="pull-right lp-add-listing-btn">
+								<ul>
+									<li><a href="/conecta/profile/register"><i class="fa fa-plus"></i> Adicionar Empresa</a></li>
+								</ul>
+							</div>
+							<div class="lp-menu pull-right menu">
+								<ul id="top_menu">
+									<t t-foreach="website.menu_id.child_id" t-as="submenu" class="sub-menu">
+										<t t-call="website.submenu"/>
+									</t>
+								</ul>
+							</div>	
+						</div>
+					</div>
+				</div>
+		</div><!-- ../menu-bar -->
+	</header>
+	<!--==================================Header Close=================================-->
+		</div>
+        	</xpath>
+        </template>
+        
+        <!--<template id="fav_ico" name="CONECTA Title" inherit_id="web.layout">
+        	<xpath expr="//html/head/title" position="replace">
+        	 <title>CONECTA</title>
+        	</xpath>
+        </template>
+        
+        <template id="fav_ico" name="CONECTA Icon" inherit_id="web.layout">
+        	<xpath expr="//html/head/link[1]" position="replace">
+        	 	<link rel="shortcut icon" href="/website_conecta/static/src/images/favicon.png" type="image/x-icon"/>
+        	</xpath>
+        </template>
+
+
+        <template id="website_favicon_layout" inherit_id="website.layout">
+            <xpath expr="//head//title" position="after">
+                <link rel="shortcut icon" href="/website_conecta/static/src/images/favicon.png" type="image/x-icon"/>
+            </xpath>
+        </template>-->
+
+
+<template id="footer_CONECTA" inherit_id="website.layout" customize_show="True" name="Footer CONECTA">
+  <xpath expr="//div[@id='footer']" position="replace">
+
+    <div class="oe_structure main" id="footer">
+	<!--==================================Footer Open=================================-->
+	<footer class="text-center">
+		<div class="footer-upper-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="footer-menu">
+							<li><a href="/">Início</a></li>
+							<li><a href="/blog/1">Notícias</a></li>
+							<li><a href="/page/contactus">Contact</a></li>
+							<li><a href="/conecta/profile/register">Registar</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../footer-upper-bar -->
+		<div class="footer-bottom-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="footer-about-company">
+							<li>Copyright © 2017 Conecta</li>
+							<li>Praça dos Negócios. Algures - PT</li>
+							<li>Tel: 00351-275-000-000</li>
+						</ul>
+						<p class="credit-links">Created by <a href="http://www.communities.pt/" target="_blank">Communities</a></p>
+						<ul class="social-icons footer-social-icons">
+							<li><a href="#"><!-- Facebook icon by Icons8 -->
+								<img class="icon icons8-Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC10lEQVRoQ+1ai3HTQBTc7QAqgFQQqADoAFcAHZBUAFRAUgGkApIKCBUkqYCkA6hgmVXuPGf7ZF0snyTP6GY8ceyT7+17+z7Se0TLkvQBwFsAr8KrbesQn98C8OuS5FXuQK5/KOk9gG8AXg4h4Q5n3AM4JXmZXrsCRJIBnIQNDwDOAFyTtDZGW5LMCrPDsr0IgpyRPI1CLYFIstCfwhdG7P8ntyQZjBXudU6yUXwDJNDpZ/jy9dgW6NJesNBN2LcwzSKQP8EnJmuJjC9Hy9yTPKKkjwC+A3ggOVUHzxpJkh3fPrMwkB8AHGoPxhoRVeIvFwZirjkqTN43MvSy3Jb/1kDUeD25kVO6nG4K3y/lHwNIqBqceK3R1C+vAZj3zlu/S6LnKEBC2HSYLw0qTUTaZvnBgQQQvwA8s7YBOMi4dvqbOK+zt0H6rwNQJ+XHABKDygVJh/ytq5TygwJJKofiXDVVIE/OVVMF4mj0BsA7kn6/XJLsM58BOIptBIGutDA0tVpzVVJZZH3mkIA0IHPW6goIoXJ/VFIpF0t+tG3PtjP6nj8lavUqkaoDiQekVsrxPbdvzbLP06SZKRzrUmtfQEZ39j7cl+QSxeWMC0e/b12DUatLozkJJX0JuaWznJk6kFgJfCVpUAdrkdZK4FCd/Yikb7TGt0iP8PuPpOuwrau6j6Snz5m9yxyPT0nrJsTZIgVWyCqpTwYuPXP2kQJNzT5SoKSNLTO1CrQ2U6tASTO1eilJkh/hH9ds9NRy9qQpejdI660ikNgQbVpvflTpnkVnL2IX0/uaikBiN3oR29OxO1qlIVoDSNIIbZ7wDzIwsG8grQMDwfzpCMcJyfNdqdR6X51puD61aJXkMZM4XrI6whEPXptHMd18QVFTsui+ekcgwQJuS9i5Y+thCcJnt405GUCcwtmXYfb1O55aMmPax5zWblgczWIL2XlmzHWXDJ6tAIhC/QfJdOM+5ZDCYAAAAABJRU5ErkJggg==" alt="facebook"/></a></li>
+							<li><a href="#"><!-- Google Plus icon by Icons8 -->
+								<img class="icon icons8-Google-Plus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEFElEQVRoQ+2a8VEVQQzGkwqUCoQKhArUCpQKhAqECoQK1AqECsQKlArUCsQKhAri/J7Jzd6+23t3B3dv/yAzzGOYPV6+TfbLl+ypFMzM9kXkrYjw+bK0bqG/fxeRnyJyqap8rpnmf3EAHypwvrRHgDrNAbWAmNkbEfksIk9F5E5ELkTkSlV5eGtmZmQEvh2JyBMRuRWRY1W9CqcaIGbGIkBglyJyoqo8UI2ZGRv80VMevw4DzAqIme2KyA+PBEiJRLWWbDobfaCqNwHkm58JDhORqd7MjLR67al/qB6N334mdmtLp9KOeprd+JnZAwg5905EPqnqSfWhSBxs+W5mMNILEXm1bXYau4nOZhyLayLy1w/52P9T0/pbgFhNHk31pQGiqmtVfuo/XfK5CMQjkCV3ve+7HiNSSyTCj3tHxMyQB8gZdBo9S8muReRsrho1GYgXIVQyMh9VgExIJTaAaH5OkdulRuihIjsJSKI6r1W11TV6Q4ZKoF/ALlT1+KEc7tFcqzo4mH4TcclznXLGzNBqdJdhs8ue0RFJZLP0FU8zI9WeOZKvqkrazWZTgDRSZgOQUNM4f6Oqe7Oh+N8UDk+tRGWGTzulvsX7/i+xcG7pc18gTa+c73YGeo0UHjo6o4Dw5ZlKLrbEGZBzVT0b4nyuwodGcgoQBhIM7MJo+teGZQlFU2cGt85LAmEUEz1yFD3otRkZeR/NNGaHYcaYYrgYEE8v5AjTi+ceFkCshnhJdf/D74xohqRUrFkUSPKl1AYqOxqLSAUwlnSm3CZQWwGSOjWFbqe2110EMPqwl3Y0G7WyjAEzRbFotQLh3MBeIRYB0CsYqwNiZszDMCKQ9ySAa7Fa6WBvOj99KmFSarkCppZw2HEchgp2ir4kjUwRTIciaI2l5iyI7+n03IFzT58WxXpPAh2nLDaoui/CWmZGRxhT+l569aJIg9XUGlWlQPba7EAyVho06HYwpFX0JXubCuQSQLhygJmwwR1ftgEbi+QSQNJDOAYIlZ9J+Z2qUv1nscGsZWboqWCiQQcXj5P+fdZbsBTIytES3ZlZKt9ZS1Q677qTOkEEiAZt7mApPzZkfha5FrljitJ70ZNdcfFdgIGG2em1W19vrJikAGKUlJ8AJNJ3ddGz8erN6wPropIHICITd/AUyJg6LnK9nV+94QDNELsLTRbv1n23qSc8kxY9KnyA4gWDUb3I2Ej4GSR9YVQ+D+J6OtJrkengFMc7JE0U6dWAI31hIBQsA2ckSLVmZiGXmAvsNy8MeKgQgjGPgqnoK2p8hQMiCbnUfoUjoU3AACJeXIl+/Ne2QDlrch5j4h8v/Bx1vlSTgIF5AJAyVE1pxn0LIFqEUrzJdcoNhoKl0j5jSWCcA84vP5BRZzH+B8zg25A0mqpxAAAAAElFTkSuQmCC" alt="google-plus"/></a></li>
+							<li><a href="#"><!-- LinkedIn icon by Icons8 -->
+								<img class="icon icons8-LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADv0lEQVRoQ+1a7VEbMRTcrSDpIFBBoIKQCoIrSKggUEGggkAFgQogFYRUELuCQAUJFbzMnp8uurNOJxv7Ds9YM/6B0fm02vf2fUhExzCzjwCOABz4p2vqEN9PAehzT/Im9UK2vzSzYwBfAewNscIV3vEA4IzkXfxsA4iZCcCpT5gBuPZd0G6MNsxMViHr+ATgrS/kkuRZWFQNxMwuAXwG8ATgnKT+fnHDzLTR5wBeAbgiWW18BcTN6dZBHJEclYG+3XOGfvm8icwsAPntPiHbe5FMJHxZTMgVHkju08xkd98AzEjKFrdmmJksRz4zERA5tKR2a9gIO+3+IlZuBES2JiYOu3zDY4qoDIxpJ6QaSU0fitLIV6YCYpXXkwsxxYVAZifzS41rkidDLTz1nnr9OSARdZJkMRKCkIKmREESeEJS5jnKKAUSzK6SuHilkUhMSR6OgmIeOuYW1cNIp9mZ2WsAf3JmOQS4UiB/3Xz2SSrHqYeZKRdT/HkiKVCjjFIgQZrvSE5aQJQJyFduSHaJwcbBlQLRrktq5dRiJHZ2/U8icNBma+Orb1pGv4+4/Cp2CMCb1gIfxcjYeVkRIy1TUhqtj4aUqqFiQ7LQWlc/I1HUz62z8p8l52pDPkQVqH5fwiIz1gZ9LzXXIkbCpL7dVlZQOtcXKpHIDYFSCnTR9+6lgGTSlzrOFKQ61VwfEgllBmKzqn08LokpgVQSW5kwgPckBSw5xgSiElrFW25xEph7V8sF6V/FR/oSymUYCVVnFkRYpAfcIP2d+dzgjPTZeur/UT5XVYEdc4pUa22MRDv9xcsCBVQFWWUPaiIkTc3MNEcxbCFxdd8aHkhGojud2szUMRH4umMyto+EZkGdEbgfKG6o7r4gqUU3hplJyX4A+EkyBOR6zuA+ErHRcNyoFZWsa6JyIeknYwDJ1TbFvphgbFgfWbWAazh0oq+wYySpGFGuVZLOdJpHdyen3yzXRXlprpUCupZnd0DiVszOtObesjOtdTTo2ju5ll3dqdYzWqY7RnJpxjNNKxxfLRz0lHZGlumi5AJiXxXZfjY66Jllj97MTA2Adz0vUA/qeJm5iRSl+D2tFCnUONXRWzgMHfWco4+Njnr9//mNO22oi7fmQDQ6TXskude+MKAGgBpi23lhwFkJVzgERlc4rlahe9PPmJmumYRLDc0rHFGrJoDRV2JFrRoV/aMy5Ook0ZE/hyPyRlel65qTALXPQza92aW/ry7MafaaU0vahD5cPAtXi0pftu556heHi2fJo/B/rbIkXGKb1eoAAAAASUVORK5CYII=" alt="linkedin"/></a></li>
+							<li><a href="#"><!-- Instagram icon by Icons8 -->
+								<img class="icon icons8-Instagram" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFNUlEQVRoQ9WagVUUQQyGkwqUCpQKlArUCoQKxAqUCoQKhAqECsQK1AqECtQKxAri+8ZkzQ67d3vL3HHOe/dg7/Z25k/+JP9kTmVkmNkrEXkuIk/9NXbrJt6/EhFel6r6aWhCrd80s30ReS8ijzexwhlz/BCRI1W9zN/tATEzALz1G36KyKmIfFFVrHFvw8xgBexgbY98IaeqehSL6oCYGYt+4x+AmOutG2YGGAzOOFPVYvgCxOn00T/cu28PLLOee+ib33cAzQLId4+JrfGEmT0UkQ8iQszmQWy8FpFD98wPVd1VM+MNvvBTVbcmwM3ss8fFkIM+qeq+mRH4xMwBQM5FhFS7Nd5wupsj2FHVG38PL/0qMaHK2iNeLriAa2SFrYoNMytAWHB2SX4/xcoVQAa/sCzg1v35FCDZc82BuJWgKl6GCvxlUIugCH8vlmXGACIio9RaCxAze+eZZGrCIFDPVfVkyLtm9kVEno14vgR7UyBmRsUl6wUAFAEpktdNWN49hYdYAK+o0AB6raosvBuefklELyswaK3DlAD+hsZdYqSSNF9F5Lhe0FgsuQGOk9XfqurZqrHXrX8uEDPDC9QgRi91mxlWxOp4KccI1u8p2EpyQDWK3eQxCiSl4ykP+82Cwwsu/dFoUGjRIOjxwIXzHHpCxQdTJnUh+2JhjKRsMeWZLwDhfKYSh/WhGfy+qmKEz/FiBDEZjGfcONV4xqQR9WWRR0brii+YAgplCp0qENdu6V7g1ivzReO5J56OA0xUaihIgS4VPY86FOYCIThJs19VFTqgnEMZAOL50ORDJnYDALiAUdU9f16k3RNVZb61AAmVHJQKYCuBiJVVYMrCE8WKqm0OJO1Zikr2RQCMwC7AJpH7toXxLLEBjXY9Xv6p2mpLe2dqpR1k2ZUl+d/RbA6Qik4UxvN6rqYxkiRD0Ip0Sb0ok88F4UBiTxT7jPDSLSO18Aj7AGhU5H5L+d+T46p76RqJs9PaI720PFcRjHlu1NIL9iOTCuKiDU3vAdVEcym2SSBUYXJ+UKt3PReAG4WKTz26VtWniVrlujW1olD998EeDbw6/dKJLAJu7kgdk42k33B/qbheEClcKNYWBREl/dgLYiiIWw2RO6df5zLVt1u4mYVE6VTsKl6pBGctUQb7bK2AxMILnWrhF5J8CphaNUdQp/q0PtHoXgkdlGV8UAzP8P4UGU8jGrpmSoWMH+16NvGIA2ELGw3vvLEKSc5t/I9sIX2WIwlPqaRv5EjZAvB5SP9qY1Ua00OebQbEFxUUI2aYNHaJWJTXsi0rXiALcsYRu0OMgwQapFSAagrEwUTPmMuuA+Lcj5YPO0m8ENYvzQdvQEQ/lzOZOIuhcRcNjcFQaw6k8kzQCWtO2pc4lSJO+P5CT6zNI+nBWB+L5oZbNOh+VzEC5bK3eAwNPTw6GBO1W9bikTyJ15Qp8RFfK3EytC9flL7XDiR5KFo+0cTOMRJNbBpxsw5YVwbi+2eCc2uGmZE8kC/duUluB9XyPLawW3WC5cklCmZsif/J//roLTUVoAEFbxYFWrvRCyrdFmpNqOTe0VtU6q6PlBoNgKH4YYF7oZnTiSYH6wBEPhsJlXwQx9ND+gmKjR20tDb41Od1ZyOpi1902cIfDDjN8Fh92DJ14lb3AYDjiNJ2Gv3BgH+Yf8Ix69Cl1aqX1JEsafo/4Ug1IIOBblzTJLvXgHcPQHOCO474OhAlHQ9IgFpybMLQq8wxKGluAak0FKDI1VGdV5mw5b3sW+KHZ4Oa7A8mMc1cZlo+UAAAAABJRU5ErkJggg==" alt="instagram"/></a></li>
+							<li><a href="#"><!-- Tumblr icon by Icons8 -->
+								<img class="icon icons8-Tumblr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADeUlEQVRoQ+2ajXHTQBCF91UAVACpAKgAOgBXQFIBSQWECkgqIKkgSQWECnAqIKmApIJlPs2d5uScrL8jthndjMdjSzrtu919tz8naxnu/snM3pvZm/Bpu/Up/l+aGZ9LSVe5F2r1T3f/aGbfzOzVU0g44h23ZnYk6TJ9tgHE3QFwGG64M7MTM7uWxGpsbLg7VoF1INvLIMiJpKMoVA3E3RH6c7gAYn5v3XB3wLDgjFNJ1cJXQII5XYSLbzetga7VCxr6Fe5bYGYRyO/gE1uriYwvR83cStqTu++b2Xczu5O0rQ6eVZK74/j4zAIgZ2YG1e6MNiKqxF/OAYKtwQqTfcPdj83sS2b5aqfssv8h1xNfWQLEK6+XHu0pQyYNpPHHzJ7nnisxf27eWv5SQNwdAAB5kFSDKTV/26L+CyBEBFD4T0lsXtXYRSBZ0tgpIInTPbAfSbrfOY0E34D52IO+SoK56rETGnF3hMcvoO8bSXw3xtYDCfkKgSUMdUN0mprUqmmtofIzSQdDqf6R6Q5dseAPRJ+RmUh09nMgAmtdm9m7dYJO2WNG06+7xwCTfOVYEmw1agxdxKIbYomXl2S0KRopGdJMnmsGEldgxV6pbixabPhHQgxZX9qUs6e5fS1YmzAtwFNA55JI7kaN0aY1dMMrSQ5FWWsGUiBxmzXSx/u6fKDrep93rLtndvbZ2WdnX+9Fs4+M8BF6K6+r+uxKcyYkXiRotDMIVRrNmz6MVlIjUdBsyTWpz1JZoYJO4Zlcn/yeWlgsnN9LetFH+PSekkBYxQ9mdtCWLSaF8pycZJpVF2pMFFwSSOxTXElihbMjNJOiBtAKH8L/5ZRNsySQWPMFwJ4kBBw0tgJIcNhYLm1NsHqFGSP2mmIaCUBwWJz+mZn1rlO5O4xFP4XvRhW/r0pTIGtZZ8CECIPjAwbzonRK9bFubbs79S1MkXvjYQReQc2Y2tgg+k1qzjdFW29hYoSJvfCudYCxMEt65nXhu+uheH219Rb7GlV3tO8kHTZPDs68rDoaioPSKtqKxzEmHURIioWL2J6O3dGdaYgm2qi60f/XgYHAPGmZ51DSaQkzKz2HuxOXxeMlzSMcifOkYDA3ftMTnGTLU8EEEoHxiCJibNZoebcdcwJAX+aZKufQ52E6LKb9mFM6YxIbEaUShm9ywHaR6bJ7zV8Cie0+55PMmQAAAABJRU5ErkJggg==" alt="tumblr"/></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../footer-bottom-bar -->
+	</footer>
+</div>
+	<!--==================================Footer Close=================================-->
+  </xpath>
+</template>
+
+
+<template id="my_conecta_list" name="Browse Conecta Profiles" page="True">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure">
+	   <div class="about-page-heading about-page">
+			<div class="page-heading-inner-container text-center">
+				<h1>Companies List</h1>
+				<ul class="breadcrumbs">
+					<li><a href="/">Home</a></li>
+					<li><span>Companies</span></li>
+				</ul>
+			</div>
+			<div class="page-header-overlay"></div>
+		</div>
+	<!--==================================Section Open=================================-->
+	<section>
+		<div class="container page-container">
+			<div class="row">
+				<div class="col-md-12 search-row margin-top-subtract-35  margin-bottom-35">
+					<form method="GET" action="" class="form-inline" role="form">
+						<div class="form-group" style="min-width: 33%;">
+							<div class="input-group">
+								<div class="input-group-addon lp-border"><i class="fa fa-search"></i></div>
+									<input type="text" name="min_employees" class="form-control" t-att-value="min_employees" placeholder="What is your Interest?"/>
+							</div>
+						</div>
+						<div class="form-group" style="min-width: 21%;">
+							<div class="input-group">
+								<div class="input-group-addon lp-border"><i class="fa fa-crosshairs"></i></div>
+                            <select name="country" class="form-control selectpicker">
+                                <option value="">Select a Country</option>
+                                <t t-foreach="countries" t-as="country">
+                                    <option t-attf-value="#{country.name}"><t t-esc="country.name"/></option>
+                                </t>
+                            </select>
+							</div>
+						</div>
+						<div class="form-group" style="min-width: 21%;">
+							<div class="input-group">
+								<div class="input-group-addon lp-border"><i class="fa fa-list"></i></div>
+                            <select name="state" class="form-control selectpicker">
+                                <option value="">Select a State</option>
+                                <t t-foreach="states" t-as="state">
+                                    <option t-attf-value="#{state.name}"><t t-esc="state.name"/></option>
+                                </t>
+                            </select>
+							</div>
+						</div>
+						<div class="form-group margin-right-0" style="min-width: 21%;">
+							<div class="input-group margin-right-0">
+								<div class="input-group-addon lp-border"><i class="fa fa-tag"></i></div>
+                            <select name="categ" class="form-control selectpicker" onchange="this.form.submit()">
+                                <option value="">Select Category</option>
+                                <t t-foreach="categs" t-as="categ">
+                                    <option t-attf-value="#{categ.name}"><t t-esc="categ.name"/></option>
+                                </t>
+                            </select>
+							</div>
+						</div>
+
+	            <!--<button t-attf-class="btn btn-default btn-md">Search</button>-->
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="LPtagsContainer "></div>
+				</div>
+			</div>
+			<div class="row listing-page-result-row margin-bottom-25">
+				<div class="col-md-4 col-sm-4 text-left">
+					<p><t t-esc="my_dates_count"/> Results</p>
+				</div>
+				<div class="col-md-4 col-sm-4  text-center">
+					<p class="view-on-map">
+						<!-- Marker icon by Icons8 -->
+						<img class="icon icons8-Marker" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEoklEQVRoQ91Z4XEWNxDVqgGggjgVYCrAVICpIKYCnAIs7ckFYCoIVBC7gpgKMBXgVIDTwG3mfbNiNJc7aXXffZ4M+mN/c7qTnnb37dsVuZ9k0NY4QgiviejUOXfknHvqnDvWNe6ccw/OuXsRuU4p3Wy59iZAmPlIRKJzDgCwecsAqGsi+p2Z8f9eY28gIYRIROcZgIh89d5/dM7tLMDM+OuYGZbZWWgcxzMieq47fxCRq5TSsA+S1UCY+amI/JVdR0Q+ee+Zme8tG4IVx3FkIvotux4RvVprnVVAcLoKAmBggXNmvrUAmM5h5pNxHK/UQg8KZmfFntENRC3xDW4iIp+996drTzFvFN8cxxHx8hLuSES/9n6zC0jpTgCRUjrpObXW3BDCrYK5G4bhRWt++bwLSAgBPh3VnU56T621MbUMwDwXkSGlxK138nMzEKXYL3ApInqR2ci6kHUeYkbjr8vFzEBCCB/BMGCnlNKZdWNr5q1ZywwkxvhdrYFArFKsusg7zfA/Mjsyuvf+Q8sl1foglIdhGJ5ZDsMEhJlPReRPxEZKKW9s9vvMfCYi7ysZHi7zlpmvaxsMIdwhVojoTWsuvmMCkk2tcuJqaQMK4g88F5Eb7/1Vzi+aL86J6PVu4cYGC2L5kFKCcqgOK5AdLWqymk18ZX7RE4dM+c8owFaDOQe9leZNQGKMYKvjGlsVJ3iTUoJ4XBw5X9QoVtUD1jXlFCsQwa6GYVicX4CFXqrKlYJiq5uMMTbX7cojlg9a5pQmssy3zPnfA9GY+y4i/6SUmjWOybWyT9eCvaBLs2vV6PwgwV4AWeT0HOyo+oZheFML9hgj6hhIkUU9ldkNNN4ij548ksVibWFI8XsielKjX60oGS7jvT9ayvIFC5rEo8m1isxele55nlrjGgXT5eXlZ/y+uLh4iQoSljAmxJy7tsvsOfBaFIznADOOIwTmkzn3Ukuc1WRHuR4RPWtpM7NrYWKP9lHRCFlxmpsMCGzEj8qWatfE6gHlQZlcS4Ggrn73SDIeZS/6Y2gVLWq7VUDWSOuW0FvQYugFoGSAsGyWDF0JMU8u3AsyfFYUrtl8+U5Bu109AbNraSCj1oBMvx2G4dW+m557P8aIguqoRuFz7/UCKXPF5nV7kc3/Timhd2weXUAOHfSWjL+ErBtIEfRdwdg62sIa1Yy/GRC1yuYdlX2s0ZUQJ8yCawQEJazSVLuHtsZqIGqVnZDcgsEyU/V2F1clxOmpqgzJatck7BYS4DnaRyLSzVSbAJnkFQACHXfdPE06L6sPYy/XKrL9Tm6vcYuiNdqVxfdOiAuugUsftG0Q+OYkOaHb41YbtkUY3Xlk7oNFmWvqQalLATzYz1QBPgoQDXz0an+xbCyEkEuCZi+5BSA/38QiGvgmFyuac12u2AK0GZBJbpllsQlLmYumFohNWGu6SK5Z5tpChQzZm6Wm625qEXUx3J8jXtAW+nHqRXtnlShsWWVzIApmdzGUtRj+6r3gJtrsIHlk6aQKSs7ZHrX4JlT7qEA0+HfdELWIqfXZcqGl5wdxrbxYvjfHb+/95vfyJaiDAll7umve+xc6iKNgzDxqMAAAAABJRU5ErkJggg==" alt="map"/>
+						<a class="md-trigger mobilelink" data-toggle="modal" data-target="#Modalmap">View on map</a>
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-4  text-right">
+					<p><a href="#" class="achor-color">Reset</a></p>
+				</div>
+			</div>
+
+			<div class="row lp-list-page-grid">
+            <t t-if="my_dates_count > 0"> 
+                <t t-foreach="my_dates" t-as="my_date">
+						<div class="col-md-3 col-sm-6 lp-grid-box-contianer lp-grid-box-contianer1">
+							<div class="lp-grid-box lp-border lp-border-radius-8">
+								<div class="lp-grid-box-thumb-container" >
+									<div class="lp-grid-box-thumb">
+										<img t-att-src="website.image_url(my_date, 'image')" t-attf-alt="#{my_date.first_name} conecta profile"/>
+									</div><!-- ../grid-box-thumb -->
+									<div class="lp-grid-box-quick">
+										<ul class="lp-post-quick-links">
+											<li>
+												<a class="icon-quick-eye md-trigger" t-attf-href="/conecta/profiles/#{my_date.id}"><i class="fa fa-eye"></i></a>
+											</li>
+										</ul>
+									</div><!-- ../grid-box-quick-->
+								</div>
+								<div class="lp-grid-box-description ">
+									<h4 class="lp-h4">
+										<a t-attf-href="/conecta/profiles/#{my_date.id}">
+											<t t-esc="my_date.name"/> <!--<t t-esc="my_date.categ.letter"/>-->
+										</a>
+									</h4>
+									<p>
+										<i class="fa fa-map-marker"></i>
+										<span><t t-esc="my_date.city_id.name"/>, <t t-esc="my_date.state_id.name"/>, <t t-esc="my_date.country_id.name"/></span>
+									</p>
+									<ul class="lp-grid-box-price">
+										<!--<li class="category-cion"><a href="listing.html">
+										<img class="icon icons8-Food" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADaklEQVRoQ+1aQVbbMBD9013YlJ6gUS9AOAHKCZoscRZNT0B6AuAENSdoukhYAiewOQHhAlU4QWEDu07fKLZxDI4jm5S2T14ltjTSn5k/kr5NemKuiNDBK1wMnMeB6ueHlvnI/3igdl3uU3dq+BUwZENGgaL8+Ol8XO9nQIodNw2u7oTLAHogTSPmI1LCKZ9aPrUSD3iOeI40JUNJf59aPrV8aq32wAqOzKRnFKilo0V3asru2937X7eyuyZA6hAPxNVzxfZlqeVq9zEikx9zEL1ngor31dzVUJ32+tS0iWHAfBMNPrTr2Ej75FMrBrDHhG68r+T3xi99ajQxIgCXUaB03QFzdq5JT01IwAEzjuOBOqpr1KWfnpgjIhwycBIHauTSd0mQmJqIAC1zFyA9As6aesdlMqlyw0A/DtS5S9+0rZ6YIRG+AXzHLWqTPjPb9MBzgN7+CZ5k/EgmEPfVrQuQ7tTsMTAioGdBEPWEElaKyYX6exyooYth17Z6asYEfHJNZZ2kUTYe8w2DevFA2YVyAcRWEZ4lUdkY6R/JaT3ZcamSaXVixgVE2Buocd6JmTimp0bC9ZWBOVrYdQ15VWQkhfGAKwLaDHyJAxVW9ck/r1p3iirfohQzZthC96XAWBD3iBJptlbJdQKyID4EzA4DMVroNwVTAHHNLeg6Np2AWL4sg5mD0U8J5ZIKSRHpgHAm6QSgNgix5QwkBYN7jInwUf4zY4w3OF6XnFI88AuHRLAV0BJ0C8M6kShuRco06iWOFD2+WHQ4lGqWTEhKnYC6KIJKJi/AZaFKzhJ8x0yjYoVxjWztiCxtAxZEHRF4KJvLBNBtPFDvltpNzE8ibNt7ixo/xhbCJlGoXbWqPKUnpkME+yKmTN5nxm5dTq0avxZH6hisGqjKSVXPq+yv5Mhzxl31qKoJrvvcAynzlI/IujlU0s6nlk+tgsjcMKOy7j61/uvUym1RrktE5p1/YouSCQfP6FGZPgZsRMB4MY7oiTkgQphIME+EgyUBgyFb95OXInqjbXxyUpRUkVOeCBNWo2XG57LzxaNoBlgRgxESYRYF6rIpKOeIlH6/JWcMolGVMmiVS+YwPbvkAYioUfwOa12AzkCSN0M7yQCX1rOLD8ScpE0BBEDkWInkXmLvSZFwAPLsG6u0/288R19KOGbU8gAAAABJRU5ErkJggg==" alt="restaurents"/></a></li>
+										-->
+										<li><t t-esc="my_date.profile_micro"/></li>
+									</ul>
+								</div><!-- ../grid-box-description-->
+								<div class="lp-grid-box-bottom">
+									<div class="pull-left">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+										<span class="rating-ratio">4.0</span>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="lp-add-to-fav simptip-position-top simptip-movable" data-tooltip="Add to favorites">
+										<i></i>
+										</a>
+									</div>
+									<div class="clearfix"></div>
+								</div><!-- ../grid-box-bottom-->
+							</div><!-- ../grid-box -->
+						</div>
+                </t>
+            </t>
+					</div>
+
+            
+            <t t-if="my_dates_count == 0">
+                <div class="mt16 mb16">
+		    <h2 class="text-center">No one matches that critera</h2>
+                </div>
+            </t>
+            <t t-if="request.env.user.partner_id.name == 'Public user'">
+                <div class="col-md-12">
+                    <h3 style="text-align:center;">You are currently viewing only public profiles, to view all profiles please <a href="/conecta/profile/register">register an account</a></h3>
+                </div>
+            </t>
+
+		</div>
+	</section>
+	<!--==================================Section Close=================================-->            
+        </div>
+    </t>
+</template>
+
+<template id="conecta_second_menu" name="Conecta Profile" page="True">
+    <div class="navbar navbar-default navbar-static-top mb16">
+        <div class="container">
+            <div class="collapse navbar-collapse navbar-top-collapse">
+                <ul class="nav navbar-nav navbar-right" id="second_menu">
+	            <li><a href="/conecta/profiles">Browse Profiles</a></li>        
+	            <li><a href="/conecta/events">Events</a></li>
+                    <li><a href="/conecta/profiles/messages">Messages</a></li>                    
+                    <li><a href="/conecta/account/profiles">My Profile</a></li>
+                    <li><a href="/conecta/account/profiles">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="conecta_interests_list" name="Conecta Interests List" page="True">
+    <t t-call="website.layout">
+        <div class="container mt16 mb16">
+            <div class="col-md-12">
+                <div id="main" class="well">
+                    <h1>Matches</h1>
+                    <t t-foreach="like_matches_sorted" t-as="like_member">
+                        <div class="col-md-4 mt16 mb16">
+                            <div class="well" style="max-width:240px;min-height:400px;">
+                                <a t-attf-href="/conecta/profiles/#{like_member['member'].id}">
+                                    <img t-att-src="website.image_url(like_member['member'], 'image')" class="img-rounded mb8" t-attf-alt="#{like_member['member'].first_name} conecta profile" width="200" height="200"/></a><br/><t t-esc="like_member['member'].first_name"/> (<t t-esc="like_member['member'].employees"/> <t t-esc="like_member['member'].categ.letter"/>)<br/><t t-esc="like_member['member'].city_id.name"/>, <t t-esc="like_member['member'].state_id.name"/>, <t t-esc="like_member['member'].country_id.name"/><br/>
+                                    <br/>
+                                    Shared Interests: <t t-esc="like_member['interest_count']"/><br/>
+                                    <t t-esc="like_member['member'].profile_micro"/>        			                        
+		            </div>
+		        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>
+
+<template id="conecta_interests" name="Conecta Interests" page="True">
+    <t t-call="website.layout">
+        <div class="container mt16 mb16">
+            <div class="col-md-12">
+                <div id="main" class="well">
+                    <h1>Interests</h1>
+                    <form method="GET" action="/conecta/interests/process">
+                        <t t-foreach="interest_categories" t-as="interest_category">
+                            <div class="row col-md-12">
+                                <h2><t t-esc="interest_category.name"/></h2>
+                                <t t-foreach="interest_category.interest_list" t-as="interest">
+                                    <div class="col-md-4">
+                                        <input type="checkbox" t-attf-name="#{interest.id}"/> <t t-esc="interest.name"/>
+                                    </div>
+                                </t>
+                            </div>
+                        </t>
+                        <button type="submit" class="btn btn-primary btn-lg">Submit Interests</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>
+
+<template id="conecta_questionnaire" name="Conecta Questionnaire" page="True">
+    <t t-call="website.layout">
+        <div class="container mt16 mb16">
+            <div class="col-md-12">
+                <div id="main" class="well">
+                    <h1 t-esc="questionnaire.name"/>
+                    <form method="GET" action="/conecta/questionnaire/process">
+                        <t t-foreach="questionnaire.question_ids" t-as="question">
+                            <div class="form-group">
+		                <label class="control-label" t-attf-for="question_#{question.id}"><t t-esc="question.name"/></label>
+			        <select class="form-control" t-attf-name="question_#{question.id}">
+			            <t t-foreach="question.option_ids" t-as="option">
+			                <option t-attf-value="#{option.id}"><t t-esc="option.name"/></option>
+			            </t>	    	        
+		    	        </select>
+		            </div>
+                        </t>
+                        <input type="hidden" name="questionnaire_id" t-attf-value="#{questionnaire.id}"/>
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>
+
+<template id="my_conecta_profile" name="Conecta Profile" page="True">
+    <t t-call="website.layout">
+     <div id="wrap" class="oe_structure">
+	   <div class="about-page-heading about-page">
+			<div class="page-heading-inner-container text-center">
+				<h1>Contact</h1>
+				<ul class="breadcrumbs">
+					<li><a href="/">Home</a></li>
+					<li><span>Contact</span></li>
+				</ul>
+			</div>
+			<div class="page-header-overlay"/>
+		</div>    
+
+<!--==================================Section Open=================================-->
+		
+
+
+      <section class="aliceblue">
+		<div class="post-meta-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="post-meta-left-box">
+							<h3><t t-esc="my_date.name"/> 
+							   <t t-if="request.env.user.partner_id.id == my_date.id">
+			                  <a href="/conecta/profiles/settings">Settings</a><br/>
+                        </t>
+                     </h3>
+							<ul class="post-stat">
+								<li class="reviews">
+									<span class="reviews-stars">
+<!-- alterar o value para o campo respectivo da tabela--><input id="input-rating" name="input-rating" value="4" class="rating-loading" data-size="xxs"/>
+									</span>
+									<script>
+									$(document).on('ready', function(){
+									    $('#input-rating').rating({displayOnly: true, step: 0.5});
+									});
+									</script>
+									<span class="reviews-quantity">
+										(<t t-esc="my_reviews_count"/>) <t t-esc="my_reviews_rating"/>
+									</span>						
+
+								</li>
+								<li>
+									<span class="phone-icon">
+										<!-- Phone icon by Icons8 -->
+										<img class="icon icons8-Phone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEbElEQVRoQ81a4XnUMAy1vEC7QekEwASUCWgnoEzQY4FE9gLQCWgnoJ2AMgF0AtoJgAUivpdPyefzJU6cC5fcv/Z8iZ71JD3JJpP4MPO5iJTGmFfGmCcicsx8k/rNUt9R14uZ+VhEPhljLuPviegtMz8sZXDfe3eAKIhv8IKI/LXWMjN/ZuaNgoNnXjPznzWB2QLCzDAeIOCRR2vtJTP/bAwuiuInEb00xtw55y5WCaQDxFm868z8QkR+AQARXTDz3VrA1B5RA3+oJ26ttZs+6hRFwUSEBPCHiE7XQjGKYuLee38+tMsNxUTk2nu/GVp/iO+pKIrPRHSlMbFDp56shliCB0GxVWQxKssSnH+Ra1BAsVVkMQAR7KxzrrOmpGixJoqBWtjREw3cpxw+a6ZbBcUA5IGI3kxNpyHFnHOnORsx51oAqdPpPhmooecUr84FBum3yUBPU3ZU0/fvqXE2GxA8KIiT7FTaaDAR+e69P5vLsNzn1JkqoNet935H8fY9VL2B9H2cm75zDR1a30gUiMSaHjk8DzZgUW/UdgfK9oaI3ovIKK9EAjKbkkM7nPt9CyQyDP1GK9+7HlqW5VdjDDrIUcBzDctdv1XNg5rw4Jx7m4iNUGtBAWcV0lwjx6yPG6vjqqpQ6Y+I6CM6wx7ROGrdGAPmWtPV6oIuoA36DVCsc7d1MIF1q1DAnUKxKIo7InpnjElSLGqyEPDJuJpr97ue0ztFqaoK/fmJiDjvPfcZURRFne2MMVgPMIsMJXqlOzOf6SAiSR0UxaqqIDwxlFgMTLIHiaiTipfFwQw2U0G8JHcbdUjpeLSEZwaBRNRJzrOgpJVmAAO6YWR0kJgZBIIgj3b7xjn3IVUsAzAHi5lRQBRMu9upYhmvPRTNRgNRAy9F5IsWwQ+pyXxEs9GeAZUx1cmtSVlAJoBBAkBxbVIzwHcWTVUKV8aYpjmDVML6UZP/bCATwISpGbIHCaA1TusVRrB93SUGiDiXSSaNSUAmgoFBUABGRNhae6uHSHVHqkcYmDnXB0lBDcOfg96ZDCQXTIdxbeKDDLLW4gxma9c1ziCBQE18er2zF5ApYEAljZsjEbnXyX+ynxnjnb2BxGBEZOO9v04p3SmZacg7swCJwRhjkkVzHznf553ZgDRgqqoCjyFRkHaRPmeXKLF38J5ZgfRUdaTb/9LTbx1t7OPmhN4KC+FO7Zjzne3cec6Hhs9S1YzUiZa5rh3eezfn+4Jx7ePs1IoNjYIT0h5xszfVwlNoqIX/DkTjpq0dmM6od5Ipeih96xkmjsvrAeFBgCgYaK6Watp4YXaWNXmJTqFxqaE+wD0YkGaHoXI1RZ/o/wAOonAU3cqyRBuBduLZWvuqSe8HBxJ4Z6MXDxqMqDvXfbK9444MPNF6cxEggXeQpnH0V6ti/cAzdyLyYK19hKdU6uO2UnPRZwsEfrcokAAQusLLqqrgpYZyO/GulxrOu2i4CiBR/cFsANdI0GjhIgOmnc/wkl656pQ8/wC3pFkyvejV7AAAAABJRU5ErkJggg==" alt="phone-icon"/>
+									</span>
+									<span class="phone-number">
+										<t t-esc="my_date.phone"/>
+									</span>
+								</li>
+								<li>
+									<a href="#">
+									<span>
+										@
+									</span>
+									<span >
+										<t t-esc="my_date.email"/>
+									</span>
+									</a>
+								</li>
+								<li>
+									<a t-attf-href="#{my_date.website}" target="_blank">
+									<span class="website-link-icon">
+										<!-- Globe icon by Icons8 -->
+										<img class="icon icons8-Globe" src="data:image/png;base64,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" alt="web-link"/>
+									</span>
+									<span class="website-link">
+										<t t-esc="my_date.website"/>
+									</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="post-meta-right-box">
+							<div class="padding-top-30">
+								<!--<a href="#submitreview" class="secondary-btn">
+									Submit Review
+								</a>-->
+								
+						<div class="widget-bg-color widget-categories lp-border-radius-5">
+							<div class="widget-content">
+								<ul class=" list-style-none categories-container">
+									<li><a t-attf-href="/conecta/profiles/messages/#{my_date.id}"><span class="cat-icon"><img class="icon icons8-Comments" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABBElEQVR4nO3UwYrCQBAAUb9SRVlZL3pR8/0StTyYg4REVjMzPaxV4EWGTPcjZDYzMzMzMzN7in+WAAIIMA3g7QcEJ4AAAgggQEmA/vncCSCAAHUB1JYAAghQFqB/PncCCCBAXQC1JYAAApQF6J+f2kdbT5h/8gMEEODLAWpLAAEEEECAlAAJOgM/f7h3051NWg0AADfg8OLOY3cmebUAwGPB48B9JzItD3UBwGPR09NdDRmXh+BvGLAFrgMIzcjyV2AbOnTqgP3AoreR/3bR82YJWALtize1BZbRc2YNWIwgtMAier4iAfMeQgvMo+cqWvdhvHS/3+h5QgLWwCp6DjOzr+0OfUqyKfXD440AAAAASUVORK5CYII="/></span><span>Messages</span></a></li>
+								</ul>
+							</div>
+						</div><!-- ../widget-box  -->								
+
+
+							<!--<div class="form-group margin-bottom-0">
+								<input type="submit" value="Submit Review" class="lp-review-btn btn-second-hover"  />
+							</div>-->
+						
+
+							<!--<div class="widget-content">
+                            <t t-if="can_message == True">
+                                <form t-attf-action="/conecta/profiles/messages/#{my_date.id}" method="POST">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <input type="hidden" name="member_id" t-attf-value="#{my_date.id}"/>
+			                           <button t-attf-class="secondary-btn">Message</button>
+			                       </form>
+			                   </t>
+                            <t t-if="request.env.user.partner_id.name != 'Public user'">
+           	                <t t-if="not you_like">
+           	                    <form action="/conecta/profiles/like" method="POST">
+	                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+	                                <input type="hidden" name="member_id" t-attf-value="#{my_date.id}"/>
+	                                <button t-attf-class="btn btn-default btn-md">Like</button>
+                                    </form>
+                                </t>
+                                <t t-if="you_like">
+                                    <button t-attf-class="btn btn-primary btn-md">Liked</button>
+                                </t>
+                            </t>
+							</div>-->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container single-inner-container single_listing">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="post-row">
+						<div class="post-row-header clearfix margin-bottom-15">
+							<h3>Sobre a Empresa</h3>
+						</div>
+						<ul class="list-style-none post-price-row line-height-16">
+							<li><t t-esc="my_date.profile_micro"/></li>
+						</ul>
+					</div>
+					<div class="post-row padding-top-40">
+						<p>
+							<t t-esc="my_date.profile_text"/>
+						</p>
+					</div>
+					<div class="post-row padding-top-5">
+						<div class="post-row-header clearfix margin-bottom-15">
+							<h3>Áreas de Interesse</h3> <a href="/conecta/interests" t-if="request.env.user.partner_id.id == my_date.id">Register Interests</a>
+						</div>
+						<ul class="features list-style-none">
+						   <t t-foreach="my_date.interest_list" t-as="interest">
+							<li>
+								<span class="tick-icon">
+									<!-- Checked icon by Icons8 -->
+									<img class="icon icons8-Checked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFLklEQVRoQ+1azXHbOBT+nm/2Zb0VREgDUSow1IF9DHWwXYG1FaxTQZIKohykHC1XIGwFtiuAXEHsS7wnv50HghRJgSQoMc5OJpzxjDwEQXzv53sfHkj4RS76RXDgN5CQJ0dze8QEDXZ/h0QYZuOYcQvCg/ufYPCMazNWt31FxM4e0V+txjNOiXDWdVEMrMAw2MMX806Zrs8Xx28NRM/tMYALAnRhwjsGZEEGjFXR4npmh9jDoXgKgCbmYxC9yj0mzxDebwuoMxD91Q7A+JwDYL5n0BR7mJp3atXFqg4ccEzEE4D+kGedIfZxYk5UGoaRVycgzgsCgsSq/MigS5Ooj5Hvqh2mr+whvmOSAfIhd1LNIRlXBzAaiJ7ZCyK4RTPjGgc462q1NsCyUHpyofnGv+fcjNVUfuuZlRz8AGAUIokoIHpmxQsumRn4qw8vNIHSc/uRgAtmvJVFC6EQY1kF1ynZ9dxOyFmCH5lpklmozbq73pdclJzzebSUcGbGezNWl6G5Gz0iOUHAVZMldl1wo2fS3BEQQwa+mETVUnwtEMdOz7hxlniBcAoB0jMr7xdmu+N96KacrAcyt0uhWElsM1ZSM170yvNS6P2AhgJCcqWuzgSBrEOKH3mfBn2zU5tFKnmpiwnPhFEITB2Q1Bs/IaSEZonw2TPkiUnUwtPvJRH+loJpEjWqGmMDSE51zPfL8etBm/X6vF9hqLyGOCCuxvBKFEDIK5tA5nZKwGkT1fW5+GyuCrkEGUrPbOaVjfsbQEZzy86tBNVVO20L0EsUR7MA/lkmqihE82kFLDEsMx5wAFXM3RKQQt24WyYq30tsu8DY5/TcXhEgzNhKs6O5lT3Mm2p4lYGsXffJJGoSu5Bdxq3lDz8y0bAtCgrypVTlS0BGcyuC7YiBnC12WWTbs2uGcvLH0WzsM9X6VvWIq6SZWGubdJf7MUIwWO3XArKUS1WPuERfJipaFUtydhWSsUIwCCSV+t8k4c1Y/ZmN2RpIqXAxSpzfKgSfcEPAoE0I1s2TMWvR4FsD8dV2XYUZIvE/tYVbUQhuy4y9AwmAmZqxOq8DExKCbcBD92OApBztd2axL6mEWRBMVpX9Bi2KoYI5MrNDItxIzSl6tDf6TVmIF04LMUpgSkBr1Gu00dabvXrWKmiZrQqisBERGwfGt3XwHQNvQWlaRJNCbXiu9/P1BTHjdmlvmrF6G2ul4rgSGGmTwgGRXWbjVjX2XRlZNEoUmawP0ZiCgbRxsrZOL7vMTDRKni2T19KxzK8fJuMLPSq07bc7eCNexufhBaxMolTsS+qqMP7FYZsQjH2HntlvLkwDhBGUIgXx+MObcdEg8v5aeL/S2HwIbWBiX9znOL/xsnXekHfVisOCVxYmUSd9LqzrXNnGq6k11digI+ZbXxN+WoiVWkMNG6//d8u0pjUU8mjrviOziMsX6XP5Nn/X8Og6vtLfao2IViBO4foWkfzmSLnedeEVdbA+i4lUBFFAPBh/vODOSBbYx3nfrVTHTk/uWM/1mrt0OqOBeDDHBJ56hSuhdhmzmYrxjpyIyXyFY72zrF0a83wnIA5M2iQTHXXkrbZCqqvkiLnbYagcXQCnYJzJ1teH7jX2MOk6V2cgmXV8M096Xw6QX4R8FGCIYRi43zjMFDEJvMo+Kih+UCBNDCZcvtjxdNXN7oOB1KKnMSFQHuNOhhfi0W0BZPNt7ZHQov1XEJrkMw64DwOcjC9cdwAeOP3awey6+OLEvQLp7pH+nvgNpD9b9jPTfwQDNWCupe5qAAAAAElFTkSuQmCC" alt="checked"/>
+								</span>
+								<a href="#" class="parimary-link"><t t-esc="interest.name"/></a>
+							</li>
+							</t>
+						</ul>
+					</div>
+					<div class="post-row padding-top-15 clearfix"  id="questionnaires" t-if="request.env.user.partner_id.id == my_date.id">
+						<div class="post-row-header clearfix margin-bottom-15">
+							<h3>Quick questions</h3>
+						</div>
+					<div class="post-row-accordion">
+						<div id="accordion">
+						<t t-foreach="questionnaires" t-as="questionnaire">
+						    <h5>
+							  <span>
+							  Q
+							  </span>
+							  <span class="accordion-title">
+                            <a t-attf-href="/conecta/questionnaire/#{questionnaire.id}"><t t-esc="questionnaire.name"/></a>
+							  </span>
+						    </h5>
+                  </t>
+						</div>
+					</div>
+					</div>
+					<div id="submitreview" class="comments-container padding-left-40 padding-right-40 clearfix margin-top-50">
+						<div class="comments-header clearfix">
+							<h3><t t-esc="my_reviews_count"/> Reviews</h3><!--comments-header-->
+            <t t-if="my_reviews_count > 0"> 
+                <t t-foreach="my_reviews" t-as="my_review">
+						<div class="comments-posts">
+							<div class="comments-box">
+								<div class="comments-thumb">
+									<img t-att-src="website.image_url(my_review.review_partner_id, 'image')" class="img-rounded" style="float:left;margin-right:16px;margin-bottom:16px;"  t-attf-alt="#{my_review.review_partner_id.name} conecta profile" width="85" height="85"/>
+								</div>
+								<div class="comments-content">
+									<div class="comments-meta-box">
+										<div class="comments-author text-left">
+											<div class="comments-name">
+												<t t-esc="my_review.review_partner_id.first_name"/> <t t-esc="my_review.review_partner_id.last_name"/>
+											</div>
+											<div class="comments-date">
+												<span t-field="my_review.create_date" t-field-options="{&quot;format&quot;: &quot;dd MMMM yyyy&quot;}"/>
+												<div class="post-reviews">
+                                        <input t-attf-id="input-#{my_review.id}" name="input" t-attf-value="#{my_review.review_star}" class="rating-loading" data-size="xxs"/>
+												</div>
+   											  <script>
+  												  $(document).on('ready', function(){
+  												      $('#input-<t t-esc="my_review.id"/>').rating({displayOnly: true, step: 0.5});
+  												  });
+  												  </script>
+											</div>
+										</div>
+									</div>
+									<div class="comments-description">
+										<p>
+											<t t-esc="my_review.review_text"/>
+										</p>
+									</div>
+								</div>
+							</div><!--../comments-box-->
+						</div><!--../comments-posts-->
+                </t>
+            </t>
+			<!--<div class="container">
+			    <t t-call="website.pager">
+				<t t-set="classname">pull-right</t>
+			    </t>
+			</div>-->
+					</div>
+					<div class="comments-form padding-bottom-40" id="submitreview" t-if="request.env.user.partner_id.id != my_date.id">
+						<div class="comments-header lp-border-bottom clearfix">
+							<h3>Rate us and Write a Review</h3>
+						</div><!--comments-header-->.
+						<div class="comments-inner-container margin-top-10">
+						<form method="POST" action="/conecta/profiles/review/send">
+			            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+			            <input type="hidden" name="member_id" t-attf-value="#{my_date.id}"/>
+							<div class="form-group margin-bottom-40">
+								<p class="padding-bottom-15">Your Rating for this Company</p>
+								
+								<div class="list-style-none form-review-stars">
+
+
+								    <input id="rating" name="rating" value="3" type="number" class="rating" min="0" max="5" step="0.5" data-size="xs"/>
+
+									
+								</div>
+							</div>
+							<div class="col-md-6 padding-left-0">
+								<div class="form-group clearfix">
+									<label for="inputName">Name</label>
+									<input type="text" class="form-control" id="inputName" t-attf-value="#{user_id.partner_id.first_name} #{user_id.partner_id.last_name}" readonly="True"/>
+									
+								</div>
+							</div>
+							<div class="col-md-6 padding-right-0">
+							
+								<div class="form-group clearfix">
+									<label for="inputEmail">Email</label>
+									<input type="email" class="form-control" id="inputEmail" t-attf-value="#{user_id.login}" readonly="True"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputComments">Review</label>
+								<textarea class="form-control" name="comment" rows="5" required="required"></textarea>
+							</div>
+							<div class="form-group margin-bottom-0">
+								<input type="submit" value="Submit Review" class="lp-review-btn btn-second-hover"  />
+							</div>
+						</form>
+						</div>
+					</div>
+							</div>
+							</div>
+				<div class="col-md-4 ">
+					<div class="sidebar-post">
+						<div class="widget-box  widget-bg-color post-author-box lp-border-radius-5">
+							<div class="user-info">
+								<div class="user-thumb">
+									<img t-att-src="website.image_url(my_date, 'image')" class="img-rounded" style="float:left;margin-right:16px;margin-bottom:16px;"  t-attf-alt="#{my_date.name} conecta profile" width="100" height="100"/>
+								</div>
+								<div class="user-text">
+									<h5 class="user-name margin-top-0"><a href="#"><t t-esc="my_date.first_name"/> <t t-esc="my_date.last_name"/></a></h5>
+									<label class="user-position md-trigger quickformtrigger2" data-modal="modal-6">Qucik Contact</label>
+									<label class="user-position quickformtrigger">Qucik Contact</label>
+
+									<ul class="social-icons post-socials">
+										<li><a t-attf-href="#{my_date.social_facebook}" target="_blank"><!-- Facebook icon by Icons8 -->
+											<img class="icon icons8-Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADEklEQVRoQ+1a7XHbMAwFNEE6QZIJmk5Qd4N4gmaDOAtQEBaoM0HTCepOEGeCuhPU3aBdgOiBJX10LFmMYsl0T7zLj9i0xAc8fEgPCA3LGPMREScAcOX/mrYO8fkKAFYismDmb3U3xOcfEtG1iHwCgIshTtjhHmtEvCOiRfzbLSBlWSqAmW4QkV9FUcwBYElEapGjLSJSVkystTNEPPcHmVdVdRcOtQFijJkj4q1+4REriOwWEc08Y9TY98zsDO+AeDp99SDeHdsDbdZTD4nId3/eqdLMASnL8qfGRM6eqInl4Jl1VVWXSEQ3IvJZY4KZcw3wWicZYzTwzxFxisaYB0TUVKuZIMu4aKJaiBcR+YJlWSrXrhAx+9iooVeIlZUCEd1QVdVOTWkLuhy+D+c/ChDfNVz7jiGOyyUArEVkVRTFU0r2PAoQnzY1zacmFZeR9nl+cCAexCMAnInIU1EUDwCwIKLf4aBEpL3dhbV2ogkohfKDAwlJRTMMM9+0xVdq7A4KJHQOL6lVWQLpUqtyBbJExPeI+IGINDNtFhFpzJQAoFlsJwm0lYVBqbXPusFbTTFzMkA2Fq3xVltC8A2vK+iDFMR9HkmNhSZQ2VAreyDhgLEl6/hety/+DSK+iYvmc8/07pFDATl6sL+GMtqqiMijtjLMrG1L4xrMI20WrTuhMYYQsUxpZ3IH4p5aRaRiZjpljzR2AicZ7Ih4SUTrLDzSNf2KyB9mPmur7r3HSHyAsbK3uePfy8Wx10qw0/aWkVoJJhuplWCknS0jtRKsNlIrwUgjtV5jpP/n5YMxZoWIb/sUevrKWkEUFZEfg0hvPQJxgqiT3iJpulWL6MLh+CXavrcoXR6JIzV66uS2SB3tRRDtwyOREOrU6EEGBg4NpHFgwHtlM8IhIjNmvu9Kpabn6kNQyxhzi4hORt8Z4Qg3judRvCg5TxUlU56ruwJRD1hrVZbQuRMnPcQg9P/aMSdrrXonTOEcyjEHuY6fWprtHXOK76TZzFrrJGStMwc5RceLaJ3QwbOiKFQ83ZrTCpf8CzG2NErUDo89AAAAAElFTkSuQmCC" alt="facebook"/></a></li>
+										<li><a t-attf-href="#{my_date.social_googleplus}" target="_blank"><!-- Google Plus icon by Icons8 -->
+											<img class="icon icons8-Google-Plus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEh0lEQVRoQ+1a4VnUQBDdWQpQKhAqECsQKxAqACsQC2Azuw2oFXhUIFagViBWAFQAFkDG762z+fZCcknOSy5+n/kDHLlk3s7szHszS6blYuYDETkxxhwYYw7b7pvo82/GmCsiumDmq6Z3Uv1DBfB+Bsa3rdE3InpXB7QEhJmPROSTMeapiPwyxiystZfMjBXZ2sXMh2VZHhljTonoiTHmnojeMPNlMqoCwsynCsKIyIW19oyZ77dmfcOLmflpWZYfiAghb4joOIGJQJh5T0R+wBOKdDEnAA3hnxYdnnnBzDcRSFEUX7En4IkQwumcQSTbnHOXRPTaGHPpvT8m9cY19oS1dm9u4bQiqyLMbrBniGifnHOIubci8jGEcPYveCPzSmU7gCCdvSSiV9vOTkMXEdlMRL6KyHcqiuIOm3zoQ2Z2/z2AyMyMWsucCoj3/lGVX+uJE38pOeI/kIkXvvV1/z0yF08kO/7aI86510QEOrOnmqURI3K8tZbHqlFrA9Ei9EkpzQdjzE2NYgMQRNA70O02IbQpz64FJFF9rHIIYUk1QpCVZQmWAL2Aa+G9f7Mpg9ueMxhIIpeqAxrpDDOfiQjUZbymoD2DgWS02awqns45MNJnACIiX0IIUHajXYOB5FSmA0hkpGr5jfd+fzQUf7RUpFi9KntimVnI7LbpFtX9n9O9Y1OfvwVSaeX6auegm5LCpr0zCAhenofWKklcA+JDCNzH+DoL7+vJwUCcc4vUvdCMBNH/qFmWpehB0nkyINqKiRpZVxhFD2m4ahnhHnRjRGTXWns4pBhOBgTGo5aUZYnuxXMFAxALfGatjQ00EbnF72jR9AmpdM+kQNJLkZnKskRlR18YvbAEDEWwMeS6QG0FSG7UOul2XXndlAAGb/a2Fc1brZoE0GAGmWy95goE+wYbPyUBAFhJGGcH5Pz8/CWsttbCA9gv+fUoq7Vt7K79s4olrBVamrVOiAgZCoOgW+gRfRF+HtU80wqmbvxkm905VxBRrNIi4q21i3qKVU2CwlllMdzbp7pPAqQoCgx/Ype+K71q4YTAqmqN9363K3xGB1IbAPVqdCsYhFXUJeiWdxXI0YEURXGtDYZBii9fgC4v1kkp/t44acxXaoh0zTrlv0IIozXJe2ct5xzGW7FG9N24ysuifh97ClYBSYa2ubJG3wEKjLdx1p1xMbBgzC32x5yCKdu+Q2uqc9DTQN/vRYSttRjeP5r6akjBEwAxiMp3Zbb6/5cGPX1Gb1of0FSIlVwvgLgSkTiDJyJU9th1nGq8nduOYShejNE0wgZpsnW2roN71JODWtFDhb+y1gIUDhgM0iJDPaF7EOGLjAoZ8SIOd9IcsYvsrfPCsb6TinRqcFQHBhKDRfyHEPxYBmziuYkuaf/5oDowoK7COZTUjwJfgq6Y3REObckmurR8hCNLm5CwABEPriQ9vrOz83NboJA1Hx4enqeeQDrwY609bTxUk4GBUAKYPENtIiI28gydtwDEUkJpneRqyo0ZSrNUrgA3YlSfh+hxKxRgZEVIh8Zi/BvU1cKW0t95DwAAAABJRU5ErkJggg==" alt="google-plus"/></a></li>
+										<li><a t-attf-href="#{my_date.social_linkedin}" target="_blank"><!-- LinkedIn icon by Icons8 -->
+											<img class="icon icons8-LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEBUlEQVRoQ+1a7VEbMRDVqgHoAKgAUwFOBTEVBCoAGtCt1EBMBZgKMBUEKohTAaSCkAa0mXeRPPL5PmQP3MGMb4Y/Rnfa1dt9+yVSDY8x5hsRjZVSo/DXtLSP3xdKqYWIPDrn7uo2pOqPzDwRke9KqcM+JNxijxciumbmefruiiJFUUCBKywQkV9a65lS6pGZcSKDPcwMqxh778+J6DgIMrXWXkehlooYY6ZEdCkif7XWzMzTwSRv2ZiZr7z3TER7InLjnCsPvlQkmNN9UGI8NAJdBwiERORnqQDRGcysVKQoimf4RLC9D4lEjS9fBV9+sdYeETOfi8gtfMI5B1v8NI8xZgGfASpkjJkREagWTPAp0IgnDX8BKiJyR0VRwNZGRHTS5BshpsCpImLg9GkTp/cFaeIrCygi2NhauxZTgv/cKqXOG4SbWWsv+hK8bp8of6siCXSgZCASg9DEew+63iOiC2ZGvBnkyVIkMbuS4lJJI0kgdbDWngyixX/GLS2qFZE2s2PmfRH502aWfSiXpYgx5jWYzxEzv1QQORSRZwRR59x+H0Jv7SORmuEb1tqz9ENFUdwrpZBg3jnnmsjg3fXLQoSZD733CDp7SikgsnR2ZAIhpRlV0Xp36ZMNshQJedjIez8nooNUQBH5rbWeDJ2XZSuSRFGk0Si0lNZ6UWWxPlGomHgWa5VRv0PI0n8iVeesZeaxiHxFjZF8/zVUgXOt9UOuuWYhEhd1nTaygty1wc8mHd98DSmQ7dp7I0Va0pdlepOR6pRr8YAklFJTrfU8+hjiUqgCJ0hiw1IQzRdmBlq1z2CKhBIaxVujcEgGvfePgS3XqH8bH+lKKLMRQe0QiKJViYRcltTfls/1jkiXrdf9P8nnyipw68iea/epszf5UxTCGFMQETIBtJteRGSmtb5pMjVjDNo/B7E2ryozCCItFN3o1MYYdEyKtGMyqI8ktc0yIwgpELKGYxGxzjmunniIOT9E5Mk5VwbkQRVJapuVQiy2oprqmqRcqPWT3k2rzd828cWPgEgjle8UeYtSFxCnJ/kWp5qTCu1MCyeQc1I7RCom2paG1B3ojn7rompOrrWLIx2mtzOtnWm1jC/egroxsYrjq7VBT25nZJMuShuFdlWR1XfjoAd9gNbRmzEGDYDTtg1E5ME5N9lkbfV72767Mnr7KHOOLjQaAmUcG56V47akLv40A9G04nTOHa5cGFBKYR6ChtigVza60Gm8MBBQKa9wQBkRYefcTdcHh/i/MeaSiMox+toVjqRVE5XBTxhBo1XzNDRCofN4GtpIZVO92lWpveYUJrYr85AhTr9uzzCXuWq95pS+CDYL8xBcJohXiwbRB3ECFqK1xpWr2lH4PxVzvVlIavAKAAAAAElFTkSuQmCC" alt="linkedin"/></a></li>
+										<li><a href="#"><!-- Instagram icon by Icons8 -->
+											<img class="icon icons8-Instagram" src="data:image/png;base64,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" alt="instagram"/></a></li>
+										<li><a href="#"><!-- Tumblr icon by Icons8 -->
+											<img class="icon icons8-Tumblr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADxUlEQVRoQ+1a4VXbMBDWaYHSCYAJoBOQDUomKExAGAD5pAUKExQmIExQmKDJBE0ngC6g6/v8pDzF2LETm8Tpi97Ln8iS7tPdfTrdiVRFM8Z8I6KBUuo0/Ko+3cT/E6XURETGzrmnsgWp+Cczn4vId6XU0SYkXGONGRFdM/M4HbsAJMsyABjhAxH5o7W+VUo9MzN2ZGuNmWEVA+/9iIgOgyC31trrKNQciDHmloiu0BEQA0TvGjOPgsVgs++cc/nG50CCOT0GEF+2rYG63YOGRORXkHcIM8uBZFn2Gz7RZ02U+HLUzMxae0zMfCEiP+ATzrm+OnipkowxcPxDIhqSMeaeiEC1YIJe+kWVqUV/EZEHyrIMtnZKRK19wxjDRJQVF06dss7+V+lPfGUCIILB1tp3Z8oqkwZfe1VKHZSN62L+snmj/J0BYeYDEXkVkb/OuTmYLjdqU0AQETyKyItzDqFN3nYOSBVp7BSQ6HQwK631ETO/7ZxGgm+A+Y5ExDrnOLXlndAIM0N4hDYIGabOOQR3C633QMJ9BQco2GqqtR6kJlU0rSVUfm+tvVyV6ovzr0y/wR8Q7ufMJCJPWuuLMhDoN8Y8E9HZMkHbnDFrnyMxwAz3FWbm+7a7uS0gXUYCredqo5HWi3dJzXsgcQcKfjG21g4rYqGfkRiqfGkrPpLe7VPBqoSpAD4firuEc+6iLWGsTL+rHni9PxCbOuweSENbW5u19qbVwVX6Q2+IdT5Q19/Qgio/25vW3kf2PrLcizbmI8aYCRGdID9bLM5ARGYeiMgVET2U9deRQWdAEkFLU65JPeNNRJBBR+IZmX/c78+TytibtfZzneBVPto61jLGjInoKxFdVt0WY86rTEjcNGMVap0ouDONJBnxJ+ccdri0oZjkvY8amCmlZlrrMYpKbc6aLoHkOV9IT0THzAwhV2q9AAKJE9OpvGAtQ9YbIEjUee/BTp+UUo3zVIGxUE8Bcy1k8ZuqdG5adazTdEII5b2H4wPMTERYaz1NC6s3NzdnRHQQHiLExwjIjSFnjNzYQu28bu0k5zzttPSGiQOYWAtfKgsYCxpEPb8qwbdsgoXSW1KazqujdbvQpB8F1sBQg6ChfBhSq9AWnmNExmoyX9U3STV6mJfbkurozhREE23k1ej/68FA0Mr8CQdCCefcXRu1f9RYYwzisryM/u4JR1y0kLMC89xqrV+2/aQjkAgYD+9O8kcNxZJ36TMn7z2004h5Pmrnq+YNVYDR0mdO6eAkNsJjgpNNC5yuF9guMl3pWfMPzOt9SgN4YEwAAAAASUVORK5CYII=" alt="tumblr"/></a></li>
+									</ul><!-- ../social-icons-->
+								</div>
+									<div class="quickform">
+										<h3>Contact Owner</h3>
+										<div class="">
+											<form class="form-horizontal"  method="post">
+												<div class="form-group">
+													<input type="text" class="form-control" id="name7" placeholder="Name:"/>
+												</div>
+												<div class="form-group">
+													<input type="email" class="form-control" id="email7" placeholder="Email:"/>
+												</div>
+												<div class="form-group">
+													<textarea class="form-control" rows="5" id="message7" placeholder="Message:"></textarea>
+												</div>
+												<div class="form-group mr-bottom-0">
+													<input type="submit" value="Submit" class="lp-review-btn btn-second-hover"/>
+												</div>
+											</form>	
+										</div>
+									</div>
+								</div>
+						</div><!-- ../widget-box  -->
+						<div class="widget-box  widget-bg-color post-author-box lp-border-radius-5">
+							<div class="widget-header margin-bottom-25 hideonmobile">
+								<ul class="post-stat">
+									<li>
+										<a class="md-trigger parimary-link singlebigmaptrigger">
+											<span class="phone-icon">
+												<!-- Marker icon by Icons8 -->
+												<a t-attf-href="http://osmbuildings.org/?lat=#{my_date.partner_latitude}&amp;lon=#{my_date.partner_longitude}&amp;zoom=17.4&amp;rotation=0&amp;tilt=30" target="_blank"><img class="icon icons8-Marker" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEy0lEQVRoQ91aQXbTShCszgpnQzjB93ABnBMgnwBnGXnx4QSEE8ScAHMCwsLOEucEUk4Q5wSTf4KEDbBK82YykkfG0vRISh7va5X3PJKmurqreloh/E8u6hvHeKHfMDABYQjGARFG5h3MWINwB8YNAatsqi76fHcvQJJzPcQ9TgFMiHAg2SAz7gCssI8P+ZEyf3e6OgNJzvUp7nHiAbhm4AyENe5xl0/V2uwwWegR9nAAxoiAtwBeOabusId5fqw+dkHSGkjyTR/gB7IydYCvIMzyY3Uj2ZBlkTEj4N8y9fYxbstOKyA2urAgTBpdM+EkP1a5BMD2muRcJ8SYG4Zcuo0LFmOeFw3EMaEdiEseYNI2isVGzTPpJ1YAXlsw+1Cxz4wCspVOl1mqkpiohdaOl9qwasCs86k6DK33f48DstAzIqtO1zxAEhu10MYcMwaMSbOP+VTNQvcUv4uBOIm9MinFjMM2eSzZlKuZLDbF5ECW+swoDANf81QZ+Xy0K2nxLjmQhb61bBBUSGJtLf3Ce9xbg9w4+x5WeIbPoZQ07BNDG1byqXohiZgISLLUEwK+mdrIUmU3VnclC23Y+lTn8DZlCO/yVBmVqr3GS22M9BUDR6G15iFSIEVafchTZTR/52VAEOGLM7gL59jWX0zuuw7gjf09sMHECQsDn/NUnYRYEQEpZZEwrjM+31+Y8S6fqrNdLy/Ahoq5KHoAIpkXAUkW2qjVqEmtyggyLvKpmgTSpvCLWok13QMRrqSeIgIyXmo2G8tSVbu+BNvAWgHOk9hG45O8N8pHJA+UrPFZkqyXrPnrgTiXvwX4e5a+DJ5xpKn1kNMNaVPKZURqNcn5oxR7qVoNkunJ5SpP1VGj1yx1RkDS1E956hYUD7mPFJre0Mg9pALfAPS8UX7P9SkxZiZleEDDOpf3VFDUPIpSy3P2Rk331hnDWxEwz1J1aSI2XurXDHsitK1/yBAlWeCzLgPycPC5DUmwdXDbzvCZYWZ3evF3Br1tajs2hQ7wAC9CvZk4tVxExb2Pc3kzkDDGaIcM9gzDdmoyD21MmgHRjLhIzwl4/yRt/EKviGDmY429XTsgLVrrUKO3sxfz0lhyZIgyxGJx6RUNTWGbzfv3eB20qFlsBaTUdiDPUzXuuumdjCy1JmDYJOG77hOpVtnsVb2i93N76ebM/2XTl8OYQEUBeeyiTwSOXwcuHogremtqgvO7NKqb3qrZ8XsD4ljpfaLShY0oQ6woS5WV2uPvU7HRGohlZTMc6KxgyUapRA1iZ9WqsOIrmHBkUyO3JwR8QgulauXsOzfhxj8M3GCAw1APtf2MyuSlQzA6pZbn9sGJSF2tFKNR6cinqeai5fePqLqxjZXjiOF2RW6JRqExbEg4OgOpFL7wu4ZNqZ+4cq1I6wLvrUYqrcsPXoPoH8l3jWSp7ZFAMksOMVH83gsjjhU7GQylmDcdiUrFEKDegGx5y04V21Ip8aEpBKIX1dp+ifc54I+xUNGG9KFS2+/tlRHLim1feG3HQt5RtegEQmMgSfR7dfamF1bGQgR7ACNGZutHMIlsA6Z3Rkol2wz17P+ZuI+ovUjtkzHigbHTEKdkotFnGzYepdj9jXjfzc2grffv8r0bYtso9nnfb8uVHmDpOaieAAAAAElFTkSuQmCC" alt="map-marker"/></a>
+											</span>
+											<span class="phone-number ">
+												<a t-attf-href="http://osmbuildings.org/?lat=#{my_date.partner_latitude}&amp;lon=#{my_date.partner_longitude}&amp;zoom=17.4&amp;rotation=0&amp;tilt=30" target="_blank"><t t-esc="my_date.street"/></a>
+											</span>
+										</a>	
+									</li>
+								</ul><!-- ../post-stat -->
+							</div>
+							<div class="widget-content ">
+								<div class="widget-map" >
+									<div id="singlepostmap" class="singlemap" ></div>
+<style type="text/css">
+.olControlAttribution {
+    font-size: smaller;xx-small
+    right: 3px;
+    bottom: 0.1em;
+    position: absolute;
+    display: block;
+}
+.olControlAttribution a {
+    font-size: xx-small;
+}
+</style>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script>
+    map = new OpenLayers.Map("singlepostmap");
+    map.addLayer(new OpenLayers.Layer.OSM());
+
+    var lonLat = new OpenLayers.LonLat( <t t-esc="my_date.partner_longitude"/>,<t t-esc="my_date.partner_latitude"/> )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+          
+    var zoom=16;
+
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+    
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+    
+    map.setCenter (lonLat, zoom);
+  </script>
+
+								</div>
+							</div>
+						</div><!-- ../widget-box  -->
+						<div class="widget-box widget-bg-color widget-categories lp-border-radius-5">
+							<div class="widget-content">
+								<ul class=" list-style-none categories-container">
+									<li><a href="#"><span class="cat-icon"><img class="icon icons8-Question-Mark" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABQklEQVRoge2X25GDMAwAXUJKoARKuBIogQ6go9DB0QnpIHRAOtj7CNwljjw84iAzp/1kkLwSsgc7ZxhGNIAMqIBvoOOPbnxWAZm25wvACTiznDNw0vZ2zjkHFMCwQn5iAApt+XKDuE+pJV8EhHqgBvKHd/PxWR+I2fdLcJ95aWzqBbG1EDew554AGkEin4/8jf8S4psPKj8tnm3pvJBH+hLZB5RnF+7fyOXviTKeaXjR9t3uP+Tym9HGdA0tetk6+0Ku3MvVxXQNLfpEavl259AFCCN00XZahcomjgmvx+jmE213hO5DincFCeQfwUbbaxGBzt9I5YIjMZ42FXAV5EH7YiMREJUotV1FFojfkuz8xIx4k/TMOycW0HK/Q6ctPuHba/usxgrQxgrQxgrQ5vAFGMZ/5/Cb2ArQ5vAFGMZB+AE14UN8bAOh0gAAAABJRU5ErkJggg=="/></span><span>######</span></a></li>
+									<li><a href="#"><span class="cat-icon"><img class="icon icons8-Question-Mark" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABQklEQVRoge2X25GDMAwAXUJKoARKuBIogQ6go9DB0QnpIHRAOtj7CNwljjw84iAzp/1kkLwSsgc7ZxhGNIAMqIBvoOOPbnxWAZm25wvACTiznDNw0vZ2zjkHFMCwQn5iAApt+XKDuE+pJV8EhHqgBvKHd/PxWR+I2fdLcJ95aWzqBbG1EDew554AGkEin4/8jf8S4psPKj8tnm3pvJBH+hLZB5RnF+7fyOXviTKeaXjR9t3uP+Tym9HGdA0tetk6+0Ku3MvVxXQNLfpEavl259AFCCN00XZahcomjgmvx+jmE213hO5DincFCeQfwUbbaxGBzt9I5YIjMZ42FXAV5EH7YiMREJUotV1FFojfkuz8xIx4k/TMOycW0HK/Q6ctPuHba/usxgrQxgrQxgrQ5vAFGMZ/5/Cb2ArQ5vAFGMZB+AE14UN8bAOh0gAAAABJRU5ErkJggg=="/></span><span>######</span></a></li>
+								</ul>
+							</div>
+						</div><!-- ../widget-box  -->
+						<div class="widget-box widget-bg-color user-timing lp-border-radius-5">
+							<div class="widget-content">
+								<ul class="user-abailable-table list-style-none">
+									<li>
+										<span class="timing-days">
+											<!-- Clock icon by Icons8 -->
+											<img class="icon icons8-Clock" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE8UlEQVRoQ82ai3EbNxCGsVABliuwXEHkCqRUELkCKRVYbgDAoYFQFUSqwFQFpiuIUoGpCqIUIGzmxywYEDqSuDuc5ZvheDy6x37YB/YBUo0u59xJCOGMiE6VUvidyC//wlophd8DMz9orb855/D/yRdNeYMIf0lEVz1C1756zcwLrfX9FKhRIABgZquUAkC8mPlfpdQKq621xr/rUjA8B+AQwrlo7ZyI3mTEt0TUjQEaBOKcO2bmPwqAO6310jm3rFVBfp9z7iKEcEFElwXQZ+fcU+07q0HwQWb+UykFGKw+zGEx5GP7hBIzhYavRUtPRPR77QJVgVhroYVrMaF7rfV1rfqttX/hua7rPtSsrgDBxM7k/kXXdZ8PPbsXREzpi1LqHFoQgNtDL83/bq1lAalatPSsc+4qhLAQ7ayI6OM+7e98uUB8hVMKxLlz7mEIBO4dC4JnnXOnIQRAICA8ENGvu2B2glhrAQFN/K21vqg1pRJ0CkgGA1P7RSm17LruY99i9oIYY6DST6KJ07EQUzWSmdlGM8x8472P/ppfL0AkOn2ZYk4tfKQUNDcz8ZetcL8FIn7xHSFWQt8gx+5T+VTTKvacK9kCEJrf5/6yBWKMgS1eMvO99/5iqGPPDYL3G2Pg/GfMfOe932QWGxBJO7638Is5TCvzF6Q4iGBvRCsx6dyAZNrovPeuhTZaOXspizHGEZHNtRJBkjYiGdHbVmnHXCCFvPCVdQTpI/yZNSIyR38mIiSXiwhirUWkOukLa1OBWkatIoIhiUX6tO667j3lTu69P54qePn8XCCiFYTh6PQAibG5ZcidM2rl7zbGLInoN+x5lKUjTaNV+uDMGknR6wYgcYORzBIlatNrThDnHJLar8z8jTJHj2GsJYUxxhJR3JOY2Xnvu5bvR/7FzCjc1gAZVfgcEiiZbH4fMzc33yT/bCDW2n+QfBbAT13XvT20CEP+PjuIMSaGxkIjj957tISaXbOCSDkA290SelbTMsasiehdnklOWa6i1n8U80J/6rZlMgoZs838sWn4LSBQ66NhUd1kG7qAW+G31Yb4oyGKZPemSYryGhAC8n+KkuX2o0Lja0FI1h5DfEwahSw5PLp5g5rR0hLFDju7T/Sl8cwcQ3qqEK/RZS8L+hrnM8bE7uPcjl3KkkrzrcKqr3SsgXite3aWumJeqRXUPB9qDZxF2k1L6EU7SCmF1OJD60y4FYxoA1lDdPIkZ2+Dbl+zuJVAY9+TNdf7G3Sy5R+HEBDBUAdjWjS5ZTpW4L7nnHMpKGFWc7KzZSowqTsBE8M8YvBMpKXw6V1SRGHUAZN6sU3sHSv8LP6SQ1SPFdIKpFpeJkVYgaZlcK3WBAJDWGy6O5vre0dvMvbCpOhVzKzQxN7M4eAwNISAxAwTVsCgPflDAoAx5pM0LjAOxyT5atQwNFd90UhA+wgRbRZTk30CpoTTEei+9I7aStOsHhnLCQXs/qjDn+T8yF0roOxcS2ofIcRCC1VJbDVIts9gULp13IKZl977+1oHLrSNliemY/m5FhwLwaGE6upyEEgW0zE1QrsyB8JHVzi+xMyro6Ojx75DNc/Pz+gP4DANjkLBfDYtI2TfWms3RsujQHIgpRQOxeD8yLsxGkE9gTMtSIvGAKRvTgIpCh20fs5DCJuDZyUchE4Hz7TWyBhWU4TPv/8fVZPejlNsRCUAAAAASUVORK5CYII=" alt="clock"/>
+											Monday - Friday
+										</span>
+										<span class="timing-hours">
+											07:30-20:00
+										</span>
+									</li>
+									<li>
+										<span class="timing-days">
+											<!-- Clock icon by Icons8 -->
+											<img class="icon icons8-Clock" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE8UlEQVRoQ82ai3EbNxCGsVABliuwXEHkCqRUELkCKRVYbgDAoYFQFUSqwFQFpiuIUoGpCqIUIGzmxywYEDqSuDuc5ZvheDy6x37YB/YBUo0u59xJCOGMiE6VUvidyC//wlophd8DMz9orb855/D/yRdNeYMIf0lEVz1C1756zcwLrfX9FKhRIABgZquUAkC8mPlfpdQKq621xr/rUjA8B+AQwrlo7ZyI3mTEt0TUjQEaBOKcO2bmPwqAO6310jm3rFVBfp9z7iKEcEFElwXQZ+fcU+07q0HwQWb+UykFGKw+zGEx5GP7hBIzhYavRUtPRPR77QJVgVhroYVrMaF7rfV1rfqttX/hua7rPtSsrgDBxM7k/kXXdZ8PPbsXREzpi1LqHFoQgNtDL83/bq1lAalatPSsc+4qhLAQ7ayI6OM+7e98uUB8hVMKxLlz7mEIBO4dC4JnnXOnIQRAICA8ENGvu2B2glhrAQFN/K21vqg1pRJ0CkgGA1P7RSm17LruY99i9oIYY6DST6KJ07EQUzWSmdlGM8x8472P/ppfL0AkOn2ZYk4tfKQUNDcz8ZetcL8FIn7xHSFWQt8gx+5T+VTTKvacK9kCEJrf5/6yBWKMgS1eMvO99/5iqGPPDYL3G2Pg/GfMfOe932QWGxBJO7638Is5TCvzF6Q4iGBvRCsx6dyAZNrovPeuhTZaOXspizHGEZHNtRJBkjYiGdHbVmnHXCCFvPCVdQTpI/yZNSIyR38mIiSXiwhirUWkOukLa1OBWkatIoIhiUX6tO667j3lTu69P54qePn8XCCiFYTh6PQAibG5ZcidM2rl7zbGLInoN+x5lKUjTaNV+uDMGknR6wYgcYORzBIlatNrThDnHJLar8z8jTJHj2GsJYUxxhJR3JOY2Xnvu5bvR/7FzCjc1gAZVfgcEiiZbH4fMzc33yT/bCDW2n+QfBbAT13XvT20CEP+PjuIMSaGxkIjj957tISaXbOCSDkA290SelbTMsasiehdnklOWa6i1n8U80J/6rZlMgoZs838sWn4LSBQ66NhUd1kG7qAW+G31Yb4oyGKZPemSYryGhAC8n+KkuX2o0Lja0FI1h5DfEwahSw5PLp5g5rR0hLFDju7T/Sl8cwcQ3qqEK/RZS8L+hrnM8bE7uPcjl3KkkrzrcKqr3SsgXite3aWumJeqRXUPB9qDZxF2k1L6EU7SCmF1OJD60y4FYxoA1lDdPIkZ2+Dbl+zuJVAY9+TNdf7G3Sy5R+HEBDBUAdjWjS5ZTpW4L7nnHMpKGFWc7KzZSowqTsBE8M8YvBMpKXw6V1SRGHUAZN6sU3sHSv8LP6SQ1SPFdIKpFpeJkVYgaZlcK3WBAJDWGy6O5vre0dvMvbCpOhVzKzQxN7M4eAwNISAxAwTVsCgPflDAoAx5pM0LjAOxyT5atQwNFd90UhA+wgRbRZTk30CpoTTEei+9I7aStOsHhnLCQXs/qjDn+T8yF0roOxcS2ofIcRCC1VJbDVIts9gULp13IKZl977+1oHLrSNliemY/m5FhwLwaGE6upyEEgW0zE1QrsyB8JHVzi+xMyro6Ojx75DNc/Pz+gP4DANjkLBfDYtI2TfWms3RsujQHIgpRQOxeD8yLsxGkE9gTMtSIvGAKRvTgIpCh20fs5DCJuDZyUchE4Hz7TWyBhWU4TPv/8fVZPejlNsRCUAAAAASUVORK5CYII=" alt="clock"/>
+											Saturday - Sunday
+										</span>
+										<span class="timing-hours">
+											07:30-20:00
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div><!-- ../widget-box  -->
+						<div class="widget-box widget-bg-color widget-tags lp-border-radius-5">
+						<a style="float: right;" href="/conecta/interests" t-if="request.env.user.partner_id.id == my_date.id">Register Interests</a>
+							<div class="widget-content">
+								<ul class=" list-style-none tags-container">
+								<t t-foreach="my_date.interest_list" t-as="interest">
+									<li><a href="#"><span class="tag-icon">#</span><span><t t-esc="interest.name"/></span></a></li>
+								</t>
+								</ul>
+							</div>
+						</div><!-- ../widget-box  -->
+
+					</div><!-- ../sidebar-post  -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--==================================Section Close=================================-->    
+    
+    <!--<t t-call="website_conecta.conecta_second_menu"></t>
+    
+    
+
+            <div class="col-md-12">
+                <t t-call="website_conecta.conecta_second_menu"></t>
+                <div id="main" class="well">
+                    <div id="main-header">
+                        <div id="top-right-buttons" style="float:right;">
+                            <t t-if="can_message == True">
+                                <form t-attf-action="/conecta/profiles/messages/#{my_date.id}" method="POST">
+                                    <input type="hidden" name="member_id" t-attf-value="#{my_date.id}"/>
+			            <button t-attf-class="btn btn-default btn-md">Message</button>
+			        </form>
+			    </t>
+                            <t t-if="request.env.user.partner_id.name != 'Public user'">
+           	                <t t-if="not you_like">
+           	                    <form action="/conecta/profiles/like" method="POST">   
+	                                <input type="hidden" name="member_id" t-attf-value="#{my_date.id}"/>
+	                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+	                                <button t-attf-class="btn btn-default btn-md">Like</button>
+                                    </form>
+                                </t>
+                                
+                                <t t-if="you_like">
+                                    <button t-attf-class="btn btn-primary btn-md">Liked</button>
+                                </t>
+                            </t>
+                            
+                            
+                            
+                        </div>
+                        
+                        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+                        
+                        <img t-att-src="website.image_url(my_date, 'image')" class="img-rounded" style="float:left;margin-right:16px;margin-bottom:16px;"  t-attf-alt="#{my_date.first_name} conecta profile" width="200" height="200"/>
+                        
+                        <t t-if="request.env.user.partner_id.id == my_date.id">
+			    <a href="/conecta/profiles/settings">Settings</a><br/>
+                        </t>
+                            
+			Location: <t t-esc="my_date.city_id.name"/>, <t t-esc="my_date.state_id.name"/>, <t t-esc="my_date.country_id.name"/><a t-attf-href="https://www.google.com.au/maps/place/#{my_date.city}, #{my_date.state_id.name}, #{my_date.country_id.name}" target="_blank" class="material-icons">place</a><br/>
+                        Seeking: ? between <t t-esc="my_date.min_employees_pref"/> and <t t-esc="my_date.max_employees_pref"/> who is within <t t-esc="my_date.dist_pref"/>km<br/>
+                        employees: <t t-esc="my_date.employees"/><br/>
+
+                    </div>
+                    
+                    <div id="profile_text" style="clear:both;">
+                        <h1><t t-esc="my_date.first_name"/></h1><t t-esc="my_date.phone"/><t t-esc="my_date.email"/>
+                        <t t-esc="my_date.profile_text"/>            
+                    </div>
+                    
+                    <div id="questionnaires" t-if="request.env.user.partner_id.id == my_date.id">
+                        <h2>Questionnaires</h2>
+                        <t t-foreach="questionnaires" t-as="questionnaire">
+                            <a t-attf-href="/conecta/questionnaire/#{questionnaire.id}"><t t-esc="questionnaire.name"/></a><br/>
+                        </t>
+                    </div>
+
+                    <h2>Interests</h2>
+                    <t t-foreach="my_date.interest_list" t-as="interest">
+                        <t t-esc="interest.name"/><br/>
+                    </t>-->
+                    
+                    <!-- Display link to register interests if this is your profile -->
+                    <!--<a href="/conecta/interests" t-if="request.env.user.partner_id.id == my_date.id">Register Interests</a>
+                </div>
+            </div>-->
+            
+            
+            
+        </div>
+    </t>
+</template>
+
+<template id="my_conecta_profile_settings" name="Conecta Profile Settings" page="True">
+    <t t-call="website.layout">
+        <div class="container mt16 mb16">
+            <div class="col-md-12">                            
+                <div id="main" class="well">
+                    <h1>Settings</h1>
+                    <form method="POST" action="/conecta/profile/update">
+<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+	                <input type="hidden" name="member_id" t-attf-value="#{my_date.id}"/>
+                        Profile Visibility<br/>
+                        <input type="radio" name="profile_visibility" value="public" t-attf-checked="#{'checked' if my_date.profile_visibility=='public' else ''}"/> Public<br/>
+                        <input type="radio" name="profile_visibility" value="members_only" t-attf-checked="#{'checked' if my_date.profile_visibility=='members_only' else ''}"/> Members Only<br/>
+                        <input type="radio" name="profile_visibility" value="not_listed" t-attf-checked="#{'checked' if my_date.profile_visibility=='not_listed' else ''}"/> Private<br/>
+                        <br/>
+                        Who can message you<br/>
+                        <input type="radio" name="message_setting" value="public" t-attf-checked="#{'checked' if my_date.message_setting=='public' else ''}"/> Anyone
+                        <input type="radio" name="message_setting" value="members_only" t-attf-checked="#{'checked' if my_date.message_setting=='members_only' else ''}"/> Members Only
+                        <input type="radio" name="message_setting" value="i_like" t-attf-checked="#{'checked' if my_date.message_setting=='i_like' else ''}"/> Members I Like
+                        <button t-attf-class="btn btn-primary btn-lg">Update Profile</button>
+                    </form>
+            
+                </div>
+            </div>
+            
+        </div>
+        
+    </t>
+</template>
+
+<template id="my_conecta_register" name="Conecta Register Account" page="True">
+    <t t-call="website.layout">
+		<div id="wrap" class="oe_structure">
+	   <div class="about-page-heading about-page">
+			<div class="page-heading-inner-container text-center">
+				<h1>Add Company</h1>
+				<ul class="breadcrumbs">
+					<li><a href="/">Home</a></li>
+					<li><span>Company</span></li>
+				</ul>
+			</div>
+			<div class="page-header-overlay"></div>
+		</div>		
+		
+		
+	<section class="aliceblue">
+		<div class="container page-container-third">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-0">
+					<div class="form-page-heading">
+						<h3>Add your Company</h3>
+						<p>Add details about your Company</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0">
+					
+					<div class="lp-border-radius-8 lp-border lp-form-container">
+						<div class="lp-form-row clearfix lp-border-bottom margin-bottom-40 padding-bottom-40">
+							<div class="lp-form-row-left text-left pull-left">
+								<h1>Register your Profile</h1>
+							</div>
+						</div>
+						<form method="POST" action="/conecta/profile/register/process" enctype="multipart/form-data">
+							<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+						
+                        <div class="form-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="login">E-mail</label>
+                            <input type="text" name="login" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" required="True"/>
+                        </div>
+                        
+						<div class="lp-form-row clearfix lp-border-bottom margin-bottom-40 padding-bottom-40">
+							<div class="lp-form-row-left text-left pull-left">
+								<h2>Company data</h2>
+							</div>
+						</div>
+
+                        <div class="form-group">
+                            <label for="name">Company name</label>
+                            <input type="text" name="name" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="street">Address</label>
+                            <input type="text" name="street" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip</label>
+                            <input type="text" name="zip" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Website</label>
+                            <input type="text" name="website" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="text" name="email" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group postSubmitCat clearfix border-dropdown">
+                            <label for="categ">Category</label>
+                            <select name="categ" class="form-control" required="True">
+                                <option value="">Select Category</option>
+                                <t t-foreach="categs" t-as="categ">
+                                    <option t-attf-value="#{categ.id}"><t t-esc="categ.name"/></option>
+                                </t>
+                            </select>
+                        </div>
+
+                        <div class="form-group postSubmitCat clearfix border-dropdown">
+                            <label for="country">Country</label>
+                            <select name="country" class="form-control" required="True">
+                                <option value="">Select a Country</option>
+                                <t t-foreach="countries" t-as="country">
+                                    <option t-attf-value="#{country.id}"><t t-esc="country.name"/></option>
+                                </t>
+                            </select>
+                        </div>
+
+                        <div class="form-group postSubmitCat clearfix border-dropdown">
+                            <label for="state">State</label>
+                            <select name="state" class="form-control" required="True">
+                                <option value="">Select a State</option>
+                                <t t-foreach="states" t-as="state">
+                                    <option t-attf-value="#{state.id}"><t t-esc="state.name"/></option>
+                                </t>
+                            </select>
+                        </div>
+
+                        <div class="form-group postSubmitCat clearfix border-dropdown">
+                            <label for="city">City</label>
+                            <select name="city" class="form-control" required="True">
+                                <option value="">Select a City</option>
+                                <t t-foreach="cities" t-as="city">
+                                    <option t-attf-value="#{city.name}"><t t-esc="city.name"/></option>
+                                </t>
+                            </select>
+                        </div>
+
+                        <div name="file_container" t-attf-class="form-group #{error and 'file' in error and 'has-error' or ''}">
+                            <label class="control-label" for="file">Profile Image</label>
+	                    <div class="btn btn-default btn-file col-md-12"><input name="file" id="files" type="file" /></div>
+                        </div>
+<style>
+  .thumb {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+</style>
+
+<output id="list"></output>
+
+<script>
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+      f = files[0];
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        alert("Please choose an image file");
+        return;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          document.getElementById('list').innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+
+                        <div class="form-group">
+                            <label for="self_description">Short Self Description</label>
+                            <textarea name="self_description" class="form-control" required="True"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_text">Extende Description</label>
+                            <textarea name="profile_text" class="form-control" required="True"/>
+                        </div>
+                        <button t-attf-class="btn btn-primary btn-lg">Register Profile</button>
+                    </form>
+            
+                </div>
+            </div>
+            
+        </div>
+        </div>
+	</section>
+	</div>
+    </t>
+</template>
+
+<template id="my_conecta_messages" name="Conecta Messages" page="True">
+    <t t-call="website.layout">
+        <div class="container mt16 mb16 well">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Messages</h1>
+                </div>
+            </div>
+            <div class="row">   
+                <div class="col-md-3 well">
+                    <ul class="nav nav-pills nav-stacked">
+                        <t t-foreach="my_date.contacts" t-as="contact">            
+                            <li><a data-toggle="pill" t-attf-href="##{contact.to_id.id}"><img t-att-src="website.image_url(contact.to_id, 'image')" t-attf-alt="#{contact.to_id.first_name} conecta profile" width="50" height="50"/> <t t-esc="contact.to_id.first_name"/> <t t-esc="contact.to_id.last_name"/></a></li>
+                        </t>
+                    </ul>
+                </div>
+                <div class="col-md-9 well">
+                            <h3><t t-esc="my_date.first_name"/> <t t-esc="my_date.last_name"/></h3>
+			        <div>wwwwww
+			            <!--<t t-foreach="request.env.user.partner_id.messages_list" t-as="my_message">
+			                <t t-esc="my_message.message_text"/>
+			            </t>-->
+			        </div>
+			        <form method="POST" action="/conecta/profiles/messages/send">
+			        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+			            <input type="hidden" name="member_id" t-attf-value="#{my_date.id}"/>
+			            <div class="form-group">
+			                <label for="comment">Comment:</label>
+			                <textarea class="form-control" name="comment" rows="5"></textarea>
+			            </div>
+			        
+			            <button t-attf-class="btn btn-primary btn-lg" style="float:right;">Reply</button>
+			        </form>
+		          
+                </div>   
+            </div>   
+        </div>
+    </t>
+</template>
+
+</data>
+</openerp>

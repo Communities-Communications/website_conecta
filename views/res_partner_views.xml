@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+ 
+        <record id="view_partner_form_inherit_website_conecta" model="ir.ui.view">
+            <field name="name">res.partner Website Conecta</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+      	        <notebook position="inside">
+      	            <page string="Conecta">
+                    <div name="personal_data">
+                        <separator string="Personal Data"/>
+      	                <group>
+      	                    <field name="first_name"/>
+      	                    <field name="last_name"/>
+      	                </group>
+                    </div>
+                    <div name="company_data">
+                        <separator string="Company Data"/>
+      	                <group>
+      	                    <field name="conecta"/>
+      	                    <field name="employees"/>
+      	                    <field name="categ"/>
+      	                </group>
+                    </div>
+                    <div name="social_media">
+                        <separator string="Social Media"/>
+                        <group name="social_media">
+                            <field name="social_twitter" placeholder="https://twitter.com/Odoo"/>
+                            <field name="social_facebook" placeholder="https://www.facebook.com/odoo"/>
+                            <field name="social_googleplus" placeholder="https://plus.google.com/+Odooapps"/>
+                            <field name="social_linkedin" placeholder="https://www.linkedin.com/company/odoo"/>
+                            <field name="social_youtube" placeholder="https://www.youtube.com/user/OpenERPonline"/>
+                            <field name="social_github" placeholder="https://youraccount.github.io"/>
+                        </group>
+                    </div>
+                    <div>
+                        <separator string="Conecta"/>
+      	                <group>
+			    <field name="interest_list"/>
+			    <field name="profile_visibility"/>			    
+			    <field name="like_list"/>
+			    <field name="contacts"/>
+      	                </group>
+                    </div>
+      	            </page>
+      	        </notebook>
+      	    </field>
+        </record>
+        
+        <record id="res_partner_view_tree" model="ir.ui.view">
+            <field name="name">res.partner Tree Website Conecta</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+      	        <tree>
+      	            <field name="name"/>
+      	            <field name="employees"/>
+	            <field name="categ"/>
+      	        </tree>
+      	    </field>
+        </record>
+       
+       <record id="res_partner_action" model="ir.actions.act_window">
+           <field name="name">Conecta Members</field>
+	   <field name="res_model">res.partner</field>
+	   <field name="view_type">form</field>
+	   <field name="view_id" ref="website_conecta.res_partner_view_tree"/>
+	   <field name="view_mode">tree,form</field>
+	   <field name="domain">[('conecta','=',True)]</field>
+       </record>
+
+    </data>
+</openerp>
